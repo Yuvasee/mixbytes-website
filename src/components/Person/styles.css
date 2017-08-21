@@ -1,0 +1,16 @@
+.team-member .pic img {
+  clip-path: circle(50% at center);
+  margin-top: 2rem;
+}
+
+.team-member .info {
+  margin-left: 3rem;
+}
+
+.team-member ul {
+  padding-left: 0;
+}
+
+.team-member + .team-member {
+  margin-top: 2rem;
+}

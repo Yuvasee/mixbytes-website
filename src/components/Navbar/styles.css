@@ -1,0 +1,28 @@
+.navbar {
+  background-color: rgba(40, 15, 79, .95);
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.navbar-brand {
+  margin: 0.3rem 4rem 0.3rem 1rem;
+  font-size: 200%;
+  line-height: 80%;
+}
+
+.navbar-brand span {
+  font-size: 50%;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-item.active {
+  border-bottom: 1px #fff solid;
+}
+
+a.nav-link {
+  color: #fff !important;
+  cursor: pointer;
+}

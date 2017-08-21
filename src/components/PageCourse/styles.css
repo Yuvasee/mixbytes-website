@@ -1,0 +1,40 @@
+.timetable {
+  font-size: 18px;
+  margin-top: 1rem;
+  border-color: #666;
+}
+
+.timetable th, .timetable td {
+  border-color: #666;
+}
+
+.timetable th {
+  vertical-align: middle;
+  text-align: center;
+  width: 20%;
+}
+
+.timetable th span {
+  font-weight: normal;
+  font-size: 80%;
+}
+
+.timetable .break {
+  text-align: center;
+  font-weight: normal;
+  padding: 2rem 0;
+}
+
+.togglers button {
+  margin: 0 1rem 0.4rem 0;
+}
+
+.toggled {
+  font-size: 80%;
+  margin-bottom: 1rem;
+}
+
+.toggled p,
+td p:last-child {
+  margin: 0;
+}
