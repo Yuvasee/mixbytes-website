@@ -37,6 +37,7 @@ a, a:hover {
 .content p + h1,
 .content p + h2,
 .content form + h2,
+.content ul + h2,
 .content p + h3 {
   margin-top: 2rem;
 }
