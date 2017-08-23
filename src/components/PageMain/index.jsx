@@ -7,6 +7,7 @@ import ContentBubble from 'components/ContentBubble';
 import Person from 'components/Person';
 import Sergey from 'components/Person/Sergey';
 import Footer from 'components/Footer';
+import EmailForm from 'components/EmailForm';
 
 import './styles.css';
 
@@ -38,20 +39,20 @@ class PageMain extends Component {
 
           <ContentBubble id="edu">
             <h1 className="display-4">Обучение</h1>
+
             <h2>Уикенд-курс &laquo;Погружение в&nbsp;блокчейн&raquo;</h2>
             <p>Ближайший уикенд-курс пройдет <strong>9&nbsp;и&nbsp;10&nbsp;сентября.</strong></p>
             <ul>
               <li><a href="/course">Подробности о&nbsp;курсе</a></li>
               <li><a href="#">Сразу записаться</a></li>
             </ul>
+
             <h2>Школа блокчейн-разработчиков</h2>
             <p>
               В&nbsp;конце года мы&nbsp;запустим большой модульный курс, рассчитанный на&nbsp;программистов. Оставьте ваш e-mail, чтобы первым узнать о&nbsp;старте набора в&nbsp;школу:
             </p>
-            <form className="form-inline">
-              <input type="text" className="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Ваш e-mail" />
-              <button type="submit" className="btn">Узнать первым</button>
-            </form>
+            <EmailForm buttonText="Узнать первым" />
+
             <h2>Менторинг</h2>
             <p>Для уверенных в&nbsp;своих силах специалистов. Направим на&nbsp;нужные материалы и&nbsp;практики, поможем в&nbsp;самых трудных местах, проверим результаты. Индивидуальный подход, прием через собеседование. Можно приходить компанией или отделом.</p>
           </ContentBubble>
@@ -62,10 +63,13 @@ class PageMain extends Component {
         <ContainerBlock type="light">
           <ContentBubble id="consult">
             <h1 className="display-4">Консалтинг</h1>
+
             <h2>Формулирование бизнес-требований</h2>
             <p>Ваши знания о&nbsp;блокчейн-технологиях обрывочны, но&nbsp;вы&nbsp;уверены, что эта сфера открывает вам новые возможности, которые нельзя упускать? Вы&nbsp;можете начать с&nbsp;нашего <a href="/course">публичного курса</a> или обратиться к&nbsp;нам за&nbsp;консультацией.</p>
+
             <h2>Выбор технических решений, написание ТЗ</h2>
             <p>Подберем оптимальный стек технологий для решения вашей задачи. Порекомендуем фреймворки, библиотеки, проверенные смарт-контракты. Правильно сформулируем требования для программистов.</p>
+
             <h2>Помощь в&nbsp;HR</h2>
             <p>Поможем сформулировать требования к&nbsp;блокчейн-программистам, которых вы&nbsp;хотите взять в&nbsp;команду. Проведем технические собеседования, разметим путь для роста и&nbsp;обучения. Хорошо сочетается с&nbsp;менторингом.</p>
           </ContentBubble>

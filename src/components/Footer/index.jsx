@@ -1,23 +1,94 @@
 import React, {Component} from 'react';
+import isEmail from 'validator/lib/isEmail';
+import classNames from 'classnames';
+
+import api from 'helpers/api';
 
 import './styles.css';
 
 class Footer extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      contact: '',
+      message: '',
+      errContact: false,
+      errMessage: false
+    };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleChangeContact = this.handleChangeContact.bind(this);
+    this.handleChangeMessage = this.handleChangeMessage.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+
+    const {contact, message} = this.state;
+    let isValid = true;
+
+    if (!isEmail(contact)) {
+      isValid = false;
+      this.setState({errContact: true});
+    } else {
+      this.setState({errContact: false});
+    }
+
+    if (message.length < 80) {
+      isValid = false;
+      this.setState({errMessage: true});
+    } else {
+      this.setState({errMessage: false});
+    }
+
+    if (isValid) {
+      api.post('message', {
+        contact: this.state.contact,
+        message: this.state.message
+      })
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+    }
+  }
+
+  handleChangeContact(e) {
+    this.setState({contact: e.target.value});
+  }
+
+  handleChangeMessage(e) {
+    this.setState({message: e.target.value});
+  }
+
   render() {
+    const {errContact, errMessage, message} = this.state;
+
     return (
       <footer className="container-fluid">
         <div className="container" id="feedback">
           {this.props.feedback &&
             <div>
               <h1 className="display-4">Напишите нам</h1>
-              <form>
+              <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="contact">Как с вами связаться?</label>
-                  <input type="text" className="form-control" id="contact" placeholder="Номер телефона или адрес e-mail" />
+                  <input type="text" id="contact" placeholder="Ваш адрес e-mail" onChange={this.handleChangeContact}
+                    className={classNames('form-control', {'is-invalid': errContact})}
+                  />
+                  {errContact &&
+                    <div className="invalid-feedback">Это не похоже на e-mail</div>
+                  }
                 </div>
                 <div className="form-group">
-                  <label htmlFor="message">Ваше сообщение</label>
-                  <textarea className="form-control" id="messages" rows="5"></textarea>
+                  <textarea id="messages" rows="5" placeholder="Ваше сообщение" onChange={this.handleChangeMessage}
+                    className={classNames('form-control', {'is-invalid': errContact})}
+                  ></textarea>
+                  {errMessage &&
+                    <div className="invalid-feedback">Напишите хотя бы 80 знаков. Сейчас {message.length}</div>
+                  }
                 </div>
                 <button type="submit" className="btn">Отправить</button>
               </form>

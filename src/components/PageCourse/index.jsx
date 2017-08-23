@@ -34,7 +34,7 @@ class PageCourse extends Component {
       {link: 'course', name: 'О курсе'},
       {link: 'day1', name: 'День 1'},
       {link: 'day2', name: 'День 2'},
-      {link: 'speakers', name: 'Спикеры'},
+      {link: 'speakers', name: 'Ведущие'},
       {link: 'participation', name: 'Участие'},
       {link: 'EXTERNAL', address: 'http://', name: 'Записаться'}
     ];
@@ -238,12 +238,12 @@ class PageCourse extends Component {
 
         <ContainerBlock type="dark">
           <ContentBubble id="speakers">
-            <h1 className="display-4">Спикеры. Техническая часть</h1>
+            <h1 className="display-4">Ведущие. Техническая часть</h1>
             <Sergey noPosition={true} />
           </ContentBubble>
 
           <ContentBubble id="speakers">
-            <h1 className="display-4">Спикеры. Юридическая часть</h1>
+            <h1 className="display-4">Ведущие. Юридическая часть</h1>
             <Person image={require('./img/antonina.jpg')}>
               <h2>Антонина Левашенко</h2>
               <ul>
