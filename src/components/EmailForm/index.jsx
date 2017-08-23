@@ -13,7 +13,8 @@ class EmailForm extends Component {
 
     this.state = {
       email: '',
-      error: false
+      error: false,
+      success: false
     }
   }
 
@@ -35,10 +36,10 @@ class EmailForm extends Component {
         type: 'school',
         address: email
       })
-      .then(function (res) {
-        console.log(res);
+      .then((res) => {
+        this.setState({success: true})
       })
-      .catch(function (err) {
+      .catch((err) => {
         console.log(err);
       });
     }
@@ -49,14 +50,23 @@ class EmailForm extends Component {
   }
 
   render() {
-    return (
-      <form className="form-inline" onSubmit={this.handleSubmit}>
-        <input type="text" className={classNames('form-control mb-2 mr-sm-2 mb-sm-0', {'is-invalid': this.state.error})} placeholder="Ваш e-mail"
-          onChange={this.handleChange}
-        />
-        <button type="submit" className="btn">{this.props.buttonText}</button>
-      </form>
-    );
+    const {buttonText, successMessage} = this.props;
+    const {success} = this.state;
+
+    if (success) {
+      return (
+        <p>{successMessage}</p>
+      );
+    } else {
+      return (
+        <form className="form-inline" onSubmit={this.handleSubmit}>
+          <input type="text" className={classNames('form-control mb-2 mr-sm-2 mb-sm-0', {'is-invalid': this.state.error})} placeholder="Ваш e-mail"
+            onChange={this.handleChange}
+          />
+          <button type="submit" className="btn btn-success">{buttonText}</button>
+        </form>
+      );
+    }
   }
 }
 

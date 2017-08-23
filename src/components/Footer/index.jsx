@@ -14,7 +14,8 @@ class Footer extends Component {
       contact: '',
       message: '',
       errContact: false,
-      errMessage: false
+      errMessage: false,
+      success: false
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -36,6 +37,7 @@ class Footer extends Component {
     }
 
     if (message.length < 80) {
+      console.log('1');
       isValid = false;
       this.setState({errMessage: true});
     } else {
@@ -47,10 +49,10 @@ class Footer extends Component {
         contact: this.state.contact,
         message: this.state.message
       })
-      .then(function (res) {
-        console.log(res);
+      .then((res) => {
+        this.setState({success: true})
       })
-      .catch(function (err) {
+      .catch((err) => {
         console.log(err);
       });
     }
@@ -65,33 +67,35 @@ class Footer extends Component {
   }
 
   render() {
-    const {errContact, errMessage, message} = this.state;
+    const {errContact, errMessage, message, success} = this.state;
 
     return (
       <footer className="container-fluid">
         <div className="container" id="feedback">
           {this.props.feedback &&
             <div>
-              <h1 className="display-4">Напишите нам</h1>
-              <form onSubmit={this.handleSubmit}>
-                <div className="form-group">
-                  <input type="text" id="contact" placeholder="Ваш адрес e-mail" onChange={this.handleChangeContact}
-                    className={classNames('form-control', {'is-invalid': errContact})}
-                  />
-                  {errContact &&
-                    <div className="invalid-feedback">Это не похоже на e-mail</div>
-                  }
-                </div>
-                <div className="form-group">
-                  <textarea id="messages" rows="5" placeholder="Ваше сообщение" onChange={this.handleChangeMessage}
-                    className={classNames('form-control', {'is-invalid': errContact})}
-                  ></textarea>
-                  {errMessage &&
-                    <div className="invalid-feedback">Напишите хотя бы 80 знаков. Сейчас {message.length}</div>
-                  }
-                </div>
-                <button type="submit" className="btn">Отправить</button>
-              </form>
+              <h1 className="display-4">{success ? (<span>Спасибо!<br />Ваше сообщение отправлено.</span>) : 'Напишите нам'}</h1>
+              {!success &&
+                <form onSubmit={this.handleSubmit}>
+                  <div className="form-group">
+                    <input type="text" id="contact" placeholder="Ваш адрес e-mail" onChange={this.handleChangeContact}
+                      className={classNames('form-control', {'is-invalid': errContact})}
+                    />
+                    {errContact &&
+                      <div className="invalid-feedback">Это не похоже на e-mail</div>
+                    }
+                  </div>
+                  <div className="form-group">
+                    <textarea id="messages" rows="5" placeholder="Ваше сообщение" onChange={this.handleChangeMessage}
+                      className={classNames('form-control', {'is-invalid': errMessage})}
+                    ></textarea>
+                    {errMessage &&
+                      <div className="invalid-feedback">Напишите хотя бы 80 знаков. Сейчас {message.length}</div>
+                    }
+                  </div>
+                  <button type="submit" className="btn">Отправить</button>
+                </form>
+              }
             </div>
           }
           <div className="copy">&copy;&nbsp;2017&nbsp;&mdash; MixBytes Blockchain Labs</div>
