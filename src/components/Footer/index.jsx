@@ -74,7 +74,7 @@ class Footer extends Component {
         <div className="container" id="feedback">
           {this.props.feedback &&
             <div>
-              <h1 className="display-4">{success ? (<span>Спасибо!<br />Ваше сообщение отправлено.</span>) : 'Напишите нам'}</h1>
+              <h1 className="display-4">{success ? (<span>Спасибо,<br />ваше сообщение отправлено.</span>) : 'Напишите нам'}</h1>
               {!success &&
                 <form onSubmit={this.handleSubmit}>
                   <div className="form-group">
@@ -98,6 +98,8 @@ class Footer extends Component {
               }
             </div>
           }
+          <p className="mt-5">Публичный канал в Telegram: <a href="https://t.me/mixbytes_pub">https://t.me/mixbytes_pub</a><br />
+          Электропочта: <a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a></p>
           <div className="copy">&copy;&nbsp;2017&nbsp;&mdash; MixBytes Blockchain Labs</div>
         </div>
       </footer>

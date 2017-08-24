@@ -71,7 +71,7 @@ class PageCourse extends Component {
                   {toggled}
                 </div>
               }
-              <p>Полное понимание технической и&nbsp;юридической базы за&nbsp;2&nbsp;дня.</p>
+              <p>Даем фундаментальное понимание технической и&nbsp;юридической базы блокчей-технологий за&nbsp;2&nbsp;полных дня. От&nbsp;технических основ до&nbsp;юридической практики. Вы&nbsp;наконец поймете как и&nbsp;почему всё это работает!</p>
               <p>Ближайший курс: <strong>Москва, 9&mdash;10 сентября.</strong> <a href="#">Записаться</a></p>
             </div>
             <p>Блокчейн-технологии ворвались в&nbsp;нашу жизнь&nbsp;и, похоже, собираются полностью изменить&nbsp;её. Биткоин и&nbsp;ICO у&nbsp;всех на&nbsp;устах, в&nbsp;них вкладывают деньги, часто даже не&nbsp;понимая о&nbsp;чем идет речь.</p>
@@ -294,7 +294,7 @@ class PageCourse extends Component {
         <ContainerBlock type="light">
           <ContentBubble id="participation">
             <h1 className="display-4">Участие</h1>
-            <p>Ближайший курс пройдет <b>9-10 сентября</b> (суббота и&nbsp;воскресенье) в&nbsp;Москве, в&nbsp;зале...</p>
+            <p>Ближайший курс пройдет <b>9-10 сентября</b> (суббота и&nbsp;воскресенье) в&nbsp;Москве, в&nbsp;зале Фокус&nbsp;Холл (м.&nbsp;Фрунзенская)</p>
             <p>Время: оба дня с&nbsp;10:00 до&nbsp;18:00</p>
             <div className="emph">
               <h2>Стоимость</h2>
@@ -310,6 +310,10 @@ class PageCourse extends Component {
               </p>
               <button className="btn btn-success">Зарегистрироваться на сайте Timepad.ru</button>
             </div>
+            <p>Адрес зала Фокус Холл: Москва, ул. Ефремова, 12, стр 2</p>
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=%D1%83%D0%BB.%20%D0%95%D1%84%D1%80%D0%B5%D0%BC%D0%BE%D0%B2%D0%B0%2C%2012%2C%20%D1%81%D1%82%D1%80%202&key=AIzaSyBPmH6rmDO3613EWqOJS2mzBA9I-oT1ogQ" allowfullscreen
+              style={{width: '100%', height: '400px'}}
+            ></iframe>
           </ContentBubble>
         </ContainerBlock>
 
