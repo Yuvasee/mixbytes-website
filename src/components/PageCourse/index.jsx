@@ -36,7 +36,7 @@ class PageCourse extends Component {
       {link: 'day2', name: 'День 2'},
       {link: 'speakers', name: 'Ведущие'},
       {link: 'participation', name: 'Участие'},
-      {link: 'EXTERNAL', address: 'http://', name: 'Записаться'}
+      {link: 'EXTERNAL', address: 'https://mixbytes.timepad.ru/event/560706/', name: 'Записаться'}
     ];
 
     const toggleContents = {
@@ -72,11 +72,11 @@ class PageCourse extends Component {
                 </div>
               }
               <p>Даем фундаментальное понимание технической и&nbsp;юридической базы блокчей-технологий за&nbsp;2&nbsp;полных дня. От&nbsp;технических основ до&nbsp;юридической практики. Вы&nbsp;наконец поймете как и&nbsp;почему всё это работает!</p>
-              <p>Ближайший курс: <strong>Москва, 9&mdash;10 сентября.</strong> <a href="#">Записаться</a></p>
+              <p>Ближайший курс: <strong>Москва, 9&mdash;10 сентября.</strong> <a href="https://mixbytes.timepad.ru/event/560706/">Записаться</a></p>
             </div>
             <p>Блокчейн-технологии ворвались в&nbsp;нашу жизнь&nbsp;и, похоже, собираются полностью изменить&nbsp;её. Биткоин и&nbsp;ICO у&nbsp;всех на&nbsp;устах, в&nbsp;них вкладывают деньги, часто даже не&nbsp;понимая о&nbsp;чем идет речь.</p>
             <p>Ведь, к&nbsp;сожалению, большая часть доступной информации&nbsp;&mdash; либо слишком техническая и&nbsp;непонятная документация для программистов, либо слишком рекламная и&nbsp;провокационная, нацеленная на&nbsp;привлечение инвестиций в&nbsp;очередное ICO.</p>
-            <p>Мы&nbsp;болеем за&nbsp;популяризацию блокчейн-технологий, за&nbsp;прозрачность и&nbsp;доступность информации, за&nbsp;безопасность финансовых операций. Поэтому мы&nbsp;хотим дать вам фундамент знаний, который позволит вам уверенно ориентироваться в&nbsp;новостном и&nbsp;рекламном потоке. И&nbsp;принимать обдуманные решения об&nbsp;использовании блокчейн-технологий в&nbsp;своей жизни, карьере и&nbsp;бизнесе.</p>
+            <p>Мы&nbsp;болеем за&nbsp;популяризацию блокчейн-технологий, за&nbsp;прозрачность и&nbsp;доступность информации, за&nbsp;безопасность финансовых операций. Поэтому мы&nbsp;хотим дать вам фундамент знаний, который позволит вам уверенно ориентироваться в&nbsp;новостном и&nbsp;рекламном потоке. И&nbsp;принимать взвешенные решения об&nbsp;использовании блокчейн-технологий в&nbsp;своей жизни, карьере и&nbsp;бизнесе.</p>
             <p><span className="badge badge-success">Наш материал будет полезен:</span> бизнесменам, инвесторам, юристам, менеджерам, программистам и&nbsp;всем, кто хочет получить исчерпывающее понимание основ блокчейн-технологий.</p>
             <p>Если вы&nbsp;скептик&nbsp;&mdash; приходите, вы&nbsp;сможете задать спикерам самые сложные вопросы. Cкорее всего, вы&nbsp;поверите в&nbsp;силу блокчейн-технологий больше, чем раньше.</p>
             <p>Если блокчейн и&nbsp;ICO уже вскружили вам голову&nbsp;&mdash; приходите, и&nbsp;мы&nbsp;постараемся немного охладить ваш пыл.</p>
@@ -232,6 +232,12 @@ class PageCourse extends Component {
               </tbody>
             </table>
           </ContentBubble>
+
+          <ContentBubble>
+            <p>Специальная подготовка не&nbsp;требуется! Любой человек, владеющий цифрами, в&nbsp;состоянии усвоить до&nbsp;80-90% материала.</p>
+            <p>Общая продолжительность программы 16&nbsp;академических часов.</p>
+            <a className="btn btn-success" href="https://mixbytes.timepad.ru/event/560706/#register">Зарегистрироваться на сайте Timepad.ru</a>
+          </ContentBubble>
         </ContainerBlock>
 
         <ContainerSeparator />
@@ -294,26 +300,24 @@ class PageCourse extends Component {
         <ContainerBlock type="light">
           <ContentBubble id="participation">
             <h1 className="display-4">Участие</h1>
-            <p>Ближайший курс пройдет <b>9-10 сентября</b> (суббота и&nbsp;воскресенье) в&nbsp;Москве, в&nbsp;зале Фокус&nbsp;Холл (м.&nbsp;Фрунзенская)</p>
+            <p>Ближайший курс пройдет <b>9-10 сентября</b> (суббота и&nbsp;воскресенье) в&nbsp;Москве, в&nbsp;зале &laquo;Фокус Холл&raquo; (м.&nbsp;Фрунзенская)</p>
             <p>Время: оба дня с&nbsp;10:00 до&nbsp;18:00</p>
             <div className="emph">
               <h2>Стоимость</h2>
               <p>
                 <b>До&nbsp;1&nbsp;сентября</b><br />
-                Два дня: 6000 руб (первые 2&nbsp;ряда: 12000&nbsp;руб)<br />
-                Один день на&nbsp;выбор: 3500 руб (первые 2&nbsp;ряда: 7000&nbsp;руб)
+                Два дня: 6000&nbsp;&#8381; (первые 2&nbsp;ряда: 12000&nbsp;&#8381;)<br />
+                Один день на&nbsp;выбор: 3500&nbsp;&#8381; (первые 2&nbsp;ряда: 7000&nbsp;&#8381;)
               </p>
               <p>
                 <b>C&nbsp;1&nbsp;сентября</b><br />
-                Два дня: 8000 руб (первые 2&nbsp;ряда: 16000&nbsp;руб)<br />
-                Один день на&nbsp;выбор: 5000 руб (первые 2&nbsp;ряда: 10000&nbsp;руб)
+                Два дня: 8000&nbsp;&#8381; (первые 2&nbsp;ряда: 16000&nbsp;&#8381;)<br />
+                Один день на&nbsp;выбор: 5000&nbsp;&#8381; (первые 2&nbsp;ряда: 10000&nbsp;&#8381;)
               </p>
-              <button className="btn btn-success">Зарегистрироваться на сайте Timepad.ru</button>
+              <a className="btn btn-success" href="https://mixbytes.timepad.ru/event/560706/#register">Зарегистрироваться на сайте Timepad.ru</a>
             </div>
-            <p>Адрес зала Фокус Холл: Москва, ул. Ефремова, 12, стр 2</p>
-            <iframe src="https://www.google.com/maps/embed/v1/place?q=%D1%83%D0%BB.%20%D0%95%D1%84%D1%80%D0%B5%D0%BC%D0%BE%D0%B2%D0%B0%2C%2012%2C%20%D1%81%D1%82%D1%80%202&key=AIzaSyBPmH6rmDO3613EWqOJS2mzBA9I-oT1ogQ" allowfullscreen
-              style={{width: '100%', height: '400px'}}
-            ></iframe>
+            <p>Место проведения: Москва, ул. Ефремова, 12, стр&nbsp;2, зал &laquo;Фокус Холл&raquo;</p>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBUubGqhcC" style={{width: '100%', height: '400px'}} frameborder="0"></iframe>
           </ContentBubble>
         </ContainerBlock>
 

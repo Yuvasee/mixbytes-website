@@ -21,7 +21,7 @@ class Navbar extends Component {
 
     return (
       <nav className="container navbar navbar-expand-lg sticky-top navbar-dark">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           MixBytes<br />
           <span>Blockchain Labs</span>
         </a>
