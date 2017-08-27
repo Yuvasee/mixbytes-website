@@ -1,6 +1,6 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: 'http://46.101.209.63/',
+  baseURL: 'https://api.mixbytes.io/',
   timeout: 1000
 });
