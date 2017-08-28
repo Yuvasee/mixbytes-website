@@ -316,13 +316,34 @@ class PageCourse extends Component {
                 Один день на&nbsp;выбор: 5000&nbsp;&#8381; (первые 2&nbsp;ряда: 10000&nbsp;&#8381;)
               </p>
               <a className="btn btn-success" href="https://mixbytes.timepad.ru/event/560706/#register">Зарегистрироваться на сайте Timepad.ru</a>
+              <div className="card border-success mt-3" style={{fontSize: '80%'}}>
+                <div className="card-body">
+                  <h4 className="card-title text-success">-20% при оплате Bitcoin или Ethereum</h4>
+                  <p>Cделайте перевод по&nbsp;текущему курсу за&nbsp;вычетом&nbsp;20% и&nbsp;пришлите нам ФИО участников для внесения в&nbsp;список. При&nbsp;оплате биткоинами регистрация на&nbsp;Timepad.ru не&nbsp;требуется.</p>
+                  <p>
+                    Bitcoin: 1QKj9niHezvenxWWw5ZDrHv6i4yujo3ZPh<br />
+                    Ethereum: 0x2B1d01Ac2c87F1FD3b07F0A09eF4A42a03368458
+                  </p>
+                </div>
+              </div>
+
             </div>
             <p>Место проведения: Москва, ул. Ефремова, 12, стр&nbsp;2, зал &laquo;Фокус Холл&raquo;</p>
             <iframe src="https://yandex.ru/map-widget/v1/-/CBUubGqhcC" style={{width: '100%', height: '400px'}} frameborder="0"></iframe>
           </ContentBubble>
+
+          <ContentBubble className="transparent">
+            <h1>Информационная поддержка</h1>
+            <div className="card mt-3 mb-3" style={{fontSize: '80%'}}>
+              <div className="card-body partners">
+                <div><a href="https://allcoinshome.com/"><img src={require('./img/allcoinshome-logo.png')} width="250" height="75" /></a></div>
+                <div><a href="https://t.me/cryptoinvest">t.me/cryptoinvest</a></div>
+              </div>
+            </div>
+          </ContentBubble>
         </ContainerBlock>
 
-        <Footer />
+        <Footer feedback={true} />
 
       </div>
     );

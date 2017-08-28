@@ -10,3 +10,8 @@
   background-color: rgba(40, 15, 79, .88);
   color: #fff;
 }
+
+.content-bubble.transparent {
+  background: none !important;
+  color: #000;
+}

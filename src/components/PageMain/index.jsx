@@ -6,6 +6,7 @@ import ContainerSeparator from 'components/ContainerSeparator';
 import ContentBubble from 'components/ContentBubble';
 import Person from 'components/Person';
 import Sergey from 'components/Person/Sergey';
+import Alexey from 'components/Person/Alexey';
 import Footer from 'components/Footer';
 import EmailForm from 'components/EmailForm';
 
@@ -40,11 +41,11 @@ class PageMain extends Component {
           <ContentBubble id="edu">
             <h1 className="display-4">Обучение</h1>
 
-            <h2>Уикенд-курс &laquo;Погружение в&nbsp;блокчейн&raquo;</h2>
+            <h2>Базовый курс &laquo;Погружение в&nbsp;блокчейн&raquo;</h2>
             <p>Ближайший уикенд-курс пройдет <strong>9&nbsp;и&nbsp;10&nbsp;сентября.</strong></p>
             <ul>
               <li><a href="/course">Подробности о&nbsp;курсе</a></li>
-              <li><a href="#">Сразу записаться</a></li>
+              <li><a href="https://mixbytes.timepad.ru/event/560706/#register">Сразу записаться</a></li>
             </ul>
 
             <h2>Школа блокчейн-разработчиков</h2>
@@ -99,6 +100,8 @@ class PageMain extends Component {
                 <li>Консультировал и&nbsp;разрабатывал решения для более чем 150 малых и&nbsp;средних компаний</li>
               </ul>
             </Person>
+
+            <Alexey />
           </ContentBubble>
         </ContainerBlock>
 

@@ -17,8 +17,8 @@ class Sergey extends Component {
           <li>В&nbsp;аспирантуре МИФИ преподавал &laquo;Базы данных&raquo; и&nbsp;&laquo;Информационную безопасность&raquo;</li>
           <li>Преподавал курс прикладной информационной безопасности для проектов &laquo;Технопарк&raquo; (Бауманка) и&nbsp;&laquo;Техноатом&raquo; (МИФИ)</li>
           <li>В&nbsp;Mail.ru был тимлидом проектов Auto.Mail.Ru, Afisha.Mail.Ru, работал в&nbsp;команде Антиспама</li>
+          <li>Автор <a href="https://habrahabr.ru/company/mailru/blog/228681/">статей</a> по&nbsp;антивирусной тематике, активный участник сообщества блокчейн-разработчиков</li>
         </ul>
-        <p>Рекомендуем <a href="https://habrahabr.ru/users/boogerwooger/posts/">публикации</a> Сергея на Habrahabr.</p>
       </Person>
     );
   }
