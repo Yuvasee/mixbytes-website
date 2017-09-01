@@ -18,7 +18,6 @@ class Alexey extends Component {
           <li>Работал системным архитектором в&nbsp;фирме&nbsp;1С, отдел разработки платформы</li>
           <li>В&nbsp;сфере интересов: Big Data, распределенные вычисления, информационная безопасность, финтех, инвестиции</li>
         </ul>
-        <p>Рекомендуем <a href="https://habrahabr.ru/users/boogerwooger/posts/">публикации</a> Сергея на Habrahabr.</p>
       </Person>
     );
   }

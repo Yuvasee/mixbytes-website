@@ -43,9 +43,11 @@ td p:last-child {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  font-size: 80%;
 }
 
 .card-body.partners div {
-  flex: 1 1;
   text-align: center;
+  padding: 1rem 3rem;
+  flex-grow: 1;
 }
