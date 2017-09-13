@@ -35,8 +35,8 @@ class PageCourse extends Component {
       {link: 'day1', name: 'День 1'},
       {link: 'day2', name: 'День 2'},
       {link: 'speakers', name: 'Ведущие'},
-      {link: 'participation', name: 'Участие'},
-      {link: 'EXTERNAL', address: 'https://mixbytes.timepad.ru/event/560706/', name: 'Записаться'}
+      {link: 'participation', name: 'Участие'}
+      // {link: 'EXTERNAL', address: 'https://mixbytes.timepad.ru/event/560706/', name: 'Записаться'}
     ];
 
     const toggleContents = {
@@ -72,7 +72,6 @@ class PageCourse extends Component {
                 </div>
               }
               <p>Даем фундаментальное понимание технической и&nbsp;юридической базы блокчейн-технологий за&nbsp;2&nbsp;полных дня. От&nbsp;технических основ до&nbsp;юридической практики. Вы,&nbsp;наконец, поймете как и&nbsp;почему всё это работает!</p>
-              <p>Ближайший курс: <strong>Москва, 9&mdash;10 сентября.</strong> <a href="https://mixbytes.timepad.ru/event/560706/">Записаться</a></p>
               <p>Курс проводится совместно с&nbsp;компанией <a href="http://cych.io">cych.io</a> и&nbsp;приглашёнными экспертами Центра Россия-ОЭСР РАНХиГС при Президенте&nbsp;РФ.</p>
             </div>
             <p>Блокчейн-технологии ворвались в&nbsp;нашу жизнь&nbsp;и, похоже, собираются полностью изменить&nbsp;её. Биткоин и&nbsp;ICO у&nbsp;всех на&nbsp;устах, в&nbsp;них вкладывают деньги, часто даже не&nbsp;понимая о&nbsp;чем идет речь.</p>
@@ -237,7 +236,9 @@ class PageCourse extends Component {
           <ContentBubble>
             <p>Специальная подготовка не&nbsp;требуется! Любой человек, владеющий цифрами, в&nbsp;состоянии усвоить до&nbsp;80-90% материала.</p>
             <p>Общая продолжительность программы 16&nbsp;академических часов.</p>
-            <a className="btn btn-success" href="https://mixbytes.timepad.ru/event/560706/#register">Зарегистрироваться на сайте Timepad.ru</a>
+            {/*
+              <a className="btn btn-success" href="https://mixbytes.timepad.ru/event/560706/#register">Зарегистрироваться на сайте Timepad.ru</a>
+            */}
           </ContentBubble>
         </ContainerBlock>
 
@@ -301,6 +302,8 @@ class PageCourse extends Component {
         <ContainerBlock type="light">
           <ContentBubble id="participation">
             <h1 className="display-4">Участие</h1>
+            <p>Курс прошел 9-10 сентября в Москве. В ближайшее время повторение курса не планируем.</p>
+            {/*
             <p>Ближайший курс пройдет <b>9-10 сентября</b> (суббота и&nbsp;воскресенье) в&nbsp;Москве, в&nbsp;зале &laquo;Фокус Холл&raquo; (м.&nbsp;Фрунзенская)</p>
             <p>Время: оба дня с&nbsp;10:00 до&nbsp;18:00</p>
             <div className="emph">
@@ -330,6 +333,7 @@ class PageCourse extends Component {
             </div>
             <p>Место проведения: Москва, ул. Ефремова, 12, стр&nbsp;2, зал &laquo;Фокус Холл&raquo;</p>
             <iframe src="https://yandex.ru/map-widget/v1/-/CBUubGqhcC" style={{width: '100%', height: '400px'}} frameborder="0"></iframe>
+            */}
           </ContentBubble>
 
           <ContentBubble className="transparent">

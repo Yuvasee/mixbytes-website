@@ -4,7 +4,11 @@ footer {
   padding: 3rem 0;
 }
 
+.contacts, .copy {
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
 .copy {
   text-align: right;
-  margin-top: 3rem;
 }
