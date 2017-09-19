@@ -101,7 +101,8 @@ class Footer extends Component {
           <div className="contacts">
             Публичный канал в Telegram: <a href="https://t.me/mixbytes_pub">https://t.me/mixbytes_pub</a><br />
             Электропочта: <a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a><br />
-            Если что-то срочное: <a href="https://t.me/LoungerX">https://t.me/LoungerX</a>
+            Если что-то срочное: <a href="https://t.me/LoungerX">https://t.me/LoungerX</a><br />
+            <a href="/helpers">Калькулятор курсов криптовалют</a>
           </div>
           <div className="copy">&copy;&nbsp;2017&nbsp;&mdash; MixBytes Blockchain Labs</div>
         </div>
