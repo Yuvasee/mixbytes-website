@@ -12,7 +12,7 @@ class PageHelpers extends Component {
   render() {
     const navLinks = [
       {link: 'rates', name: 'Курсы обмена'},
-      {link: 'ethereum-api', name: 'Ethereum API'},
+      {link: 'ethereum-api', name: 'Ethereum'},
     ];
 
     return (
@@ -30,6 +30,8 @@ class PageHelpers extends Component {
             <Ethereum />
           </ContentBubble>
         </ContainerBlock>
+
+        <Footer feedback={true} />
       </div>
     );
   }
