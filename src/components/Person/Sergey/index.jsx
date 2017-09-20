@@ -6,7 +6,7 @@ class Sergey extends Component {
   render() {
     return (
       <Person image={require('./img/pril.jpg')}>
-        <h2>Сергей Прилуцкий</h2>
+        <h2 id="sergey">Сергей Прилуцкий</h2>
         {!this.props.noPosition &&
           <p><strong>Co-founder, Software Engineer</strong></p>
         }
