@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
-import SymbolSelect from 'components/CryptoRates/SymbolSelect';
+import SymbolSelect from './SymbolSelect';
 
 import './styles.css';
 
 class CryptoRates extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       symbolLeft: 'BTC',
       symbolRight: 'USD',
       sumLeft: 1
-    }
+    };
   }
 
   round(num) {
