@@ -4,6 +4,7 @@ import Navbar from 'components/Navbar';
 import ContainerBlock from 'components/ContainerBlock';
 import ContainerSeparator from 'components/ContainerSeparator';
 import ContentBubble from 'components/ContentBubble';
+import Footer from 'components/Footer';
 
 import CryptoRates from './CryptoRates';
 import Ethereum from './Ethereum';

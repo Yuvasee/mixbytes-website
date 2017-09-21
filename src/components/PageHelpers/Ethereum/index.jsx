@@ -38,17 +38,20 @@ class Ethereum extends Component {
 
   checkEthAddress(address) {
     return /^0x[0-9a-fA-F]{40}$/.test(address);
-    // /^0x[0-9a-fA-F]{40}$/.test('0xEA674fdDe714fd979de3EdF0F56AA9716B898ec8')
+  }
+
+  checkEthTxHash(txHash) {
+    return /^0x[0-9a-fA-F]{64}$/.test(txHash);
   }
 
   handleGetBalance(e) {
     e.preventDefault();
 
+    const address = e.target.value;
     this.setState({
       wallet: address
     });
 
-    const address = e.target.value;
     if (!address) {
       this.setState({
         balance: ''
@@ -63,30 +66,72 @@ class Ethereum extends Component {
 
     const method = 'eth_getBalance';
     const params = [address, 'latest'];
-    console.log('boom');
-    const apiCallbak = (res) => {
+    const apiCallback = (res) => {
       if (res.data.result && /^0x/.test(res.data.result)) {
         this.setState({
           balance: parseInt(res.data.result, 16) / (10 ** 18)
         });
       }
     };
-    this.callAPI(method, params, apiCallbak);
+    this.callAPI(method, params, apiCallback);
+  }
+
+  handleGetTransaction(e) {
+    e.preventDefault();
+
+    const txHash = e.target.value;
+    this.setState({txHash});
+
+    if (!txHash) {
+      this.setState({
+        txInfo: ''
+      });
+      return;
+    } else if (!this.checkEthTxHash(txHash)) {
+      this.setState({
+        txInfo: 'Invalid transaction hash'
+      });
+      return;
+    }
+
+    const method = 'eth_getTransactionByHash';
+    const params = [txHash];
+    const apiCallback = (res) => {
+      const result = res.data.result;
+      if (result) {
+        this.setState({
+          txInfo: `value: ${parseInt(result.value, 16) / (10 ** 18)} ETH\nfrom: ${result.from}\n` +
+                  `to: ${result.to}\nblock: ${parseInt(result.blockNumber, 16)}`
+        });
+      }
+    };
+    this.callAPI(method, params, apiCallback);
   }
 
   render() {
-    const {wallet, balance} = this.state;
+    const {wallet, balance, txHash, txInfo} = this.state;
 
     return (
       <div>
         <div className="form-group">
-          <label for="getBalance">Проверить баланс ETH-кошелька</label>
+          <label htmlFor="getBalance">Проверить баланс ETH-кошелька</label>
           <input className="form-control" name="getBalance"
             value={wallet}
             onChange={this.handleGetBalance.bind(this)}
             placeholder="0x0000000000000000000000000000000000000000"
           />
           <input className="form-control" type="text" placeholder="0 ETH" value={balance} disabled />
+        </div>
+        <div className="form-group">
+          <label htmlFor="getBalance">Информация о транзакции</label>
+          <input className="form-control" name="getTransaction"
+            value={txHash}
+            onChange={this.handleGetTransaction.bind(this)}
+            placeholder="0x0000000000000000000000000000000000000000000000000000000000000000"
+          />
+          <textarea className="form-control" type="text" placeholder="Enter transaction hash"
+            value={txInfo} disabled rows="4"
+          />
         </div>
       </div>
     );
