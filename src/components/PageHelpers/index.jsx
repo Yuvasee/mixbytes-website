@@ -8,6 +8,7 @@ import Footer from 'components/Footer';
 
 import CryptoRates from './CryptoRates';
 import Ethereum from './Ethereum';
+import TimestampCheck from './TimestampCheck';
 
 class PageHelpers extends Component {
   render() {
@@ -29,6 +30,11 @@ class PageHelpers extends Component {
           <ContentBubble id="ethereum-api">
             <h2>Ethereum</h2>
             <Ethereum />
+          </ContentBubble>
+
+          <ContentBubble id="ethereum-api">
+            <h2>Проверка кода</h2>
+            <TimestampCheck />
           </ContentBubble>
         </ContainerBlock>
 
