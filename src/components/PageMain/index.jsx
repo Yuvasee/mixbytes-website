@@ -80,7 +80,7 @@ class PageMain extends Component {
 
             <Person image={require('./img/yura.jpg')}>
               <h2>Юрий Васильчиков</h2>
-              <p><strong>Co-founder, Manager, Web Developer</strong></p>
+              <p><strong>Co-founder, Manager, Developer</strong></p>
               <ul>
                 <li>В&nbsp;8&nbsp;классе написал клон Тетриса на&nbsp;Бейсике :)</li>
                 <li>Начал разрабатывать сайты в&nbsp;2000 году на&nbsp;языке Perl</li>

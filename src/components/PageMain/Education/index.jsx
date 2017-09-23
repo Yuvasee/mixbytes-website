@@ -41,7 +41,7 @@ class Education extends Component {
             Входной билет: 3000&nbsp;₽,<br />
             VIP (первые 1-2&nbsp;ряда): 6000&nbsp;₽
           </p>
-          <a className="btn btn-success" href="https://mixbytes.timepad.ru/event/560706/#register">Зарегистрироваться на сайте Timepad.ru</a>
+          <a className="btn btn-success" href="https://mixbytes.timepad.ru/event/573975/#register">Зарегистрироваться на сайте Timepad.ru</a>
           <div className="card border-success mt-3" style={{fontSize: '80%'}}>
             <div className="card-body">
               <h4 className="card-title text-success">-20% при оплате Bitcoin или Ethereum</h4>

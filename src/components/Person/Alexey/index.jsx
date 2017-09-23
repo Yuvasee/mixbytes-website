@@ -8,7 +8,7 @@ class Alexey extends Component {
       <Person image={require('./img/alexey.jpg')}>
         <h2 id="alexey">Алексей Макеев</h2>
         {!this.props.noPosition &&
-          <p><strong>Software Engineer</strong></p>
+          <p><strong>Co-founder, Software Engineer</strong></p>
         }
         <ul>
           <li>Закончил МГТУ им. Н.&nbsp;Э.&nbsp;Баумана, кафедра &laquo;Компьютерные комплексы, системы и&nbsp;сети&raquo;, диплом о&nbsp;распределенных вычислениях</li>
