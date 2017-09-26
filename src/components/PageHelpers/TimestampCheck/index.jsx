@@ -48,7 +48,7 @@ class TimestampCheck extends Component {
     return (
       <div>
         <div className="form-group">
-          <label htmlFor="code">Проверить timestamps</label>
+          <label htmlFor="code">Проверить значения timestamps в любом коде</label>
           <textarea className="form-control" type="text" value={code} rows="4"
             onChange={this.handleTimestamp.bind(this)}
             placeholder="Скопипуйте код сюда"
