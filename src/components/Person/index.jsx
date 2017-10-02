@@ -8,9 +8,11 @@ class Person extends Component {
 
     return (
       <div className="team-member d-md-flex">
-        <div className="pic">
-          <img src={image} className="team" />
-        </div>
+        {image &&
+          <div className="pic">
+            <img src={image} className="team" />
+          </div>
+        }
         <div className="info">
           {children}
         </div>

@@ -8,7 +8,7 @@ import Person from 'components/Person';
 import Sergey from 'components/Person/Sergey';
 import Alexey from 'components/Person/Alexey';
 import Footer from 'components/Footer';
-import Education from './Education';
+import Education from 'components/Education';
 
 import './styles.css';
 
