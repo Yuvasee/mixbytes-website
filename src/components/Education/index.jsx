@@ -10,7 +10,6 @@ class Education extends Component {
         <h1 className="display-4">Обучение</h1>
         <h2>Вечерние лекции</h2>
         <p>Пару раз в&nbsp;месяц по&nbsp;четвергам мы&nbsp;рассказываем о&nbsp;блокчейн-технологиях и&nbsp;нашей практике.</p>
-        <CryptoHistory />
         <p>Чтобы не пропустить новую лекцию, следите за&nbsp;нами в&nbsp;<a href="https://t.me/mixbytes_pub">Telegram</a> и&nbsp;<a href="https://www.facebook.com/mixbyteslabs">Facebook</a>.</p>
         <h2>Базовый курс &laquo;Погружение в&nbsp;блокчейн&raquo;</h2>
         <p><a href="/course">Подробности о&nbsp;курсе</a>. В ближайшее время повторение курса не&nbsp;планируем.</p>
