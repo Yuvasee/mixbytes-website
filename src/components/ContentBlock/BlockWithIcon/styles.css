@@ -1,0 +1,14 @@
+.block-with-icon {
+  display: flex;
+}
+
+.block-with-icon .icon {
+  min-width: 200px;
+  margin: 0 35px;
+  text-align: center;
+}
+
+.block-with-icon .icon p {
+  margin-top: 15px;
+  font-size: 15px;
+}

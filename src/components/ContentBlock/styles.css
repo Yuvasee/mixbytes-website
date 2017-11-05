@@ -1,0 +1,13 @@
+.content-block {
+  margin-top: 60px;
+}
+
+.content-block h2 {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0 0 14px -2px;
+}
+
+.content-block p {
+  font-size: 18px;
+}

@@ -1,0 +1,9 @@
+.langs {
+  text-align: right;
+}
+
+.langs a {
+  line-height: 68px;
+  color: #fff;
+  font-size: 18px;
+}

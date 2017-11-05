@@ -1,0 +1,20 @@
+.block-two-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block-two-columns p {
+  margin-bottom: 38px;
+}
+
+.block-two-columns div {
+  width: 50%;
+}
+
+.block-two-columns div:nth-child(2n+1) {
+  padding-right: 15px;
+}
+
+.block-two-columns div:nth-child(2n) {
+  padding-left: 15px;
+}

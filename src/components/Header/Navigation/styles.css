@@ -1,0 +1,19 @@
+.header-navigation {
+  display: flex;
+  justify-content: center;
+  height: 68px;
+  overflow-x: scroll;
+}
+
+.header-navigation div {
+  line-height: 68px;
+}
+
+.header-navigation div:not(:first-child) {
+  margin-left: 34px;
+}
+
+.header-navigation a {
+  color: #fff;
+  font-size: 18px;
+}

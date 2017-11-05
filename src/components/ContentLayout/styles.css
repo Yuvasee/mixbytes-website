@@ -1,0 +1,17 @@
+div.container-content {
+  display: flex;
+}
+
+div.content-left {
+  width: 20%;
+  padding-left: 37px;
+}
+
+div.content-mid {
+  width: 60%;
+}
+
+div.content-right {
+  width: 20%;
+  padding-right: 37px;
+}
