@@ -1,0 +1,26 @@
+.footer {
+  padding: 37px 37px 25px;
+  margin-top: 100px;
+  background-color: #fff;
+  font-size: 16px;
+  display: flex;
+}
+
+.footer > div:not(:last-child) {
+  padding-right: 30px;
+}
+
+.footer .links {
+  flex-grow: 1;
+  padding-left: 50px;
+}
+
+.footer .links ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer .links li::before {
+  content: '> ';
+}

@@ -8,8 +8,13 @@ body {
 a {
   color: #491982;
   text-decoration: underline;
+  text-decoration-color: #C9BFD5;
 }
 
 a:hover {
   color: #28C677;
+}
+
+.angle-bullet::before {
+  content: '> ';
 }

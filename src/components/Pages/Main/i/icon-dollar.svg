@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage_l" transform="translate(-408.000000, -3594.000000)">
+            <g id="Group-3" transform="translate(407.000000, 3594.000000)">
+                <g id="Group-10" transform="translate(1.000000, 0.000000)">
+                    <text id="$" font-family="PTMono-Bold, PT Mono" font-size="27" font-weight="bold" fill="#FF5932">
+                        <tspan x="22" y="39">$</tspan>
+                    </text>
+                    <circle id="Oval-3" stroke="#FF5932" stroke-width="3" cx="30" cy="30" r="28.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

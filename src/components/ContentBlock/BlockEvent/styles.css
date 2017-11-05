@@ -1,0 +1,124 @@
+.block-event {
+  background: #fff;
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.03);
+  margin: 0 -20px;
+  border-radius: 9px;
+  padding: 20px;
+}
+
+.block-event .event-date {
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.block-event h3 {
+  font-size: 42px;
+}
+
+.block-event .desc {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.block-event .themes .header,
+.block-event .speakers .header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.block-event .themes .header::after,
+.block-event .speakers .header::after {
+  display: block;
+  color: #bbb;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 10px;
+  content: "================================================================================================================";
+  overflow-x: hidden;
+  margin-bottom: 14px;
+}
+
+.block-event .themes ul {
+  columns: 2;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.block-event .themes li {
+  padding: 0 20px 28px 0;
+}
+
+.block-event .themes li::before {
+  content: "* "
+}
+
+.block-event .speakers-content {
+  display: flex;
+  margin-top: 22px;
+}
+
+.block-event .speakers-content .speaker {
+  width: 50%;
+}
+
+.block-event .speakers-content .speaker:nth-child(2n+1) {
+  padding-right: 15px;
+}
+
+.block-event .speakers-content .speaker:nth-child(2n) {
+  padding-left: 15px;
+}
+
+.block-event .speakers-content img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.block-event .speakers-content .speaker div {
+  margin-top: 30px;
+}
+
+.block-event .conditions {
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  border-top: 1px solid #dedede;
+  margin-top: 66px;
+}
+
+.block-event .conditions div {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.block-event .conditions .button {
+  margin-right: 24px;
+}
+
+.block-event .conditions .button button {
+  background-color: #481F80;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  padding: 9px 30px 7px;
+}
+
+.block-event .conditions .prices {
+  flex-grow: 1;
+  display: flex;
+}
+
+.block-event .conditions .prices div {
+  margin-right: 24px;
+}
+
+.block-event .conditions .pay-crypt a {
+  text-decoration-color: #C9BFD5;
+}

@@ -6,6 +6,10 @@ import ContentBlock from 'components/ContentBlock';
 import BlockWithIcon from 'components/ContentBlock/BlockWithIcon';
 import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
 import BlockEvent from 'components/ContentBlock/BlockEvent';
+import Splurge from 'components/Splurge';
+import Capabilities from 'components/Capabilities';
+import MeetUs from 'components/MeetUs';
+import Footer from 'components/Footer';
 
 import './styles.css';
 
@@ -48,10 +52,10 @@ class Main extends Component {
             />
           </ContentBlock>
           <ContentBlock>
-            <h2>Ежемесячный курс</h2>
+            <h2>Ближайшие лекции</h2>
             <BlockEvent
               date="9-10 декабря"
-              header="Интенсив &laquo;Погружение в&nbsp;блокчейн&nbsp;2&raquo;"
+              header="Интенсив &laquo;Погружение в&nbsp;блокчейн&raquo;"
               desc="На&nbsp;лекции мы&nbsp;подробно разберем технические аспекты запуска Сrowdsale на&nbsp;самой популярной платформе&nbsp;&mdash; Ethereum, расскажем о&nbsp;своём реальном коммерческом опыте разработки, аудита и&nbsp;запуска смарт-контрактов. Подача материала рассчитана на&nbsp;бизнес, но&nbsp;разработчикам тоже будет интересно."
               themes={[
                 "Обзор 10&nbsp;криптовалют: Bitcoin, NEO,Bitcoin Cash, Litecoin, Dash, Ethereum, Ripple, NEM, IOTA, Monero.",
@@ -64,7 +68,7 @@ class Main extends Component {
                 {
                   name: "Павел Круглов",
                   desc: <p>Выпускник МИФИ, факультет Информа-ционной Безопасности, кафедра безопасности банковских систем. Участвовал в&nbsp;разработке системы безопасности для Банка России. Почетный автор и&nbsp;редактор журнала &laquo;Хакер&raquo; (более 100 статей для журнала). Вдохновитель сообщества пишущих разработчиков Mail.Ru Group (более 800 публикаций на&nbsp;Habrahabr, Medium и&nbsp;в&nbsp;других блогах). Заядлый сторонник open-source и&nbsp;Linux.</p>,
-                  img: "kruglov"
+                  img: "makeev"
                 },
                 {
                   name: "Сергей Прилуцкий",
@@ -100,7 +104,35 @@ class Main extends Component {
               ]}
             />
           </ContentBlock>
+          <Splurge />
+          <Capabilities
+            header="Наши возможности"
+            elements={[
+              {
+                icon: require('./i/icon-dollar.svg'),
+                text: 'Прием криптовалют в&nbsp;ICO в&nbsp;автоматическом режиме, сразу выдавая токены.'
+              },
+              {
+                icon: require('./i/icon-html-brackets.svg'),
+                text: 'Автоматизируем тестирование контракта, проверяя набор из&nbsp;заготовленных сценариев в&nbsp;разных комбинациях.'
+              },
+              {
+                icon: require('./i/icon-lock.svg'),
+                text: 'Мультиподпись защитит смарт-контракт от&nbsp;взлома, через кражу ключей.'
+              },
+              {
+                icon: require('./i/icon-lens.svg'),
+                text: 'Solidity-инспектор автоматизирует обнаружение проблем в&nbsp;коде, проверяет опасные конструкции и&nbsp;особенности языка.'
+              },
+              {
+                icon: require('./i/icon-eye.svg'),
+                text: 'Аналитика крипто-платежей в&nbsp;реальном времени подсчитает ether-платежи, полученные через разные каналы привлечения трафика, позволит корректировать маркетинг ICO на&nbsp;ходу.'
+              },
+            ]}
+          />
+          <MeetUs />
         </ContentLayout>
+        <Footer />
       </div>
     );
   }

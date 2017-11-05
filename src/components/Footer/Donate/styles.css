@@ -1,0 +1,46 @@
+.donate > div {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.donate button {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #481F80;
+  padding: 5px 10px 3px;
+  z-index: 20;
+}
+
+.donate button.active {
+  background-color: #481F80;
+  color: #fff;
+}
+
+.donate button.active span::before {
+  content: '\02022';
+}
+
+.donate button:not(.active) {
+  cursor: pointer;
+}
+
+.donate button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.donate button:not(:first-child) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.donate input {
+  height: 34px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: -8px;
+  padding-left: 26px;
+  min-width: 450px;
+  color: #000;
+}
