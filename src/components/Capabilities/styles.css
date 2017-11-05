@@ -27,3 +27,17 @@
 .capabilities .elements .item img {
   margin-bottom: 6px;
 }
+
+@media (max-width: 1400px) {
+  .capabilities {
+    margin: 0 -50px;
+  }
+
+  .capabilities h2 {
+    font-size: 40px;
+  }
+
+  .capabilities .elements {
+    max-width: 520px;
+  }
+}

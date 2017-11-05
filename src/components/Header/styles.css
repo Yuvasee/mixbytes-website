@@ -38,3 +38,14 @@ div.container-header .intro {
   color: #fff;
   margin: 20px 0 90px 0;
 }
+
+@media (max-width: 1400px) {
+  div.container-header h1 {
+    font-size: 53px;
+    line-height: 54px;
+  }
+
+  div.container-header .intro {
+    font-size: 20px;
+  }
+}

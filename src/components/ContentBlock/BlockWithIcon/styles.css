@@ -12,3 +12,9 @@
   margin-top: 15px;
   font-size: 15px;
 }
+
+@media (max-width: 1400px) {
+  .block-with-icon .icon p {
+    font-size: 12px;
+  }
+}

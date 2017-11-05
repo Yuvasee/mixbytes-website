@@ -21,6 +21,10 @@
   margin-top: 12px;
 }
 
+.block-event .themes {
+  margin-bottom: -15px;
+}
+
 .block-event .themes .header,
 .block-event .speakers .header {
   font-size: 18px;
@@ -32,7 +36,6 @@
 .block-event .speakers .header::after {
   display: block;
   color: #bbb;
-  font-size: 18px;
   font-weight: normal;
   line-height: 10px;
   content: "================================================================================================================";
@@ -89,7 +92,7 @@
   align-items: center;
   padding: 18px 0;
   border-top: 1px solid #dedede;
-  margin-top: 66px;
+  margin-top: 30px;
 }
 
 .block-event .conditions div {
@@ -108,6 +111,7 @@
   color: #fff;
   font-size: 18px;
   padding: 9px 30px 7px;
+  height: 43px;
 }
 
 .block-event .conditions .prices {
@@ -121,4 +125,32 @@
 
 .block-event .conditions .pay-crypt a {
   text-decoration-color: #C9BFD5;
+}
+
+@media (max-width: 1400px) {
+  .block-event h3 {
+    font-size: 37px;
+  }
+
+  .block-event .desc {
+    font-size: 15px;
+  }
+
+  .block-event .themes .header,
+  .block-event .speakers .header {
+    font-size: 15px;
+  }
+
+  .block-event .themes ul {
+    font-size: 15px;
+  }
+
+  .block-event .conditions div {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .block-event .conditions .button button {
+    font-size: 17px;
+  }
 }

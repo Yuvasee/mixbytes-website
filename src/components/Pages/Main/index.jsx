@@ -23,7 +23,7 @@ class Main extends Component {
             <h2>Разработка и аудит</h2>
             <BlockWithIcon
               icon={require('./i/github-logo.png')}
-              iconText={<p>Пример <a href="https://github.com/mixbytes/storiqa_ico/tree/master/contracts">контракта</a> и&nbsp;<a href="https://github.com/mixbytes/audits_public/blob/master/solidity/KickICO/report.md">аудита</a> на&nbsp;Гитхабе</p>}
+              iconText={<p>Пример <a href="https://github.com/mixbytes/storiqa_ico/tree/master/contracts">контракта</a><br />и&nbsp;<a href="https://github.com/mixbytes/audits_public/blob/master/solidity/KickICO/report.md">аудита</a> на&nbsp;Гитхабе</p>}
             >
               <p>Пишем и&nbsp;проверяем смарт-контракты на&nbsp;Solidity с&nbsp;нуля или на&nbsp;основе проверенных бибилиотек. Соблюдаем стандарт ERC20. Тестируем код под Truffle framework. Верифицируем контракты на&nbsp;Etherscan. Находим ошибки и&nbsp;уязвимости в&nbsp;вашем смарт-контракте. Разрабатываем блокчейны на&nbsp;базе фреймворка Graphene. Скорее всего, сначала вампонадобятся наши консультации.</p>
             </BlockWithIcon>

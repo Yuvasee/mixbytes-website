@@ -9,6 +9,7 @@
   background-color: #fff;
   border: 1px solid #481F80;
   padding: 5px 10px 3px;
+  height: 34px;
   z-index: 20;
 }
 
@@ -43,4 +44,10 @@
   padding-left: 26px;
   min-width: 450px;
   color: #000;
+}
+
+@media (max-width: 1400px) {
+  .donate input {
+    min-width: 400px;
+  }
 }
