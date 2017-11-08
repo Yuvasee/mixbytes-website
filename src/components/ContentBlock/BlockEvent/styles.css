@@ -154,3 +154,138 @@
     font-size: 17px;
   }
 }
+
+@media (max-width: 770px) {
+  .block-event h3 {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+
+  .block-event .desc {
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+
+  .block-event .themes .header,
+  .block-event .speakers .header {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+
+  .block-event .themes .header::before,
+  .block-event .speakers .header::before {
+    content: "============== ";
+    overflow-x: hidden;
+  }
+
+  .block-event .themes .header::after,
+  .block-event .speakers .header::after {
+    display: inline;
+    color: #000;
+    line-height: inherit;
+    content: " ==============";
+    overflow-x: hidden;
+    margin-bottom: 0;
+  }
+
+  .block-event .themes ul {
+    columns: 1;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .block-event .themes li {
+    padding: 0 0 18px 0;
+  }
+
+  .block-event .conditions div {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .block-event .conditions .button button {
+    font-size: 17px;
+  }
+
+  .block-event .speakers-content {
+    flex-wrap: wrap;
+    margin-top: 22px;
+  }
+
+  .block-event .speakers-content .speaker {
+    width: 100%;
+  }
+
+  .block-event .speakers-content .speaker:nth-child(2n+1) {
+    padding-right: 0;
+  }
+
+  .block-event .speakers-content .speaker:nth-child(2n) {
+    padding-left: 0;
+  }
+
+  .block-event .speakers-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    border-radius: 50%;
+  }
+
+  .block-event .speakers-content .speaker div {
+    margin-top: 16px;
+  }
+
+  .block-event .speakers-content .speaker:not(:last-child) div {
+    margin-bottom: 40px;
+  }
+
+  .block-event .conditions {
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 18px 0;
+    border-top: 1px solid #dedede;
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .block-event .conditions div {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .block-event .conditions .button {
+    margin-right: 0;
+    order: 10;
+    width: 100%;
+    text-align: center;
+  }
+
+  .block-event .conditions .button button {
+    margin-top: 30px;
+    width: 60%;
+    min-width: 230px;
+  }
+
+  .block-event .conditions .prices {
+    justify-content: space-around;
+  }
+
+  .block-event .conditions .prices div {
+    margin-right: 24px;
+  }
+
+  .block-event .conditions .pay-crypt {
+    order: 20;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .block-event .conditions .pay-crypt a {
+    text-decoration-color: #C9BFD5;
+  }
+}

@@ -44,14 +44,14 @@ class BlockEvent extends Component {
                 <b dangerouslySetInnerHTML={{__html: element.period}} /><br />
                 <span dangerouslySetInnerHTML={{
                   __html: element.types.map((el) => (
-                    `${el.name ? el.name : ''} ${el.price}`
+                    `${el.name ? `${el.name}&nbsp;` : ''}${el.price}`
                   )).join(', ')
                 }} />
               </div>
             ))}
           </div>
           <div className="pay-crypt">
-            <a href="#">Оплатить<br />криптовалютой</a>
+            <a href="#">Оплатить криптовалютой</a>
           </div>
         </div>
       </div>

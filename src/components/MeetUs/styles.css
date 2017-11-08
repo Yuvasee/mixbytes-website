@@ -42,3 +42,21 @@
     line-height: 16px;
   }
 }
+
+@media (max-width: 770px) {
+  .meet-us {
+    flex-wrap: wrap;
+  }
+
+  .meet-us p:last-child {
+    margin-top: 16px;
+  }
+
+  .meet-us div:first-child {
+    width: 100%;
+  }
+
+  .meet-us img {
+    margin-top: 20px;
+  }
+}

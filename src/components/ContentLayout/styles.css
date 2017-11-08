@@ -15,3 +15,22 @@ div.content-right {
   width: 20%;
   padding-right: 37px;
 }
+
+@media (max-width: 970px) {
+  div.container-content {
+    display: flex;
+  }
+
+  div.content-left {
+    display: none;
+  }
+
+  div.content-mid {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  div.content-right {
+    display: none;
+  }
+}

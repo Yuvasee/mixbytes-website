@@ -51,3 +51,25 @@
     min-width: 400px;
   }
 }
+
+@media (max-width: 970px) {
+  .donate {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .donate > div {
+    margin-top: 5px;
+    display: block;
+  }
+
+  .donate input {
+    display: block;
+    margin: 8px auto;
+    text-align: center;
+    padding-left: 0;
+    min-width: inherit;
+    max-width: 450px;
+    width: 100%;
+  }
+}

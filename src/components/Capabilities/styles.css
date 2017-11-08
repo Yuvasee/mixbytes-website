@@ -25,7 +25,7 @@
 }
 
 .capabilities .elements .item img {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1400px) {
@@ -39,5 +39,25 @@
 
   .capabilities .elements {
     max-width: 520px;
+  }
+}
+
+@media (max-width: 770px) {
+  .capabilities {
+    margin: 0 -20px;
+  }
+
+  .capabilities h2 {
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .capabilities .elements {
+    column-count: 1;
+  }
+
+  .capabilities .elements .item p {
+    font-size: 14px;
   }
 }

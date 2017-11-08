@@ -18,3 +18,25 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 770px) {
+  .block-with-icon {
+    flex-wrap: wrap;
+  }
+
+  .block-with-icon .text {
+    width: 100%;
+  }
+
+  .block-with-icon .icon {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .block-with-icon .icon p {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+}

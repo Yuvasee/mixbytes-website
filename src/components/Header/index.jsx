@@ -14,14 +14,6 @@ class Header extends Component {
         </div>
         <div className="header-mid">
           <Navigation />
-          <h1>
-            Блокчейн-решения
-            <br />и&nbsp;смарт-контракты
-          </h1>
-          <div className="intro">
-            Мы&nbsp;&mdash; команда программистов. Составляем технические проекты, внедряем блокчейн-технологии, пишем смарт-контракты. Проводим корпоративное обучение и&nbsp;открытые лекции.
-            <br />Стек: Solidity/Truffle, JS/Node, C++/Graphene, Python.
-          </div>
         </div>
         <div className="header-right">
           <Langs />

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import Header from 'components/Header';
+import HeaderJumbo from 'components/HeaderJumbo';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
 import BlockWithIcon from 'components/ContentBlock/BlockWithIcon';
@@ -18,6 +19,7 @@ class Main extends Component {
     return (
       <div className="container-fluid">
         <Header />
+        <HeaderJumbo />
         <ContentLayout>
           <ContentBlock>
             <h2>Разработка и аудит</h2>

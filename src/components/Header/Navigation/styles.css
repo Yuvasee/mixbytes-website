@@ -5,21 +5,40 @@
   overflow-x: scroll;
 }
 
-.header-navigation div {
-  line-height: 68px;
-}
-
 .header-navigation div:not(:first-child) {
   margin-left: 34px;
 }
 
 .header-navigation a {
   color: #fff;
+  line-height: 68px;
   font-size: 18px;
+  text-decoration: none;
 }
 
 @media (max-width: 1400px) {
   .header-navigation a {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 970px) {
+  .header-navigation {
+    justify-content: flex-start;
+    padding: 0 20px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .header-navigation a {
+    line-height: inherit;
+  }
+
+  .header-navigation div:not(:first-child) {
+    margin-left: 25px;
+  }
+
+  .header-navigation a {
+    font-size: 14px;
   }
 }
