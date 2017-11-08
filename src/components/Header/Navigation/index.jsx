@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ClassNames from 'classnames';
 
 import './styles.css';
 
@@ -12,11 +13,14 @@ class Navigation extends Component {
       {link: '/team', name: 'Команда'},
     ];
 
-    const navItems = links.map((item, i) => (
-      <div className="nav-item" key={i}>
-        <a href={item.link}>{item.name}</a>
-      </div>
-    ));
+    const navItems = links.map((item, i) => {
+      const active = window.location.pathname === item.link;
+      return (
+        <div className={ClassNames('nav-item', {active})} key={i}>
+          {active ? item.name : <a href={item.link}>{item.name}</a>}
+        </div>
+      );
+    });
 
     return (
       <nav className="header-navigation">

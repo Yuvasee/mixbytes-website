@@ -5,7 +5,7 @@ import './styles.css';
 class Splurge extends Component {
   render() {
     return (
-      <div className="splurge">
+      <div className="splurge" id="splurge">
         <h2>>&#8201;25&#8201;000&#8201;000&#8201;$</h2>
         <div className="splurge-text">
           Собрали с помощью разработанных

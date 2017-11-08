@@ -7,7 +7,7 @@ class Capabilities extends Component {
     const {header, elements} = this.props;
 
     return (
-      <div className="capabilities">
+      <div className="capabilities" id="capabilities">
         <h2>{header}</h2>
         <div className="elements">
           {elements.map((element, i) => (

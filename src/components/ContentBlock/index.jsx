@@ -5,7 +5,7 @@ import './styles.css';
 class ContentBlock extends Component {
   render() {
     return (
-      <div className="content-block">
+      <div className="content-block" {...this.props}>
         {this.props.children}
       </div>
     );

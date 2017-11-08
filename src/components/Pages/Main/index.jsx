@@ -11,17 +11,27 @@ import Splurge from 'components/Splurge';
 import Capabilities from 'components/Capabilities';
 import MeetUs from 'components/MeetUs';
 import Footer from 'components/Footer';
+import PageNav from 'components/PageNav';
 
 import './styles.css';
 
 class Main extends Component {
   render() {
+    const pageNav = [
+      {link: 'dev-audit', name: 'Разработка и аудит'},
+      {link: 'consulting', name: 'Консалтинг'},
+      {link: 'lectures', name: 'Ближайшие лекции'},
+      {link: 'splurge', name: '>&#8201;25&#8201;000&#8201;000&#8201;$'},
+      {link: 'capabilities', name: 'Наши возможности'},
+      {link: 'meet-us', name: 'Будем знакомы'},
+    ];
+
     return (
       <div className="container-fluid">
         <Header />
         <HeaderJumbo />
-        <ContentLayout>
-          <ContentBlock>
+        <ContentLayout contentRight={<PageNav links={pageNav} />}>
+          <ContentBlock id="dev-audit">
             <h2>Разработка и аудит</h2>
             <BlockWithIcon
               icon={require('./i/github-logo.png')}
@@ -30,7 +40,7 @@ class Main extends Component {
               <p>Пишем и&nbsp;проверяем смарт-контракты на&nbsp;Solidity с&nbsp;нуля или на&nbsp;основе проверенных бибилиотек. Соблюдаем стандарт ERC20. Тестируем код под Truffle framework. Верифицируем контракты на&nbsp;Etherscan. Находим ошибки и&nbsp;уязвимости в&nbsp;вашем смарт-контракте. Разрабатываем блокчейны на&nbsp;базе фреймворка Graphene. Скорее всего, сначала вампонадобятся наши консультации.</p>
             </BlockWithIcon>
           </ContentBlock>
-          <ContentBlock>
+          <ContentBlock id="consulting">
             <h2>Консалтинг</h2>
             <BlockTwoColumns
               content={[
@@ -53,7 +63,7 @@ class Main extends Component {
               ]}
             />
           </ContentBlock>
-          <ContentBlock>
+          <ContentBlock id="lectures">
             <h2>Ближайшие лекции</h2>
             <BlockEvent
               date="9-10 декабря"

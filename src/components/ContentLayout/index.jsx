@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import AutoAffix from 'react-overlays/lib/AutoAffix';
 
 import './styles.css';
 
@@ -12,6 +13,11 @@ class ContentLayout extends Component {
           {this.props.children}
         </div>
         <div className="content-right">
+          <AutoAffix container={this}>
+            <div>
+              {this.props.contentRight}
+            </div>
+          </AutoAffix>
         </div>
       </div>
     );

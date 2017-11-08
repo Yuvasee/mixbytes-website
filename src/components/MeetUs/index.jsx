@@ -5,7 +5,7 @@ import './styles.css';
 class MeetUs extends Component {
   render() {
     return (
-      <div className="meet-us">
+      <div className="meet-us" id="meet-us">
         <div>
           <h2>Будем знакомы</h2>
           <p>Мы&nbsp;разрабатываем смарт-контракты, проводим их&nbsp;аудит, консультируем организации, и&nbsp;рас-сказываем об&nbsp;этом в&nbsp;наших курсах и&nbsp;лекциях.</p>

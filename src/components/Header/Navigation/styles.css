@@ -5,11 +5,15 @@
   overflow-x: scroll;
 }
 
-.header-navigation div:not(:first-child) {
-  margin-left: 34px;
+.header-navigation div {
+  padding: 0 17px;
 }
 
-.header-navigation a {
+.header-navigation div.active {
+  border-bottom: 3px solid #28C677;
+}
+
+.header-navigation a, .header-navigation div {
   color: #fff;
   line-height: 68px;
   font-size: 18px;
@@ -17,7 +21,7 @@
 }
 
 @media (max-width: 1400px) {
-  .header-navigation a {
+  .header-navigation a, .header-navigation div {
     font-size: 16px;
   }
 }
@@ -27,18 +31,15 @@
     justify-content: flex-start;
     padding: 0 20px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
-  .header-navigation a {
+  .header-navigation a, .header-navigation div {
     line-height: inherit;
-  }
-
-  .header-navigation div:not(:first-child) {
-    margin-left: 25px;
-  }
-
-  .header-navigation a {
     font-size: 14px;
+  }
+
+  .header-navigation div {
+    padding: 0 13px;
   }
 }
