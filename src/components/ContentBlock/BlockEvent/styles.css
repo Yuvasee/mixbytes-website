@@ -45,18 +45,10 @@
 
 .block-event .themes ul {
   columns: 2;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
 }
 
 .block-event .themes li {
-  padding: 0 20px 28px 0;
-}
-
-.block-event .themes li::before {
-  content: "* "
+  padding-right: 20px;
 }
 
 .block-event .speakers-content {
@@ -141,10 +133,6 @@
     font-size: 15px;
   }
 
-  .block-event .themes ul {
-    font-size: 15px;
-  }
-
   .block-event .conditions div {
     font-size: 15px;
     line-height: 20px;
@@ -194,8 +182,6 @@
 
   .block-event .themes ul {
     columns: 1;
-    font-size: 13px;
-    line-height: 20px;
   }
 
   .block-event .themes li {

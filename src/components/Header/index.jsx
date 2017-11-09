@@ -10,7 +10,7 @@ class Header extends Component {
     return (
       <div className="container-header">
         <div className="header-left">
-          <img src={require('./i/logo.svg')} alt="MixBytes()" />
+          <a href="/"><img src={require('./i/logo.svg')} alt="MixBytes()" /></a>
         </div>
         <div className="header-mid">
           <Navigation />

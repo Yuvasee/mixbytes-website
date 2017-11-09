@@ -5,6 +5,10 @@ body {
   background: #fafafa;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 h2 {
   font-size: 45px;
   font-weight: bold;
@@ -29,12 +33,31 @@ a:hover {
   content: '> ';
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+li {
+  padding-bottom: 28px;
+}
+
+li::before {
+  content: "* "
+}
+
 @media (max-width: 1400px) {
   h2 {
     font-size: 40px;
   }
 
   p {
+    font-size: 15px;
+  }
+
+  ul {
     font-size: 15px;
   }
 }
@@ -46,6 +69,11 @@ a:hover {
   }
 
   p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  ul {
     font-size: 13px;
     line-height: 20px;
   }

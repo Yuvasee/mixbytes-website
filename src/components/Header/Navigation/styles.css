@@ -32,6 +32,7 @@
     padding: 0 20px;
     height: auto;
     margin-top: 15px;
+    margin-left: -13px;
   }
 
   .header-navigation a, .header-navigation div {

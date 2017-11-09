@@ -1,17 +1,18 @@
 import React, {Component} from 'react';
 
 import Header from 'components/Header';
-import HeaderJumbo from 'components/HeaderJumbo';
+import Footer from 'components/Footer';
+import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
+
+import HeaderJumbo from 'components/HeaderJumbo';
 import BlockWithIcon from 'components/ContentBlock/BlockWithIcon';
 import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
 import BlockEvent from 'components/ContentBlock/BlockEvent';
 import Splurge from 'components/Splurge';
 import Capabilities from 'components/Capabilities';
 import MeetUs from 'components/MeetUs';
-import Footer from 'components/Footer';
-import PageNav from 'components/PageNav';
 
 import './styles.css';
 
