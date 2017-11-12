@@ -1,0 +1,76 @@
+.block-person-list {
+  margin-top: 40px;
+  margin-bottom: -15px;
+  padding-left: 180px;
+}
+
+.block-person-list img {
+  width: 150px;
+  height: 150px;
+}
+
+.block-person-list p.person-name {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.block-person-list > div {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.block-person-list > div div {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.block-person-list > div div:nth-child(2n+1) {
+  padding-right: 15px;
+}
+
+.block-person-list > div div:nth-child(2n) {
+  padding-left: 15px;
+}
+
+.block-person-list h2 {
+  margin-bottom: 5px;
+}
+
+.block-person-list .position {
+  margin-top: 0;
+}
+
+@media (max-width: 1400px) {
+  .block-person-list {
+    padding-left: 130px;
+  }
+
+  .block-person-list img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 770px) {
+  .block-person-list {
+    margin-bottom: -10px;
+    padding-left: 0;
+  }
+
+  .block-person-list p {
+    margin-bottom: 16px;
+  }
+
+  .block-person-list > div div {
+    width: 100%;
+  }
+
+  .block-person-list > div div:nth-child(2n+1) {
+    padding-right: 0;
+  }
+
+  .block-person-list > div div:nth-child(2n) {
+    padding-left: 0;
+  }
+}

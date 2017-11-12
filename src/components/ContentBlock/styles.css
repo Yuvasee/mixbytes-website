@@ -9,3 +9,20 @@
   border-radius: 9px;
   padding: 20px;
 }
+
+.position {
+  color: #FF5932;
+  font-size: 18px;
+}
+
+@media (max-width: 1400px) {
+  .position {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 770px) {
+  .position {
+    font-size: 15px;
+  }
+}

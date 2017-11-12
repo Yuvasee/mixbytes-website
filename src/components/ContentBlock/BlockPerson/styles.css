@@ -16,11 +16,6 @@
   margin-bottom: 5px;
 }
 
-.block-person .position {
-  color: #FF5932;
-  font-size: 18px;
-}
-
 .block-person ul {
   margin-top: 20px;
 }
@@ -30,10 +25,6 @@
 }
 
 @media (max-width: 1400px) {
-  .block-person .position {
-    font-size: 15px;
-  }
-
   .block-person .photo img {
     width: 100px;
     height: 100px;
@@ -43,10 +34,6 @@
 @media (max-width: 770px) {
   .block-person {
     flex-wrap: wrap;
-  }
-
-  .block-person .position {
-    font-size: 15px;
   }
 
   .block-person .photo, .block-person .text {

@@ -10,7 +10,9 @@ class Footer extends Component {
       <div className="footer">
         <div className="copy">
           <strong>&copy;&nbsp;2017 MixBytes Blockchain Labs</strong><br />
-          <a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a>
+          По&nbsp;всем вопросам:<br />
+          <a href="https://t.me/LoungerX">https://t.me/LoungerX</a><br />
+          или&nbsp;<a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a>
         </div>
         <div className="links">
           <div>

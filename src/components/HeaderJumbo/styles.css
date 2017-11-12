@@ -1,5 +1,5 @@
 .header-jumbo {
-  padding: 70px 20% 90px;
+  padding: 86px 20% 90px;
   background: #481F80;
 }
 
@@ -20,7 +20,7 @@
 
 @media (max-width: 1400px) {
   .header-jumbo {
-    padding: 70px 20% 115px;
+    padding: 86px 20% 115px;
   }
 
   .header-jumbo h1 {

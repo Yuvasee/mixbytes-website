@@ -1,0 +1,56 @@
+.block-program h3 {
+  margin: 30px 0 20px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.block-program .white-block {
+  margin-bottom: 60px;
+}
+
+.block-program .program-row {
+  display: flex;
+}
+
+.block-program .name-time {
+  width: 25%;
+}
+
+.block-program .desc {
+  width: 75%;
+}
+
+.block-program .desc.break p {
+  font-size: 15px;
+}
+
+.block-program .desc.break p::before {
+  content: '* ';
+}
+
+.block-program .desc.break p::after {
+  content: ' *';
+}
+
+@media (max-width: 770px) {
+  .block-program .program-row {
+    flex-wrap: wrap;
+  }
+
+  .block-program .name-time,
+  .block-program .desc {
+    width: 100%;
+  }
+
+  .block-program .name-time p {
+    margin-bottom: 8px;
+  }
+
+  .block-program .desc.break {
+    text-align: center;
+  }
+
+  .block-program .desc.break p {
+    font-size: 13px;
+  }
+}
