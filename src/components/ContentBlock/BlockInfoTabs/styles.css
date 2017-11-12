@@ -1,0 +1,32 @@
+.block-info-tabs {
+  margin-bottom: 30px;
+}
+
+.block-info-tabs .tabs {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.block-info-tabs .tabs-button {
+  background-color: #481F80;
+  border: none;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.block-info-tabs .tabs-button:focus {
+  box-shadow: 0 0 0 3px rgba(40,198,119,1);
+}
+
+.block-info-tabs .content p:first-child {
+  margin-top: 20px;
+}
+
+.block-info-tabs .content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 770px) {
+
+}

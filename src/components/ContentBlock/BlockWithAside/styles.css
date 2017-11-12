@@ -1,0 +1,27 @@
+.block-with-aside {
+  display: flex;
+}
+
+.block-with-aside .aside {
+  width: 25%;
+  margin: 0 35px 30px;
+}
+
+@media (max-width: 540px) {
+  .block-with-aside {
+    flex-wrap: wrap;
+  }
+
+  .block-with-aside .text {
+    width: 100%;
+  }
+
+  .block-with-aside .aside {
+    margin-left: 0;
+  }
+
+  .block-with-aside .aside p {
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+}

@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import PageLayout from 'components/PageLayout';
 import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
 
 import BlockPerson from 'components/ContentBlock/BlockPerson';
-
-import './styles.css';
 
 class Main extends Component {
   render() {
@@ -102,8 +99,7 @@ class Main extends Component {
     });
 
     return (
-      <div className="container-fluid">
-        <Header />
+      <PageLayout>
         <ContentLayout contentRight={<PageNav links={pageNav} />}>
           {team.map((el) => (
             <ContentBlock id={el.link} key={el.link}>
@@ -111,8 +107,7 @@ class Main extends Component {
             </ContentBlock>
           ))}
         </ContentLayout>
-        <Footer />
-      </div>
+      </PageLayout>
     );
   }
 }

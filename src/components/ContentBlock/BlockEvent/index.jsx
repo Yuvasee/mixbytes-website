@@ -7,7 +7,7 @@ class BlockEvent extends Component {
     const {date, desc, header, prices, speakers, themes} = this.props;
 
     return (
-      <div className="block-event">
+      <div className="block-event white-block">
         <div className="event-date">{date}</div>
         <h3>{header}</h3>
         <div className="desc">{desc}</div>

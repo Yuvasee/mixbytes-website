@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 
-import Header from 'components/Header';
-import Footer from 'components/Footer';
+import PageLayout from 'components/PageLayout';
 import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
@@ -13,8 +12,6 @@ import BlockEvent from 'components/ContentBlock/BlockEvent';
 import Splurge from 'components/Splurge';
 import Capabilities from 'components/Capabilities';
 import MeetUs from 'components/MeetUs';
-
-import './styles.css';
 
 class Main extends Component {
   render() {
@@ -28,8 +25,7 @@ class Main extends Component {
     ];
 
     return (
-      <div className="container-fluid">
-        <Header />
+      <PageLayout>
         <HeaderJumbo />
         <ContentLayout contentRight={<PageNav links={pageNav} />}>
           <ContentBlock id="dev-audit">
@@ -145,8 +141,7 @@ class Main extends Component {
           />
           <MeetUs />
         </ContentLayout>
-        <Footer />
-      </div>
+      </PageLayout>
     );
   }
 }

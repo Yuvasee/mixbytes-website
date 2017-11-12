@@ -1,0 +1,17 @@
+.block-emphasis p {
+  font-size: 21px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1400px) {
+  .block-emphasis p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 770px) {
+  .block-emphasis p {
+    font-size: 15px;
+  }
+
+}
