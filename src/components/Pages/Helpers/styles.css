@@ -1,0 +1,42 @@
+.helpers-ethereum > div:not(:first-child) {
+  margin-top: 40px;
+}
+
+.helpers-ethereum input {
+  height: 82px;
+  font-size: 25px;
+  border-color: #481F80;
+}
+
+.helpers-ethereum input:focus {
+  border-color: #481F80;
+}
+
+.helpers-ethereum .result {
+  color: #481F80;
+  font-size: 21px;
+  padding: 20px 0;
+}
+
+.helpers-ethereum .result2 {
+  color: #481F80;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px 0;
+}
+
+.timestamps textarea {
+  border-color: #481F80;
+}
+
+.timestamps textarea:first-child {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.timestamps textarea:last-child {
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

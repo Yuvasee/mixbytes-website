@@ -7,7 +7,7 @@ import ContentBlock from 'components/ContentBlock';
 
 import BlockPerson from 'components/ContentBlock/BlockPerson';
 
-class Main extends Component {
+class Team extends Component {
   render() {
     const team = [
       {
@@ -112,4 +112,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default Team;

@@ -7,7 +7,7 @@ import ContentBlock from 'components/ContentBlock';
 
 import './styles.css';
 
-class Main extends Component {
+class Publications extends Component {
   render() {
     const pubs = [
       {
@@ -44,4 +44,4 @@ class Main extends Component {
   }
 }
 
-export default Main;
+export default Publications;
