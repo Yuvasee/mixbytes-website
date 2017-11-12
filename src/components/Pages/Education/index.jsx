@@ -20,6 +20,7 @@ class Education extends Component {
       {link: 'blockchain-dive', name: 'Описание'},
       {link: 'program', name: 'Программа'},
       {link: 'speakers', name: 'Ведущие'},
+      {link: 'partners', name: 'Партнеры'},
     ];
 
     return (
@@ -212,7 +213,7 @@ class Education extends Component {
               },
             ]} />
           </ContentBlock>
-          <ContentBlock>
+          <ContentBlock id="partners">
             <BlockLogos header="Информационные партнеры" logos={[
               {
                 src: require('./i/allcoinshome-logo.png'),

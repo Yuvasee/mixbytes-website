@@ -4,6 +4,7 @@ import {Switch, Route} from 'react-router';
 import Main from 'components/Pages/Main';
 import Team from 'components/Pages/Team';
 import Education from 'components/Pages/Education';
+import Publications from 'components/Pages/Publications';
 import Page404 from 'components/Pages/404';
 
 class Router extends Component {
@@ -13,6 +14,7 @@ class Router extends Component {
         <Route exact path="/" component={Main} />
         <Route exact path="/team" component={Team} />
         <Route exact path="/education" component={Education} />
+        <Route exact path="/publications" component={Publications} />
         <Route component={Page404} />
       </Switch>
     );
