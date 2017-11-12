@@ -69,6 +69,10 @@ li::before {
     margin: 0 0 10px -1px;
   }
 
+  h3 {
+    font-size: 18px;
+  }
+
   p {
     font-size: 13px;
     line-height: 20px;

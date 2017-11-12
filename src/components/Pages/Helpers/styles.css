@@ -40,3 +40,19 @@
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+@media (max-width: 770px) {
+  .helpers-ethereum > div:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .helpers-ethereum input {
+    height: 62px;
+    font-size: 21px;
+  }
+
+  .helpers-ethereum .result2 {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

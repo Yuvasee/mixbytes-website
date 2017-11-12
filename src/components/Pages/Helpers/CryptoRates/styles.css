@@ -44,3 +44,18 @@
   width: 30px !important;
   margin: 0 auto;
 }
+
+@media (max-width: 770px) {
+  .crypto-rates {
+    flex-wrap: wrap;
+  }
+
+  .crypto-rates select,
+  .crypto-rates input {
+    height: 62px;
+  }
+
+  .crypto-rates input {
+    font-size: 28px;
+  }
+}

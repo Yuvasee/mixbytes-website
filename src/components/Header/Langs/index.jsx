@@ -6,7 +6,7 @@ class Langs extends Component {
   render() {
     return (
       <nav className="langs">
-        <a href="#">EN</a>
+        {/* <a href="#">EN</a> */}
       </nav>
     );
   }}
