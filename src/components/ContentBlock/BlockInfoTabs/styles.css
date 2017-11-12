@@ -3,7 +3,7 @@
 }
 
 .block-info-tabs .tabs {
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
 }
 
