@@ -10,7 +10,7 @@ class BlockEvent extends Component {
       <div className="block-event white-block">
         <div className="event-date">{date}</div>
         <h3>{header}</h3>
-        <div className="desc">{desc}</div>
+        <div className="desc" dangerouslySetInnerHTML={{__html: desc}} />
         <div className="themes">
           <div className="header">Темы</div>
           <ul>
@@ -36,7 +36,7 @@ class BlockEvent extends Component {
         </div>
         <div className="conditions">
           <div className="button">
-            <button>Оплатить</button>
+            <a className="link-button" href="https://mixbytes.timepad.ru/event/611938/#register">Оплатить</a>
           </div>
           <div className="prices">
             {prices.map((element, i) => (
@@ -51,7 +51,7 @@ class BlockEvent extends Component {
             ))}
           </div>
           <div className="pay-crypt">
-            <a href="#">Оплатить криптовалютой</a>
+            <a href="/education#participation">Оплатить криптовалютой</a>
           </div>
         </div>
       </div>

@@ -20,6 +20,10 @@ p {
   margin-bottom: 30px;
 }
 
+p img {
+  width: 100%;
+}
+
 a {
   color: #491982;
   text-decoration: underline;
@@ -28,6 +32,21 @@ a {
 
 a:hover {
   color: #28C677;
+}
+
+a.link-button {
+  display: inline-block;
+  min-height: 43px;
+  font-size: 17px;
+  color: #fff !important;
+  background-color: #481F80;
+  border-radius: 8px;
+  padding: 9px 20px;
+  text-decoration: none;
+}
+
+a.link-button:hover {
+  background-color: #28C677;
 }
 
 .angle-bullet::before {

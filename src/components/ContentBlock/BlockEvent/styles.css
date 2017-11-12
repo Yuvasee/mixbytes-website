@@ -91,16 +91,6 @@
   margin-right: 24px;
 }
 
-.block-event .conditions .button button {
-  background-color: #481F80;
-  border: 0;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 18px;
-  padding: 9px 30px 7px;
-  height: 43px;
-}
-
 .block-event .conditions .prices {
   flex-grow: 1;
   display: flex;
