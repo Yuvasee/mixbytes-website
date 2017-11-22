@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import classNames from 'classnames';
 
 import PageLayout from 'components/PageLayout';
 import PageNav from 'components/PageNav';
@@ -10,6 +11,13 @@ import './styles.css';
 class Publications extends Component {
   render() {
     const pubs = [
+      {
+        name: 'Dive into ICO',
+        date: '16 ноября 2017',
+        place: 'Хабрахабр',
+        img: require('./i/dive.jpg'),
+        link: 'https://habrahabr.ru/post/342534/'
+      },
       {
         name: 'Технические особенности проведения ICO. Начало',
         date: '10 ноября 2017',
@@ -24,6 +32,30 @@ class Publications extends Component {
         img: require('./i/blockchain.jpg'),
         link: 'https://habrahabr.ru/post/340916/'
       },
+      {
+        name: 'Дырка в Parity Multisig Wallet',
+        date: 'июль 2017',
+        place: 'Golos.io',
+        link: 'https://golos.io/ru--blokcheijn/@boogerwooger/dyrka-v-parity-multisig-wallet'
+      },
+      {
+        name: 'Storj. Парни, вы мой файл не видали?',
+        date: 'июнь 2017',
+        place: 'Golos.io',
+        link: 'https://golos.io/ru--blokcheijn/@boogerwooger/storj-parni-vy-moi-fail-ne-vidali'
+      },
+      {
+        name: 'О смарт-контрактах попроще',
+        date: 'июнь 2017',
+        place: 'Golos.io',
+        link: 'https://golos.io/ru--smart-kontrakty/@boogerwooger/o-smart-kontraktakh-poproshe'
+      },
+      {
+        name: 'Proof Of Stake & Proof Of Work',
+        date: 'май 2017',
+        place: 'Golos.io',
+        link: 'https://golos.io/blockchain/@boogerwooger/proof-of-stake-and-proof-of-work-korotenko'
+      },
     ];
 
     return (
@@ -32,7 +64,7 @@ class Publications extends Component {
           <ContentBlock>
             <h2>Публикации</h2>
             {pubs.map((el, i) => (
-              <div className="publication" style={{backgroundImage: `url(${el.img})`}}>
+              <div className={classNames('publication', {noimg: !el.img})} style={el.img ? {backgroundImage: `url(${el.img})`} : {}}>
                 <h3><a href={el.link}>{el.name}</a></h3>
                 <p>{el.date} &bull; {el.place}</p>
               </div>

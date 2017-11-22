@@ -252,6 +252,11 @@ class Education extends Component {
           <ContentBlock id="partners">
             <BlockLogos header="Информационные партнеры" logos={[
               {
+                src: require('./i/forklog-logo.svg'),
+                link: 'https://forklog.com/',
+                alt: 'Forklog'
+              },
+              {
                 src: require('./i/allcoinshome-logo.png'),
                 link: 'https://allcoinshome.com/',
                 alt: 'AllCoinsHome'

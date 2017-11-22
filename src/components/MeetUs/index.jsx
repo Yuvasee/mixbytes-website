@@ -8,13 +8,13 @@ class MeetUs extends Component {
       <div className="meet-us" id="meet-us">
         <div>
           <h2>Будем знакомы</h2>
-          <p>Мы&nbsp;разрабатываем смарт-контракты, проводим их&nbsp;аудит, консультируем организации, и&nbsp;рас-сказываем об&nbsp;этом в&nbsp;наших курсах и&nbsp;лекциях.</p>
+          <p>Мы&nbsp;разрабатываем смарт-контракты, проводим их&nbsp;аудит, консультируем организации, и&nbsp;рассказываем об&nbsp;этом в&nbsp;наших курсах и&nbsp;лекциях.</p>
           <p className="angle-bullet"><a href="/team">Познакомиться ближе</a></p>
         </div>
         <div className="person">
           <img
             src={require('components/Pages/Team/i/prilutskiy.jpg')}
-            alt="Сергей Прилутский"
+            alt="Сергей Прилуцкий"
           />
           <p>Сергей<br />Прилутский</p>
         </div>

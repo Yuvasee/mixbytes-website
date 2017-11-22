@@ -8,6 +8,11 @@
   background-size: cover;
 }
 
+.publication.noimg {
+  background-color: rgb(72, 31, 128);
+  height: 215px;
+}
+
 .publication p {
   margin-bottom: 0;
   font-size: 16px;
