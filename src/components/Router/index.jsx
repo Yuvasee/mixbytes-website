@@ -6,6 +6,7 @@ import Team from 'components/Pages/Team';
 import Education from 'components/Pages/Education';
 import Publications from 'components/Pages/Publications';
 import Helpers from 'components/Pages/Helpers';
+import Job from 'components/Pages/Job';
 import Page404 from 'components/Pages/404';
 
 class Router extends Component {
@@ -17,6 +18,7 @@ class Router extends Component {
         <Route exact path="/education" component={Education} />
         <Route exact path="/publications" component={Publications} />
         <Route exact path="/helpers" component={Helpers} />
+        <Route exact path="/job" component={Job} />
         <Route component={Page404} />
       </Switch>
     );

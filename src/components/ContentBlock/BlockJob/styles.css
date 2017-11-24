@@ -1,0 +1,14 @@
+.block-job ul {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.block-job li {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 770px) {
+  .block-job h2 {
+    margin-top: 15px;
+  }
+}

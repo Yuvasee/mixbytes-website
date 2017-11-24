@@ -271,6 +271,16 @@ class Education extends Component {
                 link: 'https://freedman.club/',
                 alt: 'freedman club'
               },
+              {
+                src: require('./i/logo-inv-fut.jpg'),
+                link: 'https://investfuture.ru/',
+                alt: 'Invest Future'
+              },
+              {
+                src: require('./i/logo-anycoin.jpg'),
+                link: 'https://anycoin.news/',
+                alt: 'Anycoin.News'
+              },
             ]} />
           </ContentBlock>
         </ContentLayout>
