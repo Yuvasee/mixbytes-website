@@ -68,6 +68,22 @@ li::before {
   content: "* "
 }
 
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+h4::after {
+  display: block;
+  color: #bbb;
+  font-weight: normal;
+  line-height: 10px;
+  content: "================================================================================================================";
+  overflow-x: hidden;
+  margin-bottom: 14px;
+}
+
 @media (max-width: 1400px) {
   h2 {
     font-size: 40px;
@@ -78,6 +94,10 @@ li::before {
   }
 
   ul {
+    font-size: 15px;
+  }
+
+  h4 {
     font-size: 15px;
   }
 }
@@ -100,5 +120,27 @@ li::before {
   ul {
     font-size: 13px;
     line-height: 20px;
+  }
+
+  h4 {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+
+  h4::before {
+    content: "============== ";
+    overflow-x: hidden;
+  }
+
+  h4::after {
+    display: inline;
+    color: #000;
+    line-height: inherit;
+    content: " ==============";
+    overflow-x: hidden;
+    margin-bottom: 0;
   }
 }

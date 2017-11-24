@@ -44,11 +44,12 @@ class Job extends Component {
     return (
       <PageLayout>
         <ContentLayout contentRight={<PageNav links={pageNav} />}>
-          {jobs.map((el) => (
-            <ContentBlock id={el.link} key={el.link}>
-              <BlockJob job={el} />
-            </ContentBlock>
-          ))}
+          <ContentBlock>
+            <h2>Вакансии</h2>
+            {jobs.map((el) => (
+                <BlockJob job={el} />
+            ))}
+          </ContentBlock>
         </ContentLayout>
       </PageLayout>
     );

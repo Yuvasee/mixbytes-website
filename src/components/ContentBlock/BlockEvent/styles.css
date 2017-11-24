@@ -20,24 +20,6 @@
   margin-bottom: -15px;
 }
 
-.block-event .themes .header,
-.block-event .speakers .header {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-.block-event .themes .header::after,
-.block-event .speakers .header::after {
-  display: block;
-  color: #bbb;
-  font-weight: normal;
-  line-height: 10px;
-  content: "================================================================================================================";
-  overflow-x: hidden;
-  margin-bottom: 14px;
-}
-
 .block-event .themes ul {
   columns: 2;
 }
@@ -113,11 +95,6 @@
     font-size: 15px;
   }
 
-  .block-event .themes .header,
-  .block-event .speakers .header {
-    font-size: 15px;
-  }
-
   .block-event .conditions div {
     font-size: 15px;
     line-height: 20px;
@@ -138,31 +115,6 @@
     font-size: 13px;
     margin-top: 20px;
     line-height: 20px;
-  }
-
-  .block-event .themes .header,
-  .block-event .speakers .header {
-    font-size: 13px;
-    font-weight: normal;
-    text-align: center;
-    white-space: nowrap;
-    margin-bottom: 10px;
-  }
-
-  .block-event .themes .header::before,
-  .block-event .speakers .header::before {
-    content: "============== ";
-    overflow-x: hidden;
-  }
-
-  .block-event .themes .header::after,
-  .block-event .speakers .header::after {
-    display: inline;
-    color: #000;
-    line-height: inherit;
-    content: " ==============";
-    overflow-x: hidden;
-    margin-bottom: 0;
   }
 
   .block-event .themes ul {

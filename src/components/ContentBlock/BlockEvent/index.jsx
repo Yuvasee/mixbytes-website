@@ -12,7 +12,7 @@ class BlockEvent extends Component {
         <h3>{header}</h3>
         <div className="desc" dangerouslySetInnerHTML={{__html: desc}} />
         <div className="themes">
-          <div className="header">Темы</div>
+          <h4>Темы</h4>
           <ul>
             {themes.map((element, i) => (
               <li dangerouslySetInnerHTML={{__html: element}} key={i} />
@@ -20,7 +20,7 @@ class BlockEvent extends Component {
           </ul>
         </div>
         <div className="speakers">
-          <div className="header">Спикеры</div>
+          <h4>Спикеры</h4>
           <div className="speakers-content">
             {speakers.map((element, i) => (
               <div className="speaker" key={i}>

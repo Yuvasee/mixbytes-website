@@ -6,22 +6,22 @@ class BlockJob extends Component {
   render() {
     const {name, description, requirements, advantages, conditions} = this.props.job;
     return (
-      <div className="block-job">
-        <h2>{name}</h2>
+      <div className="block-job white-block">
+        <h3>{name}</h3>
         <p>{description}</p>
-        <h3>Требования:</h3>
+        <h4>Требования:</h4>
         <ul>
           {requirements.map((el, i) => (
             <li key={i}>{el}</li>
           ))}
         </ul>
-        <h3>Будет плюсом:</h3>
+        <h4>Будет плюсом:</h4>
         <ul>
           {advantages.map((el, i) => (
             <li key={i}>{el}</li>
           ))}
         </ul>
-        <h3>Условия:</h3>
+        <h4>Условия:</h4>
         <ul>
           {conditions.map((el, i) => (
             <li key={i}>{el}</li>
