@@ -23,7 +23,7 @@
   padding-right: 37px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1150px) {
   .container-header {
     flex-wrap: wrap;
   }

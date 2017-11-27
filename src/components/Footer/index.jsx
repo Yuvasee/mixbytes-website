@@ -23,6 +23,7 @@ class Footer extends Component {
               <li><a href="https://www.facebook.com/mixbyteslabs/">Facebook</a></li>
               <li><a href="https://github.com/mixbytes">GitHub</a></li>
               <li><a href="https://mixbytes.timepad.ru/">Timepad</a></li>
+              <li><a href="https://www.youtube.com/channel/UCcEtHFZPsWoSxi4fdZcLsxQ/videos">YouTube</a></li>
             </ul>
           </div>
         </div>

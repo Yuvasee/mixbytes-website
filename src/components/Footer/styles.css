@@ -59,8 +59,13 @@
 
   .footer .links ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     font-size: 13px;
+  }
+
+  .footer .links li {
+    margin: 0 10px;
   }
 
   .footer .links li::before {

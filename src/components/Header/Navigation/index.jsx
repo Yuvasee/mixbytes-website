@@ -11,6 +11,7 @@ class Navigation extends Component {
       {link: '/education', name: 'Обучение'},
       {link: '/helpers', name: 'Инструменты'},
       {link: '/team', name: 'Команда'},
+      {link: '/job', name: 'Вакансии'},
     ];
 
     const navItems = links.map((item, i) => {

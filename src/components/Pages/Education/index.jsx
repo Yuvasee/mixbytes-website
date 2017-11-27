@@ -281,6 +281,11 @@ class Education extends Component {
                 link: 'https://anycoin.news/',
                 alt: 'Anycoin.News'
               },
+              {
+                src: require('./i/kl10ch-logo.jpg'),
+                link: 'https://kl10.ch/',
+                alt: 'Ключ'
+              },
             ]} />
           </ContentBlock>
         </ContentLayout>
