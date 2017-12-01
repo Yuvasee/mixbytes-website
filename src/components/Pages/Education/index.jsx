@@ -286,6 +286,11 @@ class Education extends Component {
                 link: 'https://kl10.ch/',
                 alt: 'Ключ'
               },
+              {
+                src: require('./i/aronicle-logo.jpg'),
+                link: 'http://aronicle.com/',
+                alt: 'Aronicle'
+              },
             ]} />
           </ContentBlock>
         </ContentLayout>
