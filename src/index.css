@@ -80,8 +80,9 @@ h4::after {
   font-weight: normal;
   line-height: 10px;
   content: "================================================================================================================";
-  overflow-x: hidden;
+  overflow: hidden;
   margin-bottom: 14px;
+  white-space: nowrap;
 }
 
 @media (max-width: 1400px) {
