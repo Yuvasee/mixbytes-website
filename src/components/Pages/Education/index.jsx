@@ -291,6 +291,16 @@ class Education extends Component {
                 link: 'http://aronicle.com/',
                 alt: 'Aronicle'
               },
+              {
+                src: require('./i/coinforce-logo.jpg'),
+                link: 'http://coinforce.ru/',
+                alt: 'Aronicle'
+              },
+              {
+                src: require('./i/startup-logo.jpg'),
+                link: 'http://startupmagazine.ru/',
+                alt: 'Aronicle'
+              },
             ]} />
           </ContentBlock>
         </ContentLayout>
