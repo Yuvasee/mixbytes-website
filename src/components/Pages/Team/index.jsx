@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import PageLayout from 'components/PageLayout';
 import PageNav from 'components/PageNav';
@@ -9,102 +10,50 @@ import BlockPerson from 'components/ContentBlock/BlockPerson';
 
 class Team extends Component {
   render() {
+    const text = this.context.text.team;
+
     const team = [
       {
         link: 'prilutskiy',
-        name: 'Сергей Прилуцкий',
+        name: text.prilutsky.name,
         photo: require('./i/prilutskiy.jpg'),
         position: 'Co-founder, Software Engineer',
-        text: (
-          <ul>
-            <li>Начал программировать в&nbsp;начальной школе, работал системным администратором много лет</li>
-            <li>Занимался реверс-инжинирингом и&nbsp;безопасностью&nbsp;ПО, исследовал программные защиты и&nbsp;антивирусные движки</li>
-            <li>Закончил МИФИ и&nbsp;преподавал там курсы &laquo;Базы данных&raquo; и&nbsp;&laquo;Информационная безопасность&raquo;, вел исследовательские проекты посвящённые криптографическим методам защиты</li>
-            <li>В&nbsp;течение многих лет работал в&nbsp;Mail.Ru ведущим разработчиком на&nbsp;многих проектах, последние годы в&nbsp;команде Антиспама</li>
-            <li>Имел дело с&nbsp;системами, начиная от&nbsp;небольших высоконагруженных микросервисов и&nbsp;сайтов и&nbsp;заканчивая большими кластерами для распредеённых вычислений</li>
-            <li>Преподаватель и&nbsp;автор курса по&nbsp;информационной безопасности для проектов &laquo;Технопарк&raquo; (Бауманка) и&nbsp;&laquo;Техноатом&raquo; (МИФИ)</li>
-            <li>Активный участник сообщества блокчейн-разработчиков</li>
-          </ul>
-        )
+        text: text.prilutsky.desc,
       },
       {
         link: 'vasilchikov',
-        name: 'Юрий Васильчиков',
+        name: text.vasilchikov.name,
         photo: require('./i/vasilchikov.jpg'),
         position: 'Co-founder, Manager, Developer',
-        text: (
-          <ul>
-            <li>В&nbsp;8&nbsp;классе написал клон Тетриса на&nbsp;Бейсике :)</li>
-            <li>Начал разрабатывать сайты в&nbsp;2000 году на&nbsp;языке Perl. В&nbsp;стеке: PHP, JS/Node/React</li>
-            <li>В&nbsp;юношестве год отработал программистом в&nbsp;студии Лебедева</li>
-            <li>В&nbsp;2005 году стал сооснователем веб-студии Eggo.ru, где на&nbsp;протяжении 6&nbsp;лет работал техническим директором</li>
-            <li>Руководил веб-студией Eggo.ru на&nbsp;протяжении 3&nbsp;лет</li>
-            <li>Консультировал и&nbsp;разрабатывал решения для более чем 150 малых и&nbsp;средних компаний</li>
-          </ul>
-        )
+        text: text.vasilchikov.desc,
       },
       {
         link: 'makeev',
-        name: 'Алексей Макеев',
+        name: text.makeev.name,
         photo: require('./i/makeev.jpg'),
         position: 'Co-founder, Software Engineer',
-        text: (
-          <ul>
-            <li>Закончил МГТУ им. Н.&nbsp;Э.&nbsp;Баумана, кафедра &laquo;Компьютерные комплексы, системы и&nbsp;сети&raquo;, диплом о&nbsp;распределенных вычислениях</li>
-            <li>Опыт программирования 17&nbsp;лет (Assembler, C/C++, Java, PHP, Perl, Python, JS)</li>
-            <li>Опыт разработки Big Data решений на&nbsp;Hadoop-кластере промышленного масштаба</li>
-            <li>Работал тимлидом в&nbsp;проекте интернет-поисковика Поиск@mail.ru</li>
-            <li>Работал системным архитектором в&nbsp;фирме&nbsp;1С, отдел разработки платформы</li>
-            <li>В&nbsp;сфере интересов: Big Data, распределенные вычисления, информационная безопасность, финтех, инвестиции</li>
-          </ul>
-        )
+        text: text.makeev.desc,
       },
       {
         link: 'karbachinsky',
-        name: 'Игорь Карбачинский',
+        name: text.karbachinsky.name,
         photo: require('./i/karbachinsky.jpg'),
         position: 'Software Engineer',
-        text: (
-          <ul>
-            <li>Закончил МИЭМ, кафедра &laquo;Кибернетика&raquo;, диплом об&nbsp;алгоритмах ранжирования в&nbsp;поисковых системах</li>
-            <li>Опыт программирования 12&nbsp;лет (C/C++, Java, PHP, Perl, Python, JS)</li>
-            <li>На&nbsp;протяжении многих лет руководил отделом в&nbsp;интернет-поисковике Поиск@mail.ru</li>
-            <li>Работал на&nbsp;позиции Data Science Architect в&nbsp;проектах Lang.ai и&nbsp;Sentisis.com</li>
-            <li>Опыт создания промышленных&nbsp;IT решений в&nbsp;облаках Google и&nbsp;Amazon</li>
-            <li>В&nbsp;сфере интересов: Анализ данных, Big Data, Теория игр, Речевые технологи</li>
-          </ul>
-        )
+        text: text.karbachinsky.desc,
       },
       {
         link: 'kruglov',
-        name: 'Павел Круглов',
+        name: text.kruglov.name,
         photo: require('./i/kruglov.jpg'),
         position: 'Analyst, SMM, Manager',
-        text: (
-          <ul>
-            <li>Закончил НИЯУ МИФИ, кафедра &laquo;Информационная безопасность банковских систем&raquo;</li>
-            <li>В&nbsp;школе начал программировать на&nbsp;C/C++ и&nbsp;разрабатывать сайты, <s>а&nbsp;потом ломать, хехе</s></li>
-            <li>Работал на&nbsp;нескольких проектах в&nbsp;качестве эксперта по&nbsp;информационной безопасности, в&nbsp;том числе в&nbsp;ЦБ&nbsp;РФ</li>
-            <li>Более 30&nbsp;личных публикаций в&nbsp;журнале Хакер, более 100&nbsp;в качестве редактора</li>
-            <li>Интересы: информационная безопасность, анализ систем, инвестиции, психология</li>
-          </ul>
-        )
+        text: text.kruglov.desc,
       },
       {
         link: 'yakovlev',
-        name: 'Андрей Яковлев',
+        name: text.yakovlev.name,
         photo: require('./i/yakovlev.jpg'),
         position: 'Software Engineer',
-        text: (
-          <ul>
-            <li>Закончил Мех-Мат СГУ по&nbsp;специальности &laquo;прикладная математика и&nbsp;информатика&raquo;</li>
-            <li>Опыт программирования 7&nbsp;лет (Python, JS, Bash)</li>
-            <li>Начинал свой путь в&nbsp;компании Mirantis инженером по&nbsp;тестированию, а&nbsp;затем DevOps инженером</li>
-            <li>Работал DevOps-инженером в&nbsp;интернет-поисковике Поиск@mail.ru</li>
-            <li>Последние годы&nbsp;&mdash; разработчик авто-тестов в&nbsp;компании Kaspersky Lab</li>
-            <li>Интересуется стартапами и&nbsp;инвестициями, мечтает о&nbsp;единороге :)</li>
-          </ul>
-        )
+        text: text.yakovlev.desc,
       },
     ];
 
@@ -128,3 +77,7 @@ class Team extends Component {
 }
 
 export default Team;
+
+Team.contextTypes = {
+  text: PropTypes.object,
+};

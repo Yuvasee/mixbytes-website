@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
@@ -20,11 +21,12 @@ class Donate extends Component {
   }
 
   render() {
-    const {active} = this.state;
+    const text = this.context.text.common;
+    const { active } = this.state;
 
     return (
       <div className="donate">
-        Поддержать нас
+        {text.donate}
         <div>
           <button
             className={classNames({active: active === 'btc'})}
@@ -52,3 +54,7 @@ class Donate extends Component {
 }
 
 export default Donate;
+
+Donate.contextTypes = {
+  text: PropTypes.object,
+};

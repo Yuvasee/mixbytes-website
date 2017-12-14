@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 // import './styles.css';
 
@@ -43,15 +44,16 @@ class TimestampCheck extends Component {
   }
 
   render() {
+    const text = this.context.text.common;
     const {code, timestampsReport} = this.state;
 
     return (
       <div className="timestamps">
-        <h3>Проверить значения timestamps в коде</h3>
+        <h3>{text.checkTimestamps}</h3>
         <div>
           <textarea className="form-control" type="text" value={code} rows="4"
             onChange={this.handleTimestamp.bind(this)}
-            placeholder="Скопипуйте код сюда"
+            placeholder={text.timestampsPlaceholder}
           />
           <textarea className="form-control" type="text" value={timestampsReport} disabled rows="4"/>
         </div>
@@ -61,3 +63,7 @@ class TimestampCheck extends Component {
 }
 
 export default TimestampCheck;
+
+TimestampCheck.contextTypes = {
+  text: PropTypes.object,
+};

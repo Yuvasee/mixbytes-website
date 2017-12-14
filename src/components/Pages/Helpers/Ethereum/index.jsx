@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
@@ -114,12 +115,14 @@ class Ethereum extends Component {
   }
 
   render() {
+    const text = this.context.text.common;
+
     const {wallet, balance, txHash, txInfo} = this.state;
 
     return (
       <div className="helpers-ethereum">
         <div>
-          <h3>Баланс Ethereum-кошелька</h3>
+          <h3>{text.ethereumBalance}</h3>
           <input className="form-control" name="getBalance"
             value={wallet}
             onChange={this.handleGetBalance.bind(this)}
@@ -128,7 +131,7 @@ class Ethereum extends Component {
           <div className="result">{balance}</div>
         </div>
         <div>
-          <h3>Информация о транзакции</h3>
+          <h3>{text.transactionInfo}</h3>
           <input className="form-control" name="getTransaction"
             value={txHash}
             onChange={this.handleGetTransaction.bind(this)}
@@ -142,3 +145,7 @@ class Ethereum extends Component {
 }
 
 export default Ethereum;
+
+Ethereum.contextTypes = {
+  text: PropTypes.object,
+};

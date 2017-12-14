@@ -1,0 +1,29 @@
+.popupElement {
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.popupElement:hover {
+  color: #28C677;
+  background-color: #cccccc;
+}
+
+.popupElement--active {
+  color: #28C677;
+}
+
+.popupContentContainer {
+  margin-top: -16px;
+  position: relative;
+}
+
+.popupElement:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.popupElement:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}

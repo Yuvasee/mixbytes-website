@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import Donate from './Donate';
 
@@ -6,15 +7,17 @@ import './styles.css';
 
 class Footer extends Component {
   render() {
+    const text = this.context.text.common;
+
     return (
       <div className="footer">
         <div className="copy">
           <strong>&copy;&nbsp;2017 MixBytes Blockchain Labs</strong><br />
-          По&nbsp;всем вопросам:<br />
+          {text.questions}<br />
           <a href="https://t.me/LoungerX">https://t.me/LoungerX</a><br />
-          или&nbsp;<a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a><br />
+          {text.or}&nbsp;<a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a><br />
           <br />
-          <a href="/job">Вакансии</a>
+          <a href="/job">{text.careers}</a>
         </div>
         <div className="links">
           <div>
@@ -34,3 +37,7 @@ class Footer extends Component {
 }
 
 export default Footer;
+
+Footer.contextTypes = {
+  text: PropTypes.object,
+};
