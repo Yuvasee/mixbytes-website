@@ -18,6 +18,15 @@ class Langs extends React.Component {
   render() {
     return (
       <nav className="langs">
+        <button
+          className="languageButton"
+          onClick={() => this.toggleLanguage()}
+        >
+          {this.state.value}
+        </button>
+
+        {/*
+        for multiple languages
         <Dropdown
           label={this.state.value}
           value={this.state.value}
@@ -27,8 +36,17 @@ class Langs extends React.Component {
           ]}
           onValueChange={value => this.onLangageChange(value)}
         />
+        */}
       </nav>
     );
+  }
+
+  toggleLanguage() {
+    const newLanguage = this.state.value === 'RU' ? 'EN' : 'RU';
+
+    this.setState({ value: newLanguage });
+    setLanguage(newLanguage);
+    window.location.reload();
   }
 
   onLangageChange(language) {

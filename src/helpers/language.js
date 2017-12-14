@@ -1,4 +1,5 @@
-const DEFAULT_LOCALE = 'RU';
+export const DEFAULT_LOCALE = 'RU';
+const SUPPORTED_LANGUAGES = ['RU', 'EN'];
 const LOCAL_STORAGE_LANGUAGE_PARAM_NAME = 'mixLocale';
 
 export const getLanguage = () => {
@@ -16,9 +17,9 @@ export const getLanguage = () => {
     lang = lang.slice(0, 2);
   }
 
-  lang = localStorage.mixLocale || lang || DEFAULT_LOCALE;
+  lang = localStorage.mixLocale || lang.toUpperCase() || DEFAULT_LOCALE;
 
-  return lang;
+  return SUPPORTED_LANGUAGES.indexOf(lang) >=0 ? lang : DEFAULT_LOCALE;
 }
 
 export const setLanguage = (language) => {
