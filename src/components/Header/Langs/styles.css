@@ -1,26 +1,30 @@
 .langs {
   text-align: right;
-}
-
-.langs a {
-  line-height: 68px;
-  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  height: 68px;
   font-size: 18px;
-  text-decoration: none;
 }
 
 @media (max-width: 1400px) {
-  .langs a {
+  .langs {
     font-size: 16px;
   }
 }
 
-@media (max-width: 970px) {
-  .langs {
-    margin-top: 20px;
-  }
+.languageButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  align-self: center;
+  outline: none;
+}
 
-  .langs a {
-    line-height: inherit;
-  }
+.languageButton:hover {
+  color: #28C677;
+  cursor: pointer;
+}
+
+.languageButton:active, .languageButton:focus {
+  outline: none;
 }

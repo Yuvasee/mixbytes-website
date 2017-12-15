@@ -1,18 +1,24 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
 class HeaderJumbo extends Component {
+
+  componentWillMount() {
+    this.text = this.context.text.headerJumbo;
+  }
+
   render() {
+    const { text } = this;
+
     return (
       <div className="header-jumbo">
-        <h1>
-          Блокчейн-решения
-          <br />и&nbsp;смарт-контракты
-        </h1>
+        {text.header}
         <div className="intro">
-          Мы&nbsp;&mdash; команда программистов. Составляем технические проекты, внедряем блокчейн-технологии, пишем смарт-контракты. Проводим корпоративное обучение и&nbsp;открытые лекции.
-          <br />Стек: Solidity/Truffle, JS/Node, C++/Graphene, Python.
+        {text.description}
+        <br />
+        {text.stack}
         </div>
       </div>
     );
@@ -20,3 +26,7 @@ class HeaderJumbo extends Component {
 }
 
 export default HeaderJumbo;
+
+HeaderJumbo.contextTypes = {
+  text: PropTypes.object,
+};

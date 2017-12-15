@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import PageLayout from 'components/PageLayout';
 import PageNav from 'components/PageNav';
@@ -13,11 +14,13 @@ import './styles.css';
 
 class Helpers extends Component {
   render() {
+    const text = this.context.text.common;
+
     return (
       <PageLayout>
         <ContentLayout>
           <ContentBlock>
-            <h2>Калькулятор курсов</h2>
+            <h2>{text.coursesCalculator}</h2>
             <div className="white-block">
               <CryptoRates />
             </div>
@@ -29,7 +32,7 @@ class Helpers extends Component {
             </div>
           </ContentBlock>
           <ContentBlock>
-            <h2>Проверка кода</h2>
+            <h2>{text.codeCheck}</h2>
             <div className="white-block">
               <TimestampCheck />
             </div>
@@ -41,3 +44,7 @@ class Helpers extends Component {
 }
 
 export default Helpers;
+
+Helpers.contextTypes = {
+  text: PropTypes.object,
+};

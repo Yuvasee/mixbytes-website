@@ -1,6 +1,8 @@
-const DEFAULT_LOCALE = 'ru';
+export const DEFAULT_LOCALE = 'RU';
+const SUPPORTED_LANGUAGES = ['RU', 'EN'];
+const LOCAL_STORAGE_LANGUAGE_PARAM_NAME = 'mixLocale';
 
-export default () => {
+export const getLanguage = () => {
   let lang;
 
   if (navigator.languages && navigator.languages.length) {
@@ -15,7 +17,11 @@ export default () => {
     lang = lang.slice(0, 2);
   }
 
-  lang = localStorage.mixLocale || lang || DEFAULT_LOCALE;
-  localStorage.setItem('mixLocale', lang);
-  return lang;
+  lang = localStorage.mixLocale || lang.toUpperCase() || DEFAULT_LOCALE;
+
+  return SUPPORTED_LANGUAGES.indexOf(lang) >=0 ? lang : DEFAULT_LOCALE;
+}
+
+export const setLanguage = (language) => {
+  localStorage.setItem(LOCAL_STORAGE_LANGUAGE_PARAM_NAME, language);
 }

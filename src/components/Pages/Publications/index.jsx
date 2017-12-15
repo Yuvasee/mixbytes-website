@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import PageLayout from 'components/PageLayout';
 import PageNav from 'components/PageNav';
@@ -10,6 +11,8 @@ import './styles.css';
 
 class Publications extends Component {
   render() {
+    const text = this.context.text.common;
+
     const pubs = [
       {
         name: 'Dive into ICO',
@@ -62,7 +65,7 @@ class Publications extends Component {
       <PageLayout>
         <ContentLayout>
           <ContentBlock>
-            <h2>Публикации</h2>
+            <h2>{text.publications}</h2>
             {pubs.map((el, i) => (
               <div className={classNames('publication', {noimg: !el.img})} style={el.img ? {backgroundImage: `url(${el.img})`} : {}}>
                 <h3><a href={el.link}>{el.name}</a></h3>
@@ -77,3 +80,7 @@ class Publications extends Component {
 }
 
 export default Publications;
+
+Publications.contextTypes = {
+  text: PropTypes.object,
+};

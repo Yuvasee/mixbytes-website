@@ -1,0 +1,23 @@
+.dropdownButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  align-self: center;
+}
+
+.dropdownButton:hover {
+  color: #28C677;
+  cursor: pointer;
+}
+
+.dropdownButton:active {
+  outline: none;
+}
+
+.dropdownContainer--opened .dropdownButton {
+  outline: none;
+}
+
+.dropdownContainer {
+  line-height: 68px;
+}

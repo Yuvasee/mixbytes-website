@@ -1,0 +1,19 @@
+.popupContainer {
+  color: #481F80;
+  background-color: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.3);
+}
+
+.containerCorner {
+  position: relative;
+  top: -5px;
+  bottom: 100%;
+  left: 9px;
+  width: 16px;
+  height: 16px;
+
+  transform: rotate(45deg);
+  border-radius: 2px;
+  background-color: #fafafa;
+}

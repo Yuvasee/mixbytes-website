@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
 class BlockProgram extends Component {
   render() {
+    const text = this.context.text.common;
     const {program} = this.props;
 
     return (
       <div className="block-program">
-        <h2>Программа</h2>
+        <h2>{text.program}</h2>
         {program.map((day, i) => (
           <div className="day" key={`day${i}`}>
             <h3 dangerouslySetInnerHTML={{__html: day.dayName}} />
@@ -35,3 +37,7 @@ class BlockProgram extends Component {
 }
 
 export default BlockProgram;
+
+BlockProgram.contextTypes = {
+  text: PropTypes.object,
+};

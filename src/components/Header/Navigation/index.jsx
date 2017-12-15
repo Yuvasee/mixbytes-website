@@ -1,17 +1,21 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ClassNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import './styles.css';
 
-class Navigation extends Component {
+class Navigation extends React.PureComponent {
+
   render() {
+    const text = this.context.text.navigation;
+
     const links = [
-      {link: '/', name: 'Услуги'},
-      {link: '/publications', name: 'Публикации'},
-      {link: '/education', name: 'Обучение'},
-      {link: '/helpers', name: 'Инструменты'},
-      {link: '/team', name: 'Команда'},
-      {link: '/job', name: 'Вакансии'},
+      {link: '/', name: text.services},
+      {link: '/publications', name: text.publications},
+      {link: '/education', name: text.training},
+      {link: '/helpers', name: text.tools},
+      {link: '/team', name: text.team},
+      {link: '/job', name: text.careers},
     ];
 
     const navItems = links.map((item, i) => {
@@ -31,3 +35,7 @@ class Navigation extends Component {
   }}
 
 export default Navigation;
+
+Navigation.contextTypes = {
+  text: PropTypes.object,
+};
