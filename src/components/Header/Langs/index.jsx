@@ -22,7 +22,7 @@ class Langs extends React.Component {
           className="languageButton"
           onClick={() => this.toggleLanguage()}
         >
-          {this.state.value}
+          {this.state.value === 'RU' ? 'EN' : 'RU'}
         </button>
 
         {/*
