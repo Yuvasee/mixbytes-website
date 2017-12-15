@@ -134,7 +134,7 @@ export const text = {
       },
       header: {
         title: <h2>Двухдневный интенсив<br />&laquo;Погружение в&nbsp;блокчейн&raquo;</h2>,
-        description: <p><strong>9-10 декабря</strong> за два дня вы получите фундаментальное понимание технической и&nbsp;юридической базы блокчейн-технологий. Криптографический фундамент, консенсусы и&nbsp;майнинг, технические тонкости&nbsp;ICO, юридическая практика. Вы,&nbsp;наконец, поймете как и&nbsp;почему всё это работает!</p>,
+        description: <p><strong>За два дня</strong> вы получите фундаментальное понимание технической и&nbsp;юридической базы блокчейн-технологий. Криптографический фундамент, консенсусы и&nbsp;майнинг, технические тонкости&nbsp;ICO, юридическая практика. Вы,&nbsp;наконец, поймете как и&nbsp;почему всё это работает!</p>,
         comment: <p>Курс проводится совместно с&nbsp;компанией <a href="http://cych.io">cych.io</a> и&nbsp;приглашёнными экспертами Центра Россия-ОЭСР РАНХиГС при Президенте&nbsp;РФ.</p>,
       },
       info: {
@@ -271,6 +271,7 @@ export const text = {
         },
       },
       conditions: {
+        soon: <span>Мы&nbsp;планируем провести ближайший интенсив в&nbsp;марте 2018.<br />Следите за&nbsp;анонсами в&nbsp;Facebook и&nbsp;Telegram!</span>,
         title: 'Условия',
         early: {
           header: 'До&nbsp;1&nbsp;декабря',
@@ -605,7 +606,7 @@ export const text = {
       },
       header: {
         title: <h2>2-Days Intensive course<br />&laquo;Dive into&nbsp;Blockchain&raquo;</h2>,
-        description: <p>During the two days, <strong>December 9-10,</strong> you will receive a fundamental understanding of the technical and legal basis of blockchain technologies. Cryptographic foundation, consensus and mining, technical subtleties of ICO, legal practice. You will finally understand how and why it all works!</p>,
+        description: <p><strong>During the two days</strong> you will receive a fundamental understanding of the technical and legal basis of blockchain technologies. Cryptographic foundation, consensus and mining, technical subtleties of ICO, legal practice. You will finally understand how and why it all works!</p>,
         comment: <p>The course is conducted with the support of <a href="http://cych.io">cych.io</a> and invited experts from The Russian Academy of National Economy and Public Service under the President of the Russian Federation.</p>,
       },
       info: {
@@ -742,6 +743,7 @@ export const text = {
         },
       },
       conditions: {
+        soon: <span> We&nbsp;plan to&nbsp;hold the next intensive in&nbsp;March 2018. <br /> Watch out for announcements on&nbsp;Facebook and Telegram!</span>,
         title: 'Conditions',
         early: {
           header: 'Before December 1',

@@ -22,7 +22,6 @@ class Main extends Component {
     const pageNav = [
       {link: 'dev-audit', name: text.devAudit.title},
       {link: 'consulting', name: text.consulting},
-      {link: 'lectures', name: text.lectures},
       {link: 'splurge', name: '>&#8201;25&#8201;000&#8201;000&#8201;$'},
       {link: 'capabilities', name: text.capabilities.title},
       {link: 'meet-us', name: meetUsText.anchor},
@@ -64,53 +63,6 @@ class Main extends Component {
               ]}
             />
           </ContentBlock>
-          <ContentBlock id="lectures">
-            <h2>{text.lectures}</h2>
-            <BlockEvent
-              date={text.lecturesItems.diveIntoBlokchain.date}
-              header={text.lecturesItems.diveIntoBlokchain.title}
-              desc={text.lecturesItems.diveIntoBlokchain.description}
-              themes={text.lecturesItems.diveIntoBlokchain.themes}
-              speakers={[
-                {
-                  name: text.lecturesItems.diveIntoBlokchain.speakers.prilutsky.name,
-                  desc: <p>{text.lecturesItems.diveIntoBlokchain.speakers.prilutsky.description}</p>,
-                  img: "prilutskiy"
-                },
-                {
-                  name: text.lecturesItems.diveIntoBlokchain.speakers.vasilchikov.name,
-                  desc: <p>{text.lecturesItems.diveIntoBlokchain.speakers.vasilchikov.description}</p>,
-                  img: "vasilchikov"
-                }
-              ]}
-              prices={[
-                {
-                  period: text.lecturesItems.diveIntoBlokchain.prices.early.name,
-                  types: [
-                    {
-                      price: "6000&#8381;"
-                    },
-                    {
-                      name: "VIP",
-                      price: "12000&#8381;"
-                    }
-                  ]
-                },
-                {
-                  period: text.lecturesItems.diveIntoBlokchain.prices.late.name,
-                  types: [
-                    {
-                      price: "9000&#8381;"
-                    },
-                    {
-                      name: "VIP",
-                      price: "18000&#8381;"
-                    }
-                  ]
-                },
-              ]}
-            />
-          </ContentBlock>
           <Splurge />
           <Capabilities
             header={text.capabilities.title}
@@ -149,3 +101,54 @@ export default Main;
 Main.contextTypes = {
   text: PropTypes.object,
 };
+
+/*
+
+<ContentBlock id="lectures">
+  <h2>{text.lectures}</h2>
+  <BlockEvent
+    date={text.lecturesItems.diveIntoBlokchain.date}
+    header={text.lecturesItems.diveIntoBlokchain.title}
+    desc={text.lecturesItems.diveIntoBlokchain.description}
+    themes={text.lecturesItems.diveIntoBlokchain.themes}
+    speakers={[
+      {
+        name: text.lecturesItems.diveIntoBlokchain.speakers.prilutsky.name,
+        desc: <p>{text.lecturesItems.diveIntoBlokchain.speakers.prilutsky.description}</p>,
+        img: "prilutskiy"
+      },
+      {
+        name: text.lecturesItems.diveIntoBlokchain.speakers.vasilchikov.name,
+        desc: <p>{text.lecturesItems.diveIntoBlokchain.speakers.vasilchikov.description}</p>,
+        img: "vasilchikov"
+      }
+    ]}
+    prices={[
+      {
+        period: text.lecturesItems.diveIntoBlokchain.prices.early.name,
+        types: [
+          {
+            price: "6000&#8381;"
+          },
+          {
+            name: "VIP",
+            price: "12000&#8381;"
+          }
+        ]
+      },
+      {
+        period: text.lecturesItems.diveIntoBlokchain.prices.late.name,
+        types: [
+          {
+            price: "9000&#8381;"
+          },
+          {
+            name: "VIP",
+            price: "18000&#8381;"
+          }
+        ]
+      },
+    ]}
+  />
+</ContentBlock>
+*/
