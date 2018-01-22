@@ -1,0 +1,40 @@
+.feedbackForm-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.feedbackForm-form {
+  max-width: 600px;
+  width: 100%;
+  flex: 1;
+  align-self: center;
+}
+
+.feedbackForm-input {
+  margin-bottom: 16px;
+}
+
+.feedbackForm-title {
+  font-weight: bold;
+  align-self: center;
+  margin-bottom: 16px;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+.feedbackForm-button {
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0,.15)
+}
+
+.feedbackForm-button:hover {
+  color: white;
+  background-color: #481F80;
+}
+
+.feedbackForm-button:active {
+  color: #28C677;
+}

@@ -20,6 +20,7 @@ export const text = {
       checkTimestamps: 'Проверить значения timestamps в коде',
       timestampsPlaceholder: 'Скопипуйте код сюда',
       program: 'Программа',
+      writeToUs: 'Пишите нам',
     },
 
     navigation: {
@@ -29,6 +30,7 @@ export const text = {
       tools: 'Инструменты',
       team: 'Команда',
       careers: 'Вакансии',
+      feedback: 'Напишите нам',
     },
 
     headerJumbo: {
@@ -471,6 +473,16 @@ export const text = {
         ]
       },
     },
+
+    feedback: {
+      writeToUs: 'Напишите нам',
+      messageSent: <span>Спасибо,<br />ваше сообщение отправлено.</span>,
+      emailPlaceholder: 'Ваш адрес e-mail',
+      invalidEmail: 'Это не похоже на e-mail',
+      messagePlaceholder: 'Ваше сообщение',
+      tooShortMessage: 'Напишите хотя бы 80 знаков. Сейчас ',
+      send: 'Отправить',
+    },
   },
 
   'EN': {
@@ -492,6 +504,7 @@ export const text = {
       checkTimestamps: 'Check timestamps in code',
       timestampsPlaceholder: 'Copy code here',
       program: 'Program',
+      writeToUs: 'Write to us',
     },
 
     navigation: {
@@ -501,6 +514,7 @@ export const text = {
       tools: 'Tools',
       team: 'Team',
       careers: 'Careers',
+      feedback: 'Write to us',
     },
 
     headerJumbo: {
@@ -942,6 +956,16 @@ export const text = {
           <span>Возможна удаленная работа</span>,
         ]
       },
+    },
+
+    feedback: {
+      writeToUs: 'Please, write to us',
+      messageSent: <span>Thanks!<br />Your message has been sent.</span>,
+      emailPlaceholder: 'Your e-mail',
+      invalidEmail: "It doesn't look like an e-mail",
+      messagePlaceholder: 'Your message',
+      tooShortMessage: "Please, write at least 80 characters, now there's only ",
+      send: 'Send message',
     },
   },
 };
