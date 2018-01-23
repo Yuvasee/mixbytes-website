@@ -20,7 +20,6 @@ export const text = {
       checkTimestamps: 'Проверить значения timestamps в коде',
       timestampsPlaceholder: 'Скопипуйте код сюда',
       program: 'Программа',
-      writeToUs: 'Пишите нам',
     },
 
     navigation: {
@@ -501,7 +500,6 @@ export const text = {
       checkTimestamps: 'Check timestamps in code',
       timestampsPlaceholder: 'Copy code here',
       program: 'Program',
-      writeToUs: 'Write to us',
     },
 
     navigation: {
