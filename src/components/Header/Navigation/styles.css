@@ -27,7 +27,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
   .header-navigation {
     justify-content: flex-start;
     padding: 0 20px;

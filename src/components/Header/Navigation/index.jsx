@@ -16,7 +16,6 @@ class Navigation extends React.PureComponent {
       {link: '/helpers', name: text.tools},
       {link: '/team', name: text.team},
       {link: '/job', name: text.careers},
-      {link: '/feedback', name: text.feedback},
     ];
 
     const navItems = links.map((item, i) => {

@@ -17,9 +17,6 @@ class Footer extends Component {
           <a href="https://t.me/LoungerX">https://t.me/LoungerX</a><br />
           {text.or}&nbsp;<a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a><br />
           <br />
-          <a href="/feedback">{text.writeToUs}</a>
-          <br />
-          <br />
           <a href="/job">{text.careers}</a>
         </div>
         <div className="links">

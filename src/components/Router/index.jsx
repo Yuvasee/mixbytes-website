@@ -9,7 +9,6 @@ import Publications from 'components/Pages/Publications';
 import Helpers from 'components/Pages/Helpers';
 import Job from 'components/Pages/Job';
 import Page404 from 'components/Pages/404';
-import { FeedbackPage } from 'components/Pages/Feedback';
 
 import { getLanguage } from '../../helpers/language';
 import { text } from '../../helpers/site_text.jsx';
@@ -30,7 +29,6 @@ class Router extends Component {
         <Route exact path="/publications" component={Publications} />
         <Route exact path="/helpers" component={Helpers} />
         <Route exact path="/job" component={Job} />
-        <Route exact path="/feedback" component={FeedbackPage} />
         <Route component={Page404} />
       </Switch>
     );
