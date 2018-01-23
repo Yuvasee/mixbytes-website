@@ -1,5 +1,3 @@
-.feedbackForm-container {}
-
 .feedbackForm-form {
   margin: 0 -20px;
   padding: 20px;
@@ -57,4 +55,21 @@
 
 .feedbackForm-button:active {
   color: #28C677;
+}
+
+@media (max-width: 970px) {
+  .feedbackForm-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedbackForm-form {
+    align-self: center;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .feedbackForm-title {
+    align-self: center;
+  }
 }
