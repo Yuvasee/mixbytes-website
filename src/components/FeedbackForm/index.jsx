@@ -6,6 +6,8 @@ import { validateEmailFormat, validateMessage } from '../../helpers/validators'
 
 import './styles.css';
 
+const LS_MESSAGE_PARAM = 'feedbackMessage';
+
 export class FeedbackForm extends React.Component {
 
   constructor(props) {
@@ -18,6 +20,14 @@ export class FeedbackForm extends React.Component {
       isMessageValid: false,
       success: false
     };
+  }
+
+  componentDidMount() {
+    const savedMessage = localStorage[LS_MESSAGE_PARAM];
+
+    if (savedMessage) {
+      this.setState({message: savedMessage});
+    }
   }
 
   render () {
@@ -45,6 +55,7 @@ export class FeedbackForm extends React.Component {
             <textarea
               id="messages"
               rows="5"
+              value={message}
               placeholder={text.messagePlaceholder}
               onChange={this.handleChangeMessage}
               className={`form-control feedbackForm-control feedbackForm-textarea`}
@@ -84,6 +95,8 @@ export class FeedbackForm extends React.Component {
 
   handleChangeMessage = (e) => {
     const message = e.target.value;
+
+    localStorage.setItem(LS_MESSAGE_PARAM, message);
 
     this.setState({
       message: e.target.value,
