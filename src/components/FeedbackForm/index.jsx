@@ -106,7 +106,6 @@ export class FeedbackForm extends React.Component {
         this.setState({success: true})
       })
       .catch((err) => {
-        this.setState({success: true})
         console.log(err);
       });
     }
