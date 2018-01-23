@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import api from '../../helpers/api';
-import { validateEmailFormat } from '../../helpers/validators'
+import { validateEmailFormat, validateMessage } from '../../helpers/validators'
 
 import './styles.css';
 
@@ -14,18 +14,23 @@ export class FeedbackForm extends React.Component {
     this.state = {
       contact: '',
       message: '',
-      errContact: false,
-      errMessage: false,
+      isContactValid: false,
+      isMessageValid: false,
       success: false
     };
   }
 
   render () {
     const text = this.context.text.feedback;
-    const { errContact, errMessage, message, success } = this.state;
+    const { containerStyle } = this.props;
+    const { isContactValid, isMessageValid, message, contact, success } = this.state;
+
+    const isFormValid = isContactValid && isMessageValid;
 
     return (
-      <div className="feedbackForm-container">
+      <div
+        className={`feedbackForm-container ${containerStyle ? containerStyle : ''}`}
+      >
         <h2 className="feedbackForm-title">
           { success ? text.messageSent : text.writeToUs }
         </h2>
@@ -37,68 +42,60 @@ export class FeedbackForm extends React.Component {
             onSubmit={this.handleSubmit}
           >
 
-            <div className="feedbackForm-input">
+            <textarea
+              id="messages"
+              rows="5"
+              placeholder={text.messagePlaceholder}
+              onChange={this.handleChangeMessage}
+              className={`form-control feedbackForm-control feedbackForm-textarea`}
+            ></textarea>
+
+            <div className="feedbackForm-row">
               <input
                 type="text"
                 id="contact"
                 placeholder={text.emailPlaceholder}
                 onChange={this.handleChangeContact}
-                className={`form-control ${errContact ? 'is-invalid' : ''})`}
+                className={`form-control feedbackForm-control`}
               />
 
-              {
-                errContact &&
-                <div className="invalid-feedback">{text.invalidEmail}</div>
-              }
+              <button
+                type="submit"
+                disabled={!isFormValid}
+                className="btn feedbackForm-button"
+              >
+                {text.send}
+              </button>
             </div>
-
-            <div className="feedbackForm-input">
-              <textarea
-                id="messages"
-                rows="5"
-                placeholder={text.messagePlaceholder}
-                onChange={this.handleChangeMessage}
-                className={`form-control ${errMessage ? 'is-invalid' : ''})`}
-              ></textarea>
-
-              {
-                errMessage &&
-                <div className="invalid-feedback">{`${text.tooShortMessage} ${message.length}`}</div>
-              }
-            </div>
-
-            <button type="submit" className="btn feedbackForm-button">{text.send}</button>
           </form>
         }
       </div>
     );
   }
 
-  handleChangeContact = (e) =>
-    this.setState({contact: e.target.value});
+  handleChangeContact = (e) => {
+    const contact = e.target.value;
 
-  handleChangeMessage = (e) =>
-    this.setState({message: e.target.value});
+    this.setState({
+      contact,
+      isContactValid: validateEmailFormat(contact),
+    });
+  }
+
+  handleChangeMessage = (e) => {
+    const message = e.target.value;
+
+    this.setState({
+      message: e.target.value,
+      isMessageValid: validateMessage(message),
+    });
+  }
 
   handleSubmit = (e) => {
     e.preventDefault();
 
-    const { contact, message } = this.state;
-    let isValid = true;
-
-    if (validateEmailFormat(contact)) {
-      this.setState({errContact: false});
-    } else {
-      isValid = false;
-      this.setState({errContact: true});
-    }
-
-    if (message.length < 80) {
-      isValid = false;
-      this.setState({errMessage: true});
-    } else {
-      this.setState({errMessage: false});
-    }
+    const { contact, message, isContactValid, isMessageValid } = this.state;
+    const isValid = isContactValid && isMessageValid;;
 
     if (isValid) {
       api.post('message', {
@@ -109,6 +106,7 @@ export class FeedbackForm extends React.Component {
         this.setState({success: true})
       })
       .catch((err) => {
+        this.setState({success: true})
         console.log(err);
       });
     }

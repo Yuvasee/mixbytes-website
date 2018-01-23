@@ -5,7 +5,6 @@ import PageLayout from 'components/PageLayout';
 import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
-
 import HeaderJumbo from 'components/HeaderJumbo';
 import BlockWithIcon from 'components/ContentBlock/BlockWithIcon';
 import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
@@ -13,6 +12,7 @@ import BlockEvent from 'components/ContentBlock/BlockEvent';
 import Splurge from 'components/Splurge';
 import Capabilities from 'components/Capabilities';
 import MeetUs from 'components/MeetUs';
+import { FeedbackForm } from '../../FeedbackForm'
 
 class Main extends Component {
   render() {
@@ -63,6 +63,7 @@ class Main extends Component {
               ]}
             />
           </ContentBlock>
+          <FeedbackForm containerStyle="content-block"/>
           <Splurge />
           <Capabilities
             header={text.capabilities.title}

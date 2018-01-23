@@ -30,7 +30,6 @@ export const text = {
       tools: 'Инструменты',
       team: 'Команда',
       careers: 'Вакансии',
-      feedback: 'Напишите нам',
     },
 
     headerJumbo: {
@@ -475,12 +474,10 @@ export const text = {
     },
 
     feedback: {
-      writeToUs: 'Напишите нам',
+      writeToUs: 'Хотите что-то уточнить?',
       messageSent: <span>Спасибо,<br />ваше сообщение отправлено.</span>,
-      emailPlaceholder: 'Ваш адрес e-mail',
-      invalidEmail: 'Это не похоже на e-mail',
-      messagePlaceholder: 'Ваше сообщение',
-      tooShortMessage: 'Напишите хотя бы 80 знаков. Сейчас ',
+      emailPlaceholder: 'ваша почта',
+      messagePlaceholder: 'введите ваше сообщение (мин. 80 символов)',
       send: 'Отправить',
     },
   },
@@ -514,7 +511,6 @@ export const text = {
       tools: 'Tools',
       team: 'Team',
       careers: 'Careers',
-      feedback: 'Write to us',
     },
 
     headerJumbo: {
@@ -959,13 +955,11 @@ export const text = {
     },
 
     feedback: {
-      writeToUs: 'Please, write to us',
+      writeToUs: 'Do you want to refine smth?',
       messageSent: <span>Thanks!<br />Your message has been sent.</span>,
-      emailPlaceholder: 'Your e-mail',
-      invalidEmail: "It doesn't look like an e-mail",
-      messagePlaceholder: 'Your message',
-      tooShortMessage: "Please, write at least 80 characters, now there's only ",
-      send: 'Send message',
+      emailPlaceholder: 'your email',
+      messagePlaceholder: 'enter your message (min. 80 characters)',
+      send: 'Send',
     },
   },
 };
