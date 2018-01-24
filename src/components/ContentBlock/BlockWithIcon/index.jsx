@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import './styles.css';
 
-class BlockWithIcon extends Component {
+export class BlockWithIcon extends Component {
   render() {
     return (
       <div className="block-with-icon">
@@ -17,5 +17,3 @@ class BlockWithIcon extends Component {
     );
   }
 }
-
-export default BlockWithIcon;

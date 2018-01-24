@@ -21,30 +21,6 @@ class Job extends Component {
         advantages: text.blockchainDev.advantages,
         conditions: text.blockchainDev.conditions,
       },
-      {
-        link: 'backend-dev',
-        name: text.backendDev.name,
-        description: text.backendDev.desc,
-        requirements: text.backendDev.requirements,
-        advantages: text.backendDev.advantages,
-        conditions: text.backendDev.conditions,
-      },
-      {
-        link: 'cpp-dev',
-        name: text.cppDev.name,
-        description: text.cppDev.desc,
-        requirements: text.cppDev.requirements,
-        advantages: text.cppDev.advantages,
-        conditions: text.cppDev.conditions,
-      },
-      {
-        link: 'devops',
-        name: text.devops.name,
-        description: text.devops.desc,
-        requirements: text.devops.requirements,
-        advantages: text.devops.advantages,
-        conditions: text.devops.conditions,
-      },
     ];
 
     const pageNav = jobs.map((el, i) => {

@@ -6,7 +6,7 @@ import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
 import HeaderJumbo from 'components/HeaderJumbo';
-import BlockWithIcon from 'components/ContentBlock/BlockWithIcon';
+import { BlockWithIcon } from 'components/ContentBlock/BlockWithIcon';
 import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
 import BlockEvent from 'components/ContentBlock/BlockEvent';
 import Splurge from 'components/Splurge';
@@ -31,6 +31,7 @@ class Main extends Component {
       <PageLayout>
         <HeaderJumbo />
         <ContentLayout contentRight={<PageNav links={pageNav} />}>
+
           <ContentBlock id="dev-audit">
             <h2>{text.devAudit.title}</h2>
             <BlockWithIcon
@@ -40,6 +41,7 @@ class Main extends Component {
               <p>{text.devAudit.description}</p>
             </BlockWithIcon>
           </ContentBlock>
+
           <ContentBlock id="consulting">
             <h2>{text.consulting}</h2>
             <BlockTwoColumns
