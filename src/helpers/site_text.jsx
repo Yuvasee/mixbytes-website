@@ -20,6 +20,9 @@ export const text = {
       checkTimestamps: 'Проверить значения timestamps в коде',
       timestampsPlaceholder: 'Скопипуйте код сюда',
       program: 'Программа',
+      requirements: 'Требования',
+      advantages: 'Будет плюсом',
+      conditions: 'Условия',
     },
 
     navigation: {
@@ -425,6 +428,9 @@ export const text = {
       checkTimestamps: 'Check timestamps in code',
       timestampsPlaceholder: 'Copy code here',
       program: 'Program',
+      requirements: 'Requirements',
+      advantages: 'It would be a plus to have',
+      conditions: 'Conditions',
     },
 
     navigation: {
@@ -776,28 +782,28 @@ export const text = {
     },
 
     job: {
-      title: 'Вакансии',
+      title: 'Vacancy',
       blockchainDev: {
-        name: 'Разработчик смарт-контрактов',
-        desc: <span>Ищем опытного разработчика для работы над смарт-контрактами (Solidity) и&nbsp;не&nbsp;только. Опыт в&nbsp;blockchain не&nbsp;требуем&nbsp;&mdash; умеем растить blockchain developer&rsquo;ов из&nbsp;толковых senior&rsquo;ов.</span>,
+        name: 'Developer of smart contracts',
+        desc: 'We are looking for an experienced developer to work on smart contracts (Solidity) and more. Experience in blockchain is not required, as we can grow blockchain developers out of clever seniors.',
         requirements: [
-          <span>Базовые знания алгоритмов, структур данных, графов, конечных автоматов</span>,
-          <span>Базовые знания по&nbsp;криптографии, понимание криптографических протоколов</span>,
-          <span>Знание сетевого программирования</span>,
-          <span>Опыт разработки на&nbsp;разных языках</span>,
-          <span>Опыт разработки 4+&nbsp;года</span>,
+          <span>Basic knowledge of algorithms, data structures, graphs, state machines</span>,
+          <span>Basic knowledge of cryptography, understanding of cryptographic protocols</span>,
+          <span>Knowledge of network programming</span>,
+          <span>Experience of development in multiple programming languages</span>,
+          <span>4+ years of development experience</span>,
         ],
         advantages: [
-          <span>Знание *nix, опыт работы в&nbsp;консоли</span>,
-          <span>Опыт разработки высоконагруженных отказоустойчивых систем</span>,
-          <span>Знание&nbsp;js, node, python, java, C++</span>,
-          <span>Представление об&nbsp;алгоритмах консенсуса</span>,
-          <span>Опыт низкоуровневого программирования</span>,
+          <span>Knowledge of *nix, experience in console programming</span>,
+          <span>Experience in the development of high-load fault-tolerant systems</span>,
+          <span>Knowledge of js, node, python, java, C++</span>,
+          <span>Basic sense of consensus algorithms</span>,
+          <span>Experience in low-level programming</span>,
         ],
         conditions: [
-          <span>Высокая зарплата</span>,
-          <span>Лофт на&nbsp;1905&nbsp;года</span>,
-          <span>Возможна удаленная работа</span>,
+          <span>High salary</span>,
+          <span>Loft office near the Ulitsa 1905 Goda metro station</span>,
+          <span>Possibility of working remotely</span>,
         ]
       },
     },
