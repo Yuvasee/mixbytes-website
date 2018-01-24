@@ -49,3 +49,23 @@
     margin-top: 15px;
   }
 }
+
+.facebook-icn, .linkedin-icn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.facebook-icn {
+  background: url('../../../assets/facebook.svg');
+}
+
+.linkedin-icn {
+  background: url('../../../assets/linkedin.svg');
+}
+
+.personPosition {
+  display: inline-block;
+}

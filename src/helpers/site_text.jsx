@@ -371,6 +371,39 @@ export const text = {
             <li>Интересуется стартапами и&nbsp;инвестициями, мечтает о&nbsp;единороге :)</li>
           </ul>,
       },
+      shubin: {
+        name: 'Михаил Шубин',
+        desc:
+          <ul>
+            <li>В школе организовал ячейку домонета с коллективным подключением к сети. Держал узел Fidonet</li>
+            <li>Закончил ТУСУР, кафедра "Радиосвязь, радиовещание, телевидение"</li>
+            <li>Разрабатывал цифровые измерительные приборы</li>
+            <li>Занимался администрированием систем разного уровня сложности. Писал на Python, Perl, Bash</li>
+            <li>Люблю разбираться в новых для себя областях, понимать "как это устроено" и "как это можно применять"</li>
+            <li>Интересы: роботостроение, электроника, психология</li>
+          </ul>,
+      },
+      galuzinskaya: {
+        name: 'Илона Галузинская',
+        desc:
+          <ul>
+            <li>Единственный человек в команде, который никогда и ничего не программировал. Усердно осваивает значение понятий форк, хэш и нода</li>
+            <li>Окончила НИУ МЭИ (ТУ) по специальности далекой от энергетики — связи с общественностью</li>
+            <li>С 2015 года аккаунт-менеджер в IT-сфере</li>
+            <li>Решает административные вопросы и организует лекции MixBytes</li>
+            <li>Среди интересов — начать разбираться в блокчейн. Ну и мода, конечно:)</li>
+          </ul>,
+      },
+      privezentsev: {
+        name: 'Константин Привезенцев',
+        desc:
+          <ul>
+            <li>Закончил МИЭМ по специальности "Системы автоматизированного проектирования"</li>
+            <li>Опыт промышленного программирования 8 лет на различных языках программирования</li>
+            <li>Участвовал в разработке мобильных приложений в Paragon, BigData инфраструктуры Поиск@Mail.ru и системы обработки данных в Kaspersky Lab</li>
+            <li>Интересы: базы данных, функциональное программирование, распределенные вычисления</li>
+          </ul>,
+      },
     },
 
     job: {
@@ -713,10 +746,10 @@ export const text = {
           <ul>
             <li>Started programming in the elementary school, worked as a system administrator for many years</li>
             <li>Was engaged in reverse engineering and software security, researched software protection and antivirus engines</li>
-            <li>Graduated from the Moscow Engineering and Physics Institute and was a lector of such courses as &laquo;Databases&raquo; and &laquo;Information Security&raquo;, conducted research projects on security cryptographic methods</li>
+            <li>Graduated from the Moscow Engineering Physics Institute</li>
             <li>For many years worked at Mail.Ru as a leading developer on many projects, the last years in the team of Antispam</li>
             <li>Worked with systems, ranging from small highly loaded micro services and sites to the large clusters for distributed computing</li>
-            <li>The teacher and author of the course on information security for the &laquo;Technopark&raquo; (Baumanka) and &laquo;Technoatom&raquo; (MEPhI) projects</li>
+            <li>The teacher and author of the course on information security for the «Technopark» (BMSTU)</li>
             <li>Active member of the blockchain developers community</li>
           </ul>,
       },
@@ -724,7 +757,7 @@ export const text = {
         name: 'Yuri Vasilchikov',
         desc:
           <ul>
-            <li>Wrote a clone of Tetris with BASIC when he was in the 8th grade :)</li>
+            <li>Wrote a clone of Tetris in BASIC</li>
             <li>Started to develop the sites in 2000 in Perl</li>
             <li>Worked as a programmer in the studio of Lebedev for one year</li>
             <li>In 2005, co-founded the Eggo.ru web studio, where he worked as a technical director for 6 years</li>
@@ -736,11 +769,11 @@ export const text = {
         name: 'Alexey Makeev',
         desc:
           <ul>
-            <li>Graduated from the Bauman Moscow State Technical University (BMSTU), Department &laquo;Computer Complexes, Systems and Networks&raquo;, Diploma of Distributed Computing</li>
+            <li>Graduated from the Bauman Moscow State Technical University (BMSTU), Faculty &laquo;Computer Complexes, Systems and Networks&raquo;</li>
             <li>Experience in programming for 17 years (Assembler, C/C ++, Java, PHP, Perl, Python, JS)</li>
             <li>Experience in Big Data solutions developing Big Data on the industrial-scale Hadoop cluster</li>
             <li>Worked as a team leader in the Internet search project Поиск@mail.ru</li>
-            <li>Worked as a system architect at 1C firm, in the platform development department</li>
+            <li>Worked as a system architect at 1C Company</li>
             <li>Fields of interest: Big Data, distributed computing, information security, finance, investments</li>
           </ul>,
       },
@@ -748,7 +781,7 @@ export const text = {
         name: 'Igor Karbachinsky',
         desc:
           <ul>
-            <li>Graduated from the Moscow Institute of Electronics and Mathematics, Cybernetics Department, Diploma on ranking algorithms in searching engines</li>
+            <li>Graduated from the Moscow Institute of Electronics and Mathematics, Cybernetics Faculty, Diploma on ranking algorithms in searching engines</li>
             <li>12 years of programming experience (C / C ++, Java, PHP, Perl, Python, JS)</li>
             <li>Headed the department in the Internet searching engine Поиск@mail.ru for many years</li>
             <li>Worked on the Data Science Architect position in such projects as Lang.ai and Sentisis.com</li>
@@ -760,7 +793,7 @@ export const text = {
         name: 'Pavel Kruglov',
         desc:
           <ul>
-            <li>Graduated from the National Research Nuclear University &laquo;Moscow Engineering Physics Institute&raquo;, Department of Information Security of Banking Systems</li>
+            <li>Graduated from the National Research Nuclear University &laquo;Moscow Engineering Physics Institute&raquo;, Faculty of Information Security of Banking Systems</li>
             <li>Started programming on C/C ++ and developing sites while learning at school, <s>and then break them, hehe</s></li>
             <li>Worked on several projects as an information security expert, including the Central Bank of Russia</li>
             <li>Has more than 30 personal publications in the Hacker magazine, more than 100 as an editor</li>
@@ -777,6 +810,39 @@ export const text = {
             <li>Worked as a DevOps-engineer in the Internet searching engine Поиск@mail.ru</li>
             <li>Worked as auto-tests developer in Kaspersky Lab company</li>
             <li>Interested in startups and investments, dreams of a unicorn :)</li>
+          </ul>,
+      },
+      shubin: {
+        name: 'Mikhail Shubin',
+        desc:
+          <ul>
+            <li>While still in school, organized a “domoneta” (home-coin) cell network with a collective connection to the Net. Maintained a FidoNet node</li>
+            <li>Graduated from Tomsk State University of Control Systems and Radioelectronics, where he studied in the Department of Radio Communications, Radio Broadcasting, and Television</li>
+            <li>Developed digital measuring devices</li>
+            <li>Handled the administration of systems with varying levels of complexity. Wrote code in Python, Perl, and Bash</li>
+            <li>Likes to learn new things to understand “how it works” and “how it can be used”</li>
+            <li>Major interests: robotics, electronics, psychology</li>
+          </ul>,
+      },
+      galuzinskaya: {
+        name: 'Ilona Galuzinskaya',
+        desc:
+          <ul>
+            <li>Ilona is the only team member who has never programmed anything. She’s working hard to master the concepts of fork, hash, and node</li>
+            <li>Graduated from the Moscow Power Engineering Institute with a major in public relations, a field far removed from power engineering</li>
+            <li>Since 2015, has worked as an IT Account Manager</li>
+            <li>Handles administrative tasks and arranges MixBytes lectures</li>
+            <li>Interests include starting to understand what blockchain is. And fashion, of course :)</li>
+          </ul>,
+      },
+      privezentsev: {
+        name: 'Константин Привезенцев',
+        desc:
+          <ul>
+            <li>Закончил МИЭМ по специальности "Системы автоматизированного проектирования"</li>
+            <li>Опыт промышленного программирования 8 лет на различных языках программирования</li>
+            <li>Участвовал в разработке мобильных приложений в Paragon, BigData инфраструктуры Поиск@Mail.ru и системы обработки данных в Kaspersky Lab</li>
+            <li>Интересы: базы данных, функциональное программирование, распределенные вычисления</li>
           </ul>,
       },
     },

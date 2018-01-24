@@ -11,7 +11,7 @@ import BlockInfoTabs from 'components/ContentBlock/BlockInfoTabs';
 import BlockWithAside from 'components/ContentBlock/BlockWithAside';
 import BlockThreeColumns from 'components/ContentBlock/BlockThreeColumns';
 import BlockProgram from 'components/ContentBlock/BlockProgram';
-import BlockPerson from 'components/ContentBlock/BlockPerson';
+import { BlockPerson } from 'components/ContentBlock/BlockPerson';
 import BlockPersonList from 'components/ContentBlock/BlockPersonList';
 import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
 import BlockLogos from 'components/ContentBlock/BlockLogos';

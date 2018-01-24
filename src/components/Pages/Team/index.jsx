@@ -6,7 +6,7 @@ import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
 
-import BlockPerson from 'components/ContentBlock/BlockPerson';
+import { BlockPerson } from 'components/ContentBlock/BlockPerson';
 
 class Team extends Component {
   render() {
@@ -19,6 +19,9 @@ class Team extends Component {
         photo: require('./i/prilutskiy.jpg'),
         position: 'Co-founder, Software Engineer',
         text: text.prilutsky.desc,
+        socialLinks: {
+          facebook: 'https://www.facebook.com/prilutskiy.sergey',
+        },
       },
       {
         link: 'vasilchikov',
@@ -26,6 +29,10 @@ class Team extends Component {
         photo: require('./i/vasilchikov.jpg'),
         position: 'Co-founder, Manager, Developer',
         text: text.vasilchikov.desc,
+        socialLinks: {
+          facebook: 'https://www.facebook.com/yuriy.vasilchikov',
+          linkedin: 'https://www.linkedin.com/in/yuriy-vasilchikov',
+        },
       },
       {
         link: 'makeev',
@@ -33,6 +40,9 @@ class Team extends Component {
         photo: require('./i/makeev.jpg'),
         position: 'Co-founder, Software Engineer',
         text: text.makeev.desc,
+        socialLinks: {
+          facebook: 'https://www.facebook.com/alpsycongroo',
+        },
       },
       {
         link: 'karbachinsky',
@@ -40,6 +50,9 @@ class Team extends Component {
         photo: require('./i/karbachinsky.jpg'),
         position: 'Software Engineer',
         text: text.karbachinsky.desc,
+        socialLinks: {
+          facebook: 'https://www.facebook.com/igor.karbachinsky',
+        },
       },
       {
         link: 'kruglov',
@@ -47,6 +60,10 @@ class Team extends Component {
         photo: require('./i/kruglov.jpg'),
         position: 'Analyst, SMM, Manager',
         text: text.kruglov.desc,
+        socialLinks: {
+          facebook: 'https://www.facebook.com/pkrglv',
+          linkedin: 'https://www.linkedin.com/in/pkruglov',
+        },
       },
       {
         link: 'yakovlev',
@@ -54,6 +71,30 @@ class Team extends Component {
         photo: require('./i/yakovlev.jpg'),
         position: 'Software Engineer',
         text: text.yakovlev.desc,
+        socialLinks: {
+          facebook: 'https://www.facebook.com/yakovlev.andrew',
+        },
+      },
+      {
+        link: 'shubin',
+        name: text.shubin.name,
+        photo: require('./i/shubin.jpg'),
+        position: 'DevOps Engineer',
+        text: text.shubin.desc,
+      },
+      {
+        link: 'galuzinskaya',
+        name: text.galuzinskaya.name,
+        photo: require('./i/galuzinskaya.jpg'),
+        position: 'Event Manager, Business Assistant',
+        text: text.galuzinskaya.desc,
+      },
+      {
+        link: 'privezentsev',
+        name: text.privezentsev.name,
+        photo: require('./i/privezentsev.jpg'),
+        position: 'Backend Developer',
+        text: text.privezentsev.desc,
       },
     ];
 
