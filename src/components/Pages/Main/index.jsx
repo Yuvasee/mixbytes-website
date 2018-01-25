@@ -13,6 +13,10 @@ import Splurge from 'components/Splurge';
 import Capabilities from 'components/Capabilities';
 import MeetUs from 'components/MeetUs';
 import { FeedbackForm } from '../../FeedbackForm'
+import { ICOTechIcn, ConsultingIcn, BlokchainIcn, EtheriumIcn, DocsIcn } from './icons';
+import { OpenSource } from '../../OpenSource';
+
+import './styles.css';
 
 class Main extends Component {
   render() {
@@ -20,10 +24,12 @@ class Main extends Component {
     const meetUsText = this.context.text.meetUs;
 
     const pageNav = [
-      {link: 'dev-audit', name: text.devAudit.title},
-      {link: 'consulting', name: text.consulting},
-      {link: 'splurge', name: '>&#8201;25&#8201;000&#8201;000&#8201;$'},
-      {link: 'capabilities', name: text.capabilities.title},
+      // {link: 'dev-audit', name: text.devAudit.title},
+      // {link: 'consulting', name: text.consulting},
+      {link: 'services', name: text.navigation.services},
+      {link: 'feedback', name: text.navigation.feedback},
+      {link: 'splurge', name: '>&#8201;48&#8201;000&#8201;000&#8201;$'},
+      // {link: 'capabilities', name: text.capabilities.title},
       {link: 'meet-us', name: meetUsText.anchor},
     ];
 
@@ -32,70 +38,178 @@ class Main extends Component {
         <HeaderJumbo />
         <ContentLayout contentRight={<PageNav links={pageNav} />}>
 
-          <ContentBlock id="dev-audit">
-            <h2>{text.devAudit.title}</h2>
-            <BlockWithIcon
-              icon={require('./i/github-logo.png')}
-              iconText={text.devAudit.example}
-            >
-              <p>{text.devAudit.description}</p>
-            </BlockWithIcon>
-          </ContentBlock>
+          { this.renderServices() }
 
-          <ContentBlock id="consulting">
-            <h2>{text.consulting}</h2>
-            <BlockTwoColumns
-              content={[
-                {
-                  header: text.businessRequirements,
-                  text: text.businessRequirementsDescription,
-                },
-                {
-                  header: text.hrHelp,
-                  text: text.hrHelpDescription,
-                },
-                {
-                  header: text.technicalSolutions,
-                  text: text.technicalSolutionsDescription,
-                },
-                {
-                  header: text.technicalDocumentation,
-                  text: text.technicalDocumentationDescription,
-                }
-              ]}
-            />
-          </ContentBlock>
-          <FeedbackForm containerStyle="content-block"/>
+          { this.renderDevAuditBlock() }
+
+          { this.renderConsultingBlock() }
+
+          <div id="feedback">
+            <FeedbackForm containerStyle="content-block"/>
+          </div>
+
           <Splurge />
-          <Capabilities
-            header={text.capabilities.title}
-            elements={[
-              {
-                icon: require('./i/icon-dollar.svg'),
-                text: text.capabilities.items.money,
-              },
-              {
-                icon: require('./i/icon-html-brackets.svg'),
-                text: text.capabilities.items.testing,
-              },
-              {
-                icon: require('./i/icon-lock.svg'),
-                text: text.capabilities.items.security,
-              },
-              {
-                icon: require('./i/icon-lens.svg'),
-                text: text.capabilities.items.solidity,
-              },
-              {
-                icon: require('./i/icon-eye.svg'),
-                text: text.capabilities.items.analytics,
-              },
-            ]}
-          />
+
+          { this.renderCapabilitiesBlock() }
+
           <MeetUs />
+
+          <OpenSource />
         </ContentLayout>
       </PageLayout>
     );
+  }
+
+  getServiceBlock = (element, isFocused, isList) => {
+    return (
+      <div
+        className={
+          `service-block ${isFocused ? 'service-block--focused' : ''}` +
+          `${isList ? 'service-block-list' : ''}`
+        }
+      >
+        <div>{element.icn}</div>
+        <div className="service-block-header">{element.header}</div>
+        <div className="service-block-text">{element.text}</div>
+        <div className="service-block-footer">{element.footerImg}</div>
+      </div>
+    );
+  }
+
+  renderServices = () => {
+    const text = this.context.text.main;
+
+    return (
+      <ContentBlock id="services">
+        <h2>{text.services.title}</h2>
+
+        <div className="row">
+          <div className="column services-column">
+            {
+              [
+                {
+                  header: text.services.icoTech.header,
+                  text: text.services.icoTech.text,
+                  icn: ICOTechIcn,
+                  isList: true,
+                },
+                {
+                  header: text.services.consulting.header,
+                  text: text.services.consulting.text,
+                  icn: ConsultingIcn,
+                },
+              ]
+              .map(element => this.getServiceBlock(element, element.isFocused, element.isList))
+            }
+          </div>
+          <div className="column services-column">
+            {
+              [
+                {
+                  header: text.services.blokchain.header,
+                  text: text.services.blokchain.text,
+                  icn: BlokchainIcn,
+                  isFocused: true,
+                  footerImg: <div className="blockchain-systems-img"></div>
+                },
+                {
+                  header: text.services.etherium.header,
+                  text: text.services.etherium.text,
+                  icn: EtheriumIcn,
+                },
+                {
+                  header: text.services.docs.header,
+                  text: text.services.docs.text,
+                  icn: DocsIcn,
+                }
+              ]
+              .map(element => this.getServiceBlock(element, element.isFocused, element.isList))
+            }
+          </div>
+        </div>
+      </ContentBlock>
+    );
+
+  }
+
+  renderCapabilitiesBlock = () => {
+    // const text = this.context.text.main;
+    return null;
+
+    /*
+    <Capabilities
+      header={text.capabilities.title}
+      elements={[
+        {
+          icon: require('./i/icon-dollar.svg'),
+          text: text.capabilities.items.money,
+        },
+        {
+          icon: require('./i/icon-html-brackets.svg'),
+          text: text.capabilities.items.testing,
+        },
+        {
+          icon: require('./i/icon-lock.svg'),
+          text: text.capabilities.items.security,
+        },
+        {
+          icon: require('./i/icon-lens.svg'),
+          text: text.capabilities.items.solidity,
+        },
+        {
+          icon: require('./i/icon-eye.svg'),
+          text: text.capabilities.items.analytics,
+        },
+      ]}
+    />
+    */
+  }
+
+  renderDevAuditBlock = () => {
+    // const text = this.context.text.main;
+    return null;
+
+    /*
+    <ContentBlock id="dev-audit">
+      <h2>{text.devAudit.title}</h2>
+      <BlockWithIcon
+        icon={require('./i/github-logo.png')}
+        iconText={text.devAudit.example}
+      >
+        <p>{text.devAudit.description}</p>
+      </BlockWithIcon>
+    </ContentBlock>
+    */
+  }
+
+  renderConsultingBlock = () => {
+    // const text = this.context.text.main;
+    return null;
+    /*
+    <ContentBlock id="consulting">
+      <h2>{text.consulting}</h2>
+      <BlockTwoColumns
+        content={[
+          {
+            header: text.businessRequirements,
+            text: text.businessRequirementsDescription,
+          },
+          {
+            header: text.hrHelp,
+            text: text.hrHelpDescription,
+          },
+          {
+            header: text.technicalSolutions,
+            text: text.technicalSolutionsDescription,
+          },
+          {
+            header: text.technicalDocumentation,
+            text: text.technicalDocumentationDescription,
+          }
+        ]}
+      />
+    </ContentBlock>
+    */
   }
 }
 

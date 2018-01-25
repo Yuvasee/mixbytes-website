@@ -41,10 +41,45 @@ export const text = {
     },
 
     main: {
+      navigation: {
+        services: 'Услуги',
+        feedback: 'Обратная связь',
+      },
+
       devAudit: {
         title: 'Разработка и аудит',
         description: 'Пишем и\u00A0проверяем смарт-контракты на\u00A0Solidity с\u00A0нуля или на\u00A0основе проверенных библиотек. Соблюдаем стандарт ERC20. Тестируем код под Truffle framework. Верифицируем контракты на\u00A0Etherscan. Находим ошибки и\u00A0уязвимости в\u00A0ваших смарт-контрактах. Разрабатываем блокчейны на\u00A0базе фреймворка Graphene. Скорее всего, сначала вам понадобятся наши консультации.',
         example: <p>Пример <a href="https://github.com/mixbytes/storiqa_ico/tree/master/contracts">контракта</a><br />и&nbsp;<a href="https://github.com/mixbytes/audits_public/blob/master/solidity/KickICO/report.md">аудита</a> на&nbsp;Гитхабе</p>,
+      },
+
+      services: {
+        title: 'Услуги',
+        icoTech: {
+          header: 'Технологии\u00A0для\u00A0ICO',
+          text:
+            <div>
+              <span>Смарт-контракты в Ethereum (Токен с поддержкой ERC20, Crowdsale, хранилище эфира).</span><br/><br/>
+              <span>Кабинет участника, встраиваемый в любой сайт с возможностью настроить дизайн, приёмом BTC, ETH и других валют. Проведение KYC, статистика участия, общая статистика ICO и связь с Google Ecommerce.</span><br/><br/>
+              <span>Административный интерфейс.</span><br/><br/>
+              <span>Прием Ethereum и Bitcoin без комиссий и других валют через сoinpayments.net</span>
+            </div>,
+        },
+        consulting: {
+          header: 'Консультирование',
+          text: 'Разберем технические аспекты проведе-ния ICO, расскажем о децентрализации проектов, текенизации и токеномике. Поможем с подбором и обучения разработчиков.',
+        },
+        blokchain: {
+          header: 'Разработка\u00A0блокчейн-систем',
+          text: 'Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.',
+        },
+        etherium: {
+          header: 'Смарт-контракты\u00A0Etherium',
+          text: 'Разработка контрактов токенов, прототипов (proof-of-concept) и систем смарт-контрактов для блокчейн-проектов. Аудирование смарт-контрактов, проверка ошибок, уязвимостей и автоматизация запуска смарт-контрактов в блокчейн.',
+        },
+        docs: {
+          header: 'Разработка\u00A0документации',
+          text: 'Технические документы с описанием методов решения задач в тех. терминах и технические Whitepaper с рассказом о работе технологий.',
+        },
       },
 
       consulting: 'Консалтинг',
@@ -100,11 +135,13 @@ export const text = {
           solidity: 'Solidity-инспектор автоматизирует обнаружение проблем в\u00A0коде, проверяет опасные конструкции и\u00A0особенности языка.',
           analytics: 'Аналитика криптоплатежей в\u00A0реальном времени подсчитает ether-платежи, полученные через разные каналы привлечения трафика, позволит корректировать маркетинг ICO на\u00A0ходу.',
         },
-      }
+      },
+
+      openSource: 'Мы за открытый код',
     },
 
     meetUs: {
-      anchor: 'Будем знакомы',
+      anchor: 'Команда',
       title: 'Будем знакомы',
       description: 'Мы\u00A0разрабатываем смарт-контракты, проводим их\u00A0аудит, консультируем организации и\u00A0рассказываем об\u00A0этом в\u00A0наших курсах и\u00A0лекциях.',
       linkText: 'Познакомиться ближе',
@@ -482,10 +519,45 @@ export const text = {
     },
 
     main: {
+      navigation: {
+        services: 'Services',
+        feedback: 'Feedback',
+      },
+
       devAudit: {
         title: 'Development and Audit',
         description: 'We write smart contracts with Solidity, completely from scratch or on the basis of proven libraries as OpenZeppelin. We comply with the ERC20 standard.We cover the code with unit-tests under the Truffle framework. We verify contracts for Etherscan. We find mistakes and vulnerabilities of your smart contracts. We develop blockchains based on the Graphene framework. Most likely, you will need our consultations.',
         example: <p><a href="https://github.com/mixbytes/storiqa_ico/tree/master/contracts">Contract</a> and&nbsp;<a href="https://github.com/mixbytes/audits_public/blob/master/solidity/KickICO/report.md">audit</a><br /> examples on&nbsp;Github</p>,
+      },
+
+      services: {
+        title: 'Services',
+        icoTech: {
+          header: 'Technology\u00A0for\u00A0ICO',
+          text:
+            <ul>
+              <li>Smart contracts in Ethereum (ERC20-enabled token, crowdsale, ether vault).</li>
+              <li>User account, embeddable into any website able to customize its design, accepting BTC, ETH, and other currencies. Implementing KYC procedures, participation statistics, general ICO statistics, link to Google Ecommerce.</li>
+              <li>Admin interface</li>
+              <li>Receiving Ethereum and Bitcoin without commission and other currencies through coinpayments.net</li>
+            </ul>,
+        },
+        consulting: {
+          header: 'Consulting',
+          text: 'Разберем технические аспекты проведе-ния ICO, расскажем о децентрализации проектов, текенизации и токеномике. Поможем с подбором и обучения разработчиков.',
+        },
+        blokchain: {
+          header: 'Developing\u00A0blockchain\u00A0systems',
+          text: 'Solutions for projects to require their own blockchain. High speed, arbitrary rate of decentralization. Fine-tuning the consensus protocol based on Graphene / BitShares/ Steem / EOS.',
+        },
+        etherium: {
+          header: 'Ethereum\u00A0Smart\u00A0Contracts',
+          text: 'Developing token contracts, prototypes (proof-of-concept) and smart contract systems for blockchain projects. Developing Checking smart contracts for bugs and vulnerabilities and automating the launch of smart contracts in blockchain.',
+        },
+        docs: {
+          header: 'Developing\u00A0documentation',
+          text: 'Technical documents describing in technical terms how we will approach the task and  technical white papers where we tell a wider audience how our technology works.',
+        },
       },
 
       consulting: 'Consulting',
@@ -542,6 +614,8 @@ export const text = {
           analytics: 'Analytics of real-time crypto payments, it calculates ether-payments that were received through the different traffic channels, allows you to correct the marketing of ICO in real time',
         },
       },
+
+      openSource: 'We are for public code',
     },
 
     meetUs: {
@@ -563,8 +637,8 @@ export const text = {
     },
 
     splurge: {
-      description_first: 'We collected with the help of ',
-      description_second: 'the developed and audited smart contracts',
+      description_first: 'Collected with our',
+      description_second: 'developed and audited smart contracts',
     },
 
     education: {

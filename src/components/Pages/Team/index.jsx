@@ -45,6 +45,17 @@ class Team extends Component {
         },
       },
       {
+        link: 'privezentsev',
+        name: text.privezentsev.name,
+        photo: require('./i/privezentsev.jpg'),
+        position: 'Backend Developer',
+        text: text.privezentsev.desc,
+        socialLinks: {
+          facebook: 'https://www.facebook.com/k.privezentsev',
+          linkedin: 'https://www.linkedin.com/in/konstantin-privezentsev-5a901769/',
+        },
+      },
+      {
         link: 'karbachinsky',
         name: text.karbachinsky.name,
         photo: require('./i/karbachinsky.jpg'),
@@ -88,13 +99,6 @@ class Team extends Component {
         photo: require('./i/galuzinskaya.jpg'),
         position: 'Event Manager, Business Assistant',
         text: text.galuzinskaya.desc,
-      },
-      {
-        link: 'privezentsev',
-        name: text.privezentsev.name,
-        photo: require('./i/privezentsev.jpg'),
-        position: 'Backend Developer',
-        text: text.privezentsev.desc,
       },
     ];
 

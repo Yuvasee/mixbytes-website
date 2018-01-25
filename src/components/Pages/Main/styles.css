@@ -1,0 +1,50 @@
+.services-column {
+  flex: 1;
+}
+
+.services-column:not(:first-child) {
+  margin-left: 20px;
+}
+
+.service-block {
+  padding: 20px;
+}
+
+.service-block--focused {
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.service-block-list > div > div {
+  padding-left: 20px;
+}
+
+.service-block-list > div > div > span:before {
+  content: '>';
+  width: 20px;
+  height: 20px;
+  margin-left: -20px;
+  display: inline-block;
+  position: absolute;
+  color: #28C677;
+}
+
+.service-block-header {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.service-block-text {
+  margin-top: 10px;
+}
+
+.service-block-footer {
+  margin-top: 20px;
+}
+
+.blockchain-systems-img {
+  width: 254px;
+  height: 44px;
+  background: url('./i/blockchain-systems.png');
+}
