@@ -50,12 +50,15 @@
   }
 }
 
-.facebook-icn, .linkedin-icn {
+.social-icn {
   width: 30px;
   height: 30px;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 10px;
+}
+
+.social-icn:not(:first-child) {
+  margin-left: 15px;
 }
 
 .facebook-icn {

@@ -16,19 +16,21 @@ export class BlockPerson extends Component {
 
           <div className="position personPosition">{position}</div>
 
-          {
-            socialLinks && socialLinks.facebook
-              ? <a className="facebook-icn" href={socialLinks.facebook}></a>
-              : null
-          }
-
-          {
-            socialLinks && socialLinks.linkedin
-              ? <a className="linkedin-icn" href={socialLinks.linkedin}></a>
-              : null
-          }
-
           { text }
+
+          <div>
+            {
+              socialLinks && socialLinks.facebook
+                ? <a className="social-icn facebook-icn" href={socialLinks.facebook}></a>
+                : null
+            }
+
+            {
+              socialLinks && socialLinks.linkedin
+                ? <a className="social-icn linkedin-icn" href={socialLinks.linkedin}></a>
+                : null
+            }
+          </div>
         </div>
       </div>
     );
