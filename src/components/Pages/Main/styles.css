@@ -2,8 +2,24 @@
   flex: 1;
 }
 
+.services-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .services-column:not(:first-child) {
   margin-left: 20px;
+}
+
+@media (max-width: 770px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-column:not(:first-child) {
+    margin-left: 0;
+  }
 }
 
 .service-block {

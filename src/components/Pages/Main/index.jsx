@@ -83,7 +83,7 @@ class Main extends Component {
       <ContentBlock id="services">
         <h2>{text.services.title}</h2>
 
-        <div className="row">
+        <div className="row services-container">
           <div className="column services-column">
             {
               [
