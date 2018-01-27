@@ -910,7 +910,7 @@ export const text = {
           </ul>,
       },
       privezentsev: {
-        name: 'Константин Привезенцев',
+        name: 'Konstantin Privezentsev',
         desc:
           <ul>
             <li>Graduated from the Moscow Institute of Electronics and Mathematics with a degree in CAD</li>
