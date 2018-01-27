@@ -514,8 +514,8 @@ export const text = {
 
     headerJumbo: {
       header: <h1>Blockchain solutions<br />and&nbsp;smart-contracts</h1>,
-      description: 'We are a team of programmers. We fullfill technical projects, implement blockchain technologies, write smart contracts. We conduct corporate training and open lectures.',
-      stack: 'Stack: Solidity / Truffle, JS / Node, C ++ / Graphene, Python.',
+      description: <span>We&nbsp;are a&nbsp;team of&nbsp;programmers. We&nbsp;fullfill technical projects, implement blockchain technologies, write smart contracts. We&nbsp;conduct corporate training and open lectures.</span>,
+      stack: <span>Stack: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C ++&nbsp;/ Graphene, Python.</span>,
     },
 
     main: {
@@ -533,30 +533,30 @@ export const text = {
       services: {
         title: 'Services',
         icoTech: {
-          header: 'Technology\u00A0for\u00A0ICO',
+          header: <span>Technology&nbsp;for&nbsp;ICO</span>,
           text:
             <div>
-              <span>Smart contracts in Ethereum (ERC20-enabled token, crowdsale, ether vault).</span><br/><br/>
-              <span>User account, embeddable into any website able to customize its design, accepting BTC, ETH, and other currencies. Implementing KYC procedures, participation statistics, general ICO statistics, link to Google Ecommerce.</span><br/><br/>
+              <span>Smart contracts in&nbsp;Ethereum (ERC20-enabled token, crowdsale, ether vault).</span><br/><br/>
+              <span>User account, embeddable into any website able to&nbsp;customize its design, accepting BTC, ETH, and other currencies. Implementing KYC procedures, participation statistics, general ICO statistics, link to&nbsp;Google Ecommerce.</span><br/><br/>
               <span>Admin interface</span><br/><br/>
               <span>Receiving Ethereum and Bitcoin without commission and other currencies through coinpayments.net</span>
             </div>,
         },
         consulting: {
           header: 'Consulting',
-          text: 'Analyze technical aspects of conducting ICOs, tell about decentralization of projects, tokenization, tokenomics. Help with the decentralization of projects, tokenization, tokenomics.',
+          text: <span>Analyze technical aspects of&nbsp;conducting ICOs, tell about decentralization of&nbsp;projects, tokenization, tokenomics. Help with the decentralization of&nbsp;projects, tokenization, tokenomics.</span>,
         },
         blokchain: {
-          header: 'Blockchain\u00A0systems\u00A0development',
-          text: 'Solutions for projects to require their own blockchain. High speed, arbitrary rate of decentralization. Fine-tuning the consensus protocol based on Graphene / BitShares/ Steem / EOS.',
+          header: <span>Blockchain&nbsp;systems&nbsp;development</span>,
+          text: <span>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
         },
         etherium: {
-          header: 'Ethereum\u00A0Smart\u00A0Contracts',
-          text: 'Developing token contracts, prototypes (proof-of-concept) and smart contract systems for blockchain projects. Developing Checking smart contracts for bugs and vulnerabilities and automating the launch of smart contracts in blockchain.',
+          header: <span>Ethereum&nbsp;Smart&nbsp;Contracts.</span>,
+          text: <span>Developing token contracts, prototypes (proof-of-concept) and smart contract systems for blockchain projects. Developing Checking smart contracts for bugs and vulnerabilities and automating the launch of&nbsp;smart contracts in&nbsp;blockchain.</span>,
         },
         docs: {
-          header: 'Developing\u00A0documentation',
-          text: 'Technical documents describing in technical terms how we will approach the task and  technical white papers where we tell a wider audience how our technology works.',
+          header: <span>Developing&nbsp;documentation</span>,
+          text: <span>Technical documents describing in&nbsp;technical terms how we&nbsp;will approach the task and technical white papers where we&nbsp;tell a&nbsp;wider audience how our technology works.</span>,
         },
       },
 
@@ -620,8 +620,8 @@ export const text = {
 
     meetUs: {
       anchor: 'Meet us',
-      title: 'We will be glad to know you',
-      description: 'We develop smart contracts, conduct their audits, advise organizations, and talk about this in our courses and lectures.',
+      title: <span>We&nbsp;will be&nbsp;glad to&nbsp;know you</span>,
+      description: <span>We&nbsp;develop smart contracts, conduct their audits, advise organizations, and talk about this in&nbsp;our courses and lectures.</span>,
       linkText: 'Getting to know us closer',
       persons: {
         prilutsky: {
@@ -652,13 +652,13 @@ export const text = {
       },
       header: {
         title: <h2>2-Days Intensive course<br />&laquo;Dive into&nbsp;Blockchain&raquo;</h2>,
-        description: <p><strong>During the two days</strong> you will receive a fundamental understanding of the technical and legal basis of blockchain technologies. Cryptographic foundation, consensus and mining, technical subtleties of ICO, legal practice. You will finally understand how and why it all works!</p>,
-        comment: <p>The course is conducted with the support of <a href="http://cych.io">cych.io</a> and invited experts from The Russian Academy of National Economy and Public Service under the President of the Russian Federation.</p>,
+        description: <p><strong>During the two days</strong> you will receive a&nbsp;fundamental understanding of&nbsp;the technical and legal basis of&nbsp;blockchain technologies. Cryptographic foundation, consensus and mining, technical subtleties of&nbsp;ICO, legal practice. You will finally understand how and why it&nbsp;all works!</p>,
+        comment: <p>The course is&nbsp;conducted with the support&nbsp;of <a href="http://cych.io">cych.io</a> and invited experts from The Russian Academy of&nbsp;National Economy and Public Service under the President of&nbsp;the Russian Federation.</p>,
       },
       info: {
         blockchain: {
           name: 'Blockchain',
-          content: <p><strong>Blockchain&nbsp;&mdash;</strong> is a digital register of transactions, contracts and other information. This is a method of storage and cryptographic protection of data from the forgery. It was described in 1991.</p>,
+          content: <p><strong>Blockchain&nbsp;&mdash;</strong> is&nbsp;a&nbsp;digital register of&nbsp;transactions, contracts and other information. This is&nbsp;a&nbsp;method of&nbsp;storage and cryptographic protection of&nbsp;data from the forgery. It&nbsp;was described in&nbsp;1991.</p>,
         },
         cryptoCurrencies: {
           name: 'Cryptocurrency',
@@ -690,36 +690,36 @@ export const text = {
         programmers: 'programmers',
       },
       description: {
-        intro: "The blokchain technologies appeared in our lives and, it seems, they’re going to completely change it. Bitcoin and ICO are on everyone's lips, people invest money in that without even knowing what it is all about. Unfortunately, most of the available information is either too technical and incomprehensible documentation for programmers, or too advertising and provocative, aimed at the attracting investments to some ICO.",
-        courceGoal: 'We support the popularization of blockchain-technologies, transparency and accessibility of information, as well as the safety of financial transactions. During the course, you will receive a foundation of knowledge that will allow you to be confident in the news and advertising flow. You can also learn how to make wise decisions about using blockchain-technologies in your life, career and business.',
+        intro: <span>The blokchain technologies appeared in&nbsp;our lives and, it&nbsp;seems, they&rsquo;re going to&nbsp;completely change&nbsp;it. Bitcoin and ICO are on&nbsp;everyone&rsquo;s lips, people invest money in&nbsp;that without even knowing what it&nbsp;is&nbsp;all about. Unfortunately, most of&nbsp;the available information is&nbsp;either too technical and incomprehensible documentation for programmers, or&nbsp;too advertising and provocative, aimed at&nbsp;the attracting investments to&nbsp;some ICO.</span>,
+        courceGoal: <span>We&nbsp;support the popularization of&nbsp;blockchain-technologies, transparency and accessibility of&nbsp;information, as&nbsp;well as&nbsp;the safety of&nbsp;financial transactions. During the course, you will receive a&nbsp;foundation of&nbsp;knowledge that will allow you to&nbsp;be&nbsp;confident in&nbsp;the news and advertising flow. You can also learn how to&nbsp;make wise decisions about using blockchain-technologies in&nbsp;your life, career and business.</span>,
       },
       advices: {
-        first: 'If you are a skeptic, come and ask the most difficult questions to the speakers. Most likely, you will believe in the power of blockchain-technologies more after that.',
-        second: 'If the blockchain and ICO have already turned your head - please come too, we will try to cool you down a little bit.',
-        promise: 'We promise that there will be any advertising and appeal to invest your money.',
+        first: <span>If&nbsp;you are a&nbsp;skeptic, come and ask the most difficult questions to&nbsp;the speakers. Most likely, you will believe in&nbsp;the power of&nbsp;blockchain-technologies more after that.</span>,
+        second: <span>If&nbsp;the blockchain and ICO have already turned your head&nbsp;&mdash; please come too, we&nbsp;will try to&nbsp;cool you down a&nbsp;little bit.</span>,
+        promise: <span>We&nbsp;promise that there will be&nbsp;any advertising and appeal to&nbsp;invest your money.</span>,
       },
       program: {
         dayOne: {
-          name: 'Day 1. Cryptography, blockchain, Bitcoin: tearing off the covers',
+          name: 'Day\u00A01. Cryptography, blockchain, Bitcoin: tearing off the covers',
           blocks: {
             first: {
               name: 'First block',
-              desc: <p><strong>Introduction to&nbsp;cryptography</strong><br />Symmetric cryptosystems. The internal arrangement of symmetric ciphers. Data Integrity and Checksums. Authentication schemes and storage of passwords. Algorithms of how programs of the information protection work. Asymmetric cryptosystems. Electronic signature scheme. Attacks such as man-in-the-middle and a certificate system. TOR and mixed networks. Coin flipping protocol.</p>,
+              desc: <p><strong>Introduction to&nbsp;cryptography</strong><br />Symmetric cryptosystems. The internal arrangement of&nbsp;symmetric ciphers. Data Integrity and Checksums. Authentication schemes and storage of&nbsp;passwords. Algorithms of&nbsp;how programs of&nbsp;the information protection work. Asymmetric cryptosystems. Electronic signature scheme. Attacks such as&nbsp;man-in-the-middle and a&nbsp;certificate system. TOR and mixed networks. Coin flipping protocol.</p>,
             },
             second: {
               name: 'Second block',
-              desc: <p><strong>Blockсhain</strong><br />Definitions of blockchain. Blocks, mechanisms of block adhesion and chain integrity. Highlights of the Bitcoin algorithm. The complexity requirements and the mining algorithm’s scheme of operation. The concept of consensus and a detailed consideration of the Proof Of Work consensus. Double spend attacks and 51%, the strategies of mining pools, the stability of the network.</p>,
+              desc: <p><strong>Blockсhain</strong><br />Definitions of&nbsp;blockchain. Blocks, mechanisms of&nbsp;block adhesion and chain integrity. Highlights of&nbsp;the Bitcoin algorithm. The complexity requirements and the mining algorithm&rsquo;s scheme of&nbsp;operation. The concept of&nbsp;consensus and a&nbsp;detailed consideration of&nbsp;the Proof Of&nbsp;Work consensus. Double spend attacks and&nbsp;51%, the strategies of&nbsp;mining pools, the stability of&nbsp;the network.</p>,
             },
             break: {
               desc: <p>1 hour 15 minutes Break</p>,
             },
             third: {
               name: 'Third block',
-              desc: <p>The task of Byzantine generals and other types of consensus. "Proof of stake" and "delegated proof of stake". The Graphene engine and the projects that were based on it. Examples of complex internal project economics, decentralization issues. "Proof of storage", "proof of compute", "Proof of everything". Examples of the using smart contracts and the work scheme of the Ethereum network.</p>,
+              desc: <p>The task of&nbsp;Byzantine generals and other types of&nbsp;consensus. &laquo;Proof of&nbsp;stake&raquo; and &laquo;delegated proof of&nbsp;stake&raquo;. The Graphene engine and the projects that were based on&nbsp;it. Examples of&nbsp;complex internal project economics, decentralization issues. &laquo;Proof of&nbsp;storage&raquo;, &laquo;proof of&nbsp;compute&raquo;, &laquo;Proof of&nbsp;everything&raquo;. Examples of&nbsp;the using smart contracts and the work scheme of&nbsp;the Ethereum network.</p>,
             },
             fourth: {
               name: 'Fourth block',
-              desc: <p><strong>Blockchain and business.</strong><br />Payments in cryptocurrencies. Cryptocurrencies and wallets. Priority of transaction, commission and gas. Centralized vs decentralized solutions. Issue of tokens, standard ERC20. Anatomy of crowdsale smart contract for ICO / ITO. Audit of smart contracts security, examples of vulnerabilities. Designing mistakes and quality of crowdsale economic models.</p>,
+              desc: <p><strong>Blockchain and business.</strong><br />Payments in&nbsp;cryptocurrencies. Cryptocurrencies and wallets. Priority of&nbsp;transaction, commission and gas. Centralized vs&nbsp;decentralized solutions. Issue of&nbsp;tokens, standard ERC20. Anatomy of&nbsp;crowdsale smart contract for ICO&nbsp;/ ITO. Audit of&nbsp;smart contracts security, examples of&nbsp;vulnerabilities. Designing mistakes and quality of&nbsp;crowdsale economic models.</p>,
             },
           },
         },
@@ -728,22 +728,22 @@ export const text = {
           blocks: {
             fifth: {
               name: 'Fifth block',
-              desc: <p>Blockchain as a marketing "whistle" and blockchain as a breakthrough. When do you need blockchain and what can BT technologies bring to the project? Types and peculiarities of crypto-tokens. "I want ICO" - the order of actions. Investor's private office - what do you need to know. The issues of accepting BTC and other cryptocurrencies in the framework of the ICO. Overview of ICO-platforms.</p>,
+              desc: <p>Blockchain as&nbsp;a&nbsp;marketing &laquo;whistle&raquo; and blockchain as&nbsp;a&nbsp;breakthrough. When do&nbsp;you need blockchain and what can&nbsp;BT technologies bring to&nbsp;the project? Types and peculiarities of&nbsp;crypto-tokens. &laquo;I&nbsp;want ICO&raquo;&nbsp;&mdash; the order of&nbsp;actions. Investor&rsquo;s private office&nbsp;&mdash; what do&nbsp;you need to&nbsp;know. The issues of&nbsp;accepting BTC and other cryptocurrencies in&nbsp;the framework of&nbsp;the ICO. Overview of&nbsp;ICO-platforms.</p>,
             },
             sixth: {
               name: 'Sixth block',
-              desc: <p><strong>Blockchain and the law.</strong> <br />Legal aspects of ITO / ICO. Experience in regulating professional participants of market in the US, Japan, Switzerland, Germany, the Isle of Man, the UK and more than other 10 countries. Extraterritorial validity of legislation. Why should you be afraid of the legislation of the USA, Japan, Switzerland, etc. even if you are not registered in these countries?</p>,
+              desc: <p><strong>Blockchain and the law.</strong> <br />Legal aspects of&nbsp;ITO&nbsp;/ ICO. Experience in&nbsp;regulating professional participants of&nbsp;market in&nbsp;the US, Japan, Switzerland, Germany, the Isle of&nbsp;Man, the&nbsp;UK and more than other 10&nbsp;countries. Extraterritorial validity of&nbsp;legislation. Why should you be&nbsp;afraid of&nbsp;the legislation of&nbsp;the USA, Japan, Switzerland, etc. even if&nbsp;you are not registered in&nbsp;these countries?</p>,
             },
             break: {
               desc: <p>1 hour 15 minutes Break</p>,
             },
             seventh: {
               name: 'Seventh block',
-              desc: <p>How to identify the residents of the countries of the project? How to reduce the risks of violating the laws of third countries? How to organize the business process in order not to fall under the requirements of countries for obtaining permits and licenses? How to implement the requirements for customer identification and organize the internal due diligence?</p>,
+              desc: <p>How to&nbsp;identify the residents of&nbsp;the countries of&nbsp;the project? How to&nbsp;reduce the risks of&nbsp;violating the laws of&nbsp;third countries? How to&nbsp;organize the business process in&nbsp;order not to&nbsp;fall under the requirements of&nbsp;countries for obtaining permits and licenses? How to&nbsp;implement the requirements for customer identification and organize the internal due diligence?</p>,
             },
             eigth: {
               name: 'Eight block',
-              desc: <p>What tax consequences of the crypto exchange activity in the US, EU and other countries? Experience in the organization of existing crypto exchanges and other professional participants: Coinbase, BTCC, Payment21, etc. The possibility of organizing crypto-exchanges in Russia: the existing regulation, risks and recommendations.</p>,
+              desc: <p>What tax consequences of&nbsp;the crypto exchange activity in&nbsp;the US, EU&nbsp;and other countries? Experience in&nbsp;the organization of&nbsp;existing crypto exchanges and other professional participants: Coinbase, BTCC, Payment21, etc. The possibility of&nbsp;organizing crypto-exchanges in&nbsp;Russia: the existing regulation, risks and recommendations.</p>,
             },
           },
         },
@@ -754,13 +754,13 @@ export const text = {
           position: 'Co-founder, Software Engineer',
           description:
             <ul>
-              <li>Started programming in the elementary school, worked as a system administrator for many years</li>
-              <li>Was engaged in reverse engineering and software security, researched software protection and antivirus engines</li>
-              <li>Graduated from the Moscow Engineering and Physics Institute and was a lector of such courses as "Databases" and "Information Security", conducted research projects on security cryptographic methods</li>
-              <li>For many years worked at Mail.Ru as a leading developer on many projects, the last years in the team of Antispam</li>
-              <li>Worked with systems, ranging from small highly loaded micro services and sites to the large clusters for distributed computing</li>
-              <li>The teacher and author of the course on information security for the "Technopark" (Baumanka) and "Technoatom" (MEPhI) projects</li>
-              <li>Active member of the blockchain developers community</li>
+              <li>Started programming in&nbsp;the elementary school, worked as&nbsp;a&nbsp;system administrator for many years</li>
+              <li>Was engaged in&nbsp;reverse engineering and software security, researched software protection and antivirus engines</li>
+              <li>Graduated from the Moscow Engineering and Physics Institute and was a&nbsp;lector of&nbsp;such courses as&nbsp;&laquo;Databases&raquo; and &laquo;Information Security&raquo;, conducted research projects on&nbsp;security cryptographic methods</li>
+              <li>For many years worked at&nbsp;Mail.Ru as&nbsp;a&nbsp;leading developer on&nbsp;many projects, the last years in&nbsp;the team of&nbsp;Antispam</li>
+              <li>Worked with systems, ranging from small highly loaded micro services and sites to&nbsp;the large clusters for distributed computing</li>
+              <li>The teacher and author of&nbsp;the course on&nbsp;information security for the &laquo;Technopark&raquo; (Baumanka) and &laquo;Technoatom&raquo; (MEPhI) projects</li>
+              <li>Active member of&nbsp;the blockchain developers community</li>
             </ul>,
         },
         lawyersTeam: {
@@ -768,23 +768,23 @@ export const text = {
           position: 'Moderations of \u00ABBlockchain and Law\u00BB part',
           levashenko: {
             name: 'Antonina Levashenko',
-            desc: <p>International Lawyer. Expert of the Center for Strategic Development. Senior Researcher of the Russian Foreign Trade Academy of the Ministry for the Economic Development of the Russian Federation. Head of the Competence and Analysis Center of The Russian Academy of National Economy and Public Service under the President of the Russian Federation.</p>,
+            desc: <p>International Lawyer. Expert of&nbsp;the Center for Strategic Development. Senior Researcher of&nbsp;the Russian Foreign Trade Academy of&nbsp;the Ministry for the Economic Development of&nbsp;the Russian Federation. Head of&nbsp;the Competence and Analysis Center of&nbsp;The Russian Academy of&nbsp;National Economy and Public Service under the President of&nbsp;the Russian Federation.</p>,
           },
           ermohin: {
             name: 'Ivan Ermohin',
-            desc: <p>International Lawyer. Researcher of the Ministry of Economic Development of the Russian Federation. Expert of the Center for Competencies and Analysis Center of The Russian Academy of National Economy and Public Service under the President of the Russian Federation.</p>,
+            desc: <p>International Lawyer. Researcher of&nbsp;the Ministry of&nbsp;Economic Development of&nbsp;the Russian Federation. Expert of&nbsp;the Center for Competencies and Analysis Center of&nbsp;The Russian Academy of&nbsp;National Economy and Public Service under the President of&nbsp;the Russian Federation.</p>,
           },
           lebedeva: {
             name: 'Sofya Lebedeva',
-            desc: <p>Specialist in the field of International Economics. Researcher of the Center for Competencies and Analysis Center of The Russian Academy of National Economy and Public Service under the President of the Russian Federation.</p>,
+            desc: <p>Specialist in&nbsp;the field of&nbsp;International Economics. Researcher of&nbsp;the Center for Competencies and Analysis Center of&nbsp;The Russian Academy of&nbsp;National Economy and Public Service under the President of&nbsp;the Russian Federation.</p>,
           },
           girich: {
             name: 'Maria Girich',
-            desc: <p>International Lawyer. Researcher of the club “Russia - OECD” of the Ministry of Economic Development of the Russian Federation.</p>,
+            desc: <p>International Lawyer. Researcher of&nbsp;the club &laquo;Russia&nbsp;&mdash; OECD&raquo; of&nbsp;the Ministry of&nbsp;Economic Development of&nbsp;the Russian Federation.</p>,
           },
           koval: {
             name: 'Alexandra Koval',
-            desc: <p>International Lawyer, director of the club “Russia - OECD” of the Ministry of Economic Development of the Russian Federation.</p>,
+            desc: <p>International Lawyer, director of&nbsp;the club &laquo;Russia&nbsp;&mdash; OECD&raquo; of&nbsp;the Ministry of&nbsp;Economic Development of&nbsp;the Russian Federation.</p>,
           },
         },
       },
@@ -818,24 +818,24 @@ export const text = {
         name: 'Sergey Prilutsky',
         desc:
           <ul>
-            <li>Started programming in the elementary school, worked as a system administrator for many years</li>
-            <li>Was engaged in reverse engineering and software security, researched software protection and antivirus engines</li>
+            <li>Started programming in&nbsp;the elementary school, worked as&nbsp;a&nbsp;system administrator for many years</li>
+            <li>Was engaged in&nbsp;reverse engineering and software security, researched software protection and antivirus engines</li>
             <li>Graduated from the Moscow Engineering Physics Institute</li>
-            <li>For many years worked at Mail.Ru as a leading developer on many projects, the last years in the team of Antispam</li>
-            <li>Worked with systems, ranging from small highly loaded micro services and sites to the large clusters for distributed computing</li>
-            <li>The teacher and author of the course on information security for the «Technopark» (BMSTU)</li>
-            <li>Active member of the blockchain developers community</li>
+            <li>For many years worked at&nbsp;Mail.Ru as&nbsp;a&nbsp;leading developer on&nbsp;many projects, the last years in&nbsp;the team of&nbsp;Antispam</li>
+            <li>Worked with systems, ranging from small highly loaded micro services and sites to&nbsp;the large clusters for distributed computing</li>
+            <li>The teacher and author of&nbsp;the course on&nbsp;information security for the &laquo;Technopark&raquo; (BMSTU)</li>
+            <li>Active member of&nbsp;the blockchain developers community</li>
           </ul>,
       },
       vasilchikov: {
         name: 'Yuri Vasilchikov',
         desc:
           <ul>
-            <li>Wrote a clone of Tetris in BASIC</li>
-            <li>Started to develop the sites in 2000 in Perl</li>
-            <li>Worked as a programmer in the studio of Lebedev for one year</li>
-            <li>In 2005, co-founded the Eggo.ru web studio, where he worked as a technical director for 6 years</li>
-            <li>Managed the Eggo.ru web-studio for 3 years</li>
+            <li>Wrote a&nbsp;clone of&nbsp;Tetris in&nbsp;BASIC</li>
+            <li>Started to&nbsp;develop the sites in&nbsp;2000 in&nbsp;Perl</li>
+            <li>Worked as&nbsp;a&nbsp;programmer in&nbsp;the studio of&nbsp;Lebedev for one year</li>
+            <li>In&nbsp;2005, co-founded the Eggo.ru web studio, where he&nbsp;worked as&nbsp;a&nbsp;technical director for 6&nbsp;years</li>
+            <li>Managed the Eggo.ru web-studio for 3&nbsp;years</li>
             <li>Consulted and developed solutions for more than 150 small and medium-sized companies</li>
           </ul>,
       },
@@ -844,33 +844,33 @@ export const text = {
         desc:
           <ul>
             <li>Graduated from the Bauman Moscow State Technical University (BMSTU), Faculty &laquo;Computer Complexes, Systems and Networks&raquo;</li>
-            <li>Experience in programming for 17 years (Assembler, C/C ++, Java, PHP, Perl, Python, JS)</li>
-            <li>Experience in Big Data solutions developing Big Data on the industrial-scale Hadoop cluster</li>
-            <li>Worked as a team leader in the Internet search project Поиск@mail.ru</li>
-            <li>Worked as a system architect at 1C Company</li>
-            <li>Fields of interest: Big Data, distributed computing, information security, finance, investments</li>
+            <li>Experience in&nbsp;programming for 17&nbsp;years (Assembler, C/C ++, Java, PHP, Perl, Python, JS)</li>
+            <li>Experience in&nbsp;Big Data solutions developing Big Data on&nbsp;the industrial-scale Hadoop cluster</li>
+            <li>Worked as&nbsp;a&nbsp;team leader in&nbsp;the Internet search project Поиск@mail.ru</li>
+            <li>Worked as&nbsp;a&nbsp;system architect at&nbsp;1C&nbsp;Company</li>
+            <li>Fields of&nbsp;interest: Big Data, distributed computing, information security, finance, investments</li>
           </ul>,
       },
       karbachinsky: {
         name: 'Igor Karbachinsky',
         desc:
           <ul>
-            <li>Graduated from the Moscow Institute of Electronics and Mathematics, Cybernetics Faculty, Diploma on ranking algorithms in searching engines</li>
-            <li>12 years of programming experience (C / C ++, Java, PHP, Perl, Python, JS)</li>
-            <li>Headed the department in the Internet searching engine Поиск@mail.ru for many years</li>
-            <li>Worked on the Data Science Architect position in such projects as Lang.ai and Sentisis.com</li>
-            <li>Experienced in creating industrial IT solutions in Google and Amazon clouds</li>
-            <li>Field of interests: Data analysis, Big Data, Game theory, Speech technology</li>
+            <li>Graduated from the Moscow Institute of&nbsp;Electronics and Mathematics, Cybernetics Faculty, Diploma on&nbsp;ranking algorithms in&nbsp;searching engines</li>
+            <li>12&nbsp;years of&nbsp;programming experience (C&nbsp;/ C ++, Java, PHP, Perl, Python, JS)</li>
+            <li>Headed the department in&nbsp;the Internet searching engine Поиск@mail.ru for many years</li>
+            <li>Worked on&nbsp;the Data Science Architect position in&nbsp;such projects as&nbsp;Lang.ai and Sentisis.com</li>
+            <li>Experienced in&nbsp;creating industrial&nbsp;IT solutions in&nbsp;Google and Amazon clouds</li>
+            <li>Field of&nbsp;interests: Data analysis, Big Data, Game theory, Speech technology</li>
           </ul>,
       },
       kruglov: {
         name: 'Pavel Kruglov',
         desc:
           <ul>
-            <li>Graduated from the National Research Nuclear University &laquo;Moscow Engineering Physics Institute&raquo;, Faculty of Information Security of Banking Systems</li>
-            <li>Started programming on C/C ++ and developing sites while learning at school, <s>and then break them, hehe</s></li>
-            <li>Worked on several projects as an information security expert, including the Central Bank of Russia</li>
-            <li>Has more than 30 personal publications in the Hacker magazine, more than 100 as an editor</li>
+            <li>Graduated from the National Research Nuclear University &laquo;Moscow Engineering Physics Institute&raquo;, Faculty of&nbsp;Information Security of&nbsp;Banking Systems</li>
+            <li>Started programming on&nbsp;C/C ++ and developing sites while learning at&nbsp;school, <s>and then break them, hehe</s></li>
+            <li>Worked on&nbsp;several projects as&nbsp;an&nbsp;information security expert, including the Central Bank of&nbsp;Russia</li>
+            <li>Has more than 30&nbsp;personal publications in&nbsp;the Hacker magazine, more than 100&nbsp;as an&nbsp;editor</li>
             <li>Interests: information security, system analysis, investment, psychology</li>
           </ul>,
       },
@@ -878,23 +878,23 @@ export const text = {
         name: 'Andrey Yakovlev',
         desc:
           <ul>
-            <li>Graduated from Faculty of Mechanics and Mathematics of Moscow National University with a degree in applied mathematics and computer science</li>
-            <li>7 years of programming experience (Python, JS, Bash)</li>
-            <li>Started as a testing engineer in Mirantis company, then worked as DevOps engineer there</li>
-            <li>Worked as a DevOps-engineer in the Internet searching engine Поиск@mail.ru</li>
-            <li>Worked as auto-tests developer in Kaspersky Lab company</li>
-            <li>Interested in startups and investments, dreams of a unicorn :)</li>
+            <li>Graduated from Faculty of&nbsp;Mechanics and Mathematics of&nbsp;Moscow National University with a&nbsp;degree in&nbsp;applied mathematics and computer science</li>
+            <li>7&nbsp;years of&nbsp;programming experience (Python, JS, Bash)</li>
+            <li>Started as&nbsp;a&nbsp;testing engineer in&nbsp;Mirantis company, then worked as&nbsp;DevOps engineer there</li>
+            <li>Worked as&nbsp;a&nbsp;DevOps-engineer in&nbsp;the Internet searching engine Поиск@mail.ru</li>
+            <li>Worked as&nbsp;auto-tests developer in&nbsp;Kaspersky Lab company</li>
+            <li>Interested in&nbsp;startups and investments, dreams of&nbsp;a&nbsp;unicorn :)</li>
           </ul>,
       },
       shubin: {
         name: 'Mikhail Shubin',
         desc:
           <ul>
-            <li>While still in school, organized a “domoneta” (home-coin) cell network with a collective connection to the Net. Maintained a FidoNet node</li>
-            <li>Graduated from Tomsk State University of Control Systems and Radioelectronics, where he studied in the Department of Radio Communications, Radio Broadcasting, and Television</li>
+            <li>While still in&nbsp;school, organized a&nbsp;&laquo;domoneta&raquo; (home-coin) cell network with a&nbsp;collective connection to&nbsp;the Net. Maintained a&nbsp;FidoNet node</li>
+            <li>Graduated from Tomsk State University of&nbsp;Control Systems and Radioelectronics, where he&nbsp;studied in&nbsp;the Department of&nbsp;Radio Communications, Radio Broadcasting, and Television</li>
             <li>Developed digital measuring devices</li>
-            <li>Handled the administration of systems with varying levels of complexity. Wrote code in Python, Perl, and Bash</li>
-            <li>Likes to learn new things to understand “how it works” and “how it can be used”</li>
+            <li>Handled the administration of&nbsp;systems with varying levels of&nbsp;complexity. Wrote code in&nbsp;Python, Perl, and Bash</li>
+            <li>Likes to&nbsp;learn new things to&nbsp;understand &laquo;how it&nbsp;works&raquo; and &laquo;how it&nbsp;can be&nbsp;used&raquo;</li>
             <li>Major interests: robotics, electronics, psychology</li>
           </ul>,
       },
@@ -902,20 +902,20 @@ export const text = {
         name: 'Ilona Galuzinskaya',
         desc:
           <ul>
-            <li>Ilona is the only team member who has never programmed anything. She’s working hard to master the concepts of fork, hash, and node</li>
-            <li>Graduated from the Moscow Power Engineering Institute with a major in public relations, a field far removed from power engineering</li>
-            <li>Since 2015, has worked as an IT Account Manager</li>
+            <li>Ilona is&nbsp;the only team member who has never programmed anything. She&rsquo;s working hard to&nbsp;master the concepts of&nbsp;fork, hash, and node</li>
+            <li>Graduated from the Moscow Power Engineering Institute with a&nbsp;major in&nbsp;public relations, a&nbsp;field far removed from power engineering</li>
+            <li>Since 2015, has worked as&nbsp;an&nbsp;IT&nbsp;Account Manager</li>
             <li>Handles administrative tasks and arranges MixBytes lectures</li>
-            <li>Interests include starting to understand what blockchain is. And fashion, of course :)</li>
+            <li>Interests include starting to&nbsp;understand what blockchain&nbsp;is. And fashion, of&nbsp;course :)</li>
           </ul>,
       },
       privezentsev: {
         name: 'Konstantin Privezentsev',
         desc:
           <ul>
-            <li>Graduated from the Moscow Institute of Electronics and Mathematics with a degree in CAD</li>
-            <li>8 years of programming experience</li>
-            <li>Worked as a developer in Paragon, BigData-infrastructure developer in Internet searching engine Poisk Mail.Ru and data processing systems in Kaspersky Lab</li>
+            <li>Graduated from the Moscow Institute of&nbsp;Electronics and Mathematics with a&nbsp;degree in&nbsp;CAD</li>
+            <li>8&nbsp;years of&nbsp;programming experience</li>
+            <li>Worked as&nbsp;a&nbsp;developer in&nbsp;Paragon, BigData-infrastructure developer in&nbsp;Internet searching engine Poisk Mail.Ru and data processing systems in&nbsp;Kaspersky Lab</li>
             <li>Interests: databases, functional programming, distributed computing</li>
           </ul>,
       },
@@ -925,25 +925,25 @@ export const text = {
       title: 'Vacancy',
       blockchainDev: {
         name: 'Developer of smart contracts',
-        desc: 'We are looking for an experienced developer to work on smart contracts (Solidity) and more. Experience in blockchain is not required, as we can grow blockchain developers out of clever seniors.',
+        desc: <span>We&nbsp;are looking for an&nbsp;experienced developer to&nbsp;work on&nbsp;smart contracts (Solidity) and more. Experience in&nbsp;blockchain is&nbsp;not required, as&nbsp;we&nbsp;can grow blockchain developers out of&nbsp;clever seniors.</span>,
         requirements: [
-          <span>Basic knowledge of algorithms, data structures, graphs, state machines</span>,
-          <span>Basic knowledge of cryptography, understanding of cryptographic protocols</span>,
-          <span>Knowledge of network programming</span>,
-          <span>Experience of development in multiple programming languages</span>,
-          <span>4+ years of development experience</span>,
+          <span>Basic knowledge of&nbsp;algorithms, data structures, graphs, state machines</span>,
+          <span>Basic knowledge of&nbsp;cryptography, understanding of&nbsp;cryptographic protocols</span>,
+          <span>Knowledge of&nbsp;network programming</span>,
+          <span>Experience of&nbsp;development in&nbsp;multiple programming languages</span>,
+          <span>4+&nbsp;years of&nbsp;development experience</span>,
         ],
         advantages: [
-          <span>Knowledge of *nix, experience in console programming</span>,
-          <span>Experience in the development of high-load fault-tolerant systems</span>,
-          <span>Knowledge of js, node, python, java, C++</span>,
-          <span>Basic sense of consensus algorithms</span>,
-          <span>Experience in low-level programming</span>,
+          <span>Knowledge of&nbsp;*nix, experience in&nbsp;console programming</span>,
+          <span>Experience in&nbsp;the development of&nbsp;high-load fault-tolerant systems</span>,
+          <span>Knowledge of&nbsp;js, node, python, java, C++</span>,
+          <span>Basic sense of&nbsp;consensus algorithms</span>,
+          <span>Experience in&nbsp;low-level programming</span>,
         ],
         conditions: [
           <span>High salary</span>,
           <span>Loft office near the Ulitsa 1905 Goda metro station</span>,
-          <span>Possibility of working remotely</span>,
+          <span>Possibility of&nbsp;working remotely</span>,
         ]
       },
     },
