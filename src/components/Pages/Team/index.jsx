@@ -48,7 +48,7 @@ class Team extends Component {
         link: 'privezentsev',
         name: text.privezentsev.name,
         photo: require('./i/privezentsev.jpg'),
-        position: 'Backend Developer',
+        position: 'Back-end Developer',
         text: text.privezentsev.desc,
         socialLinks: {
           facebook: 'https://www.facebook.com/k.privezentsev',

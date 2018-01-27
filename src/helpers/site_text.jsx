@@ -66,7 +66,7 @@ export const text = {
         },
         consulting: {
           header: 'Консультирование',
-          text: 'Разберем технические аспекты проведе-ния ICO, расскажем о децентрализации проектов, текенизации и токеномике. Поможем с подбором и обучения разработчиков.',
+          text: 'Разберем технические аспекты проведения ICO, расскажем о децентрализации проектов, текенизации и токеномике. Поможем с подбором и обучения разработчиков.',
         },
         blokchain: {
           header: 'Разработка\u00A0блокчейн-систем',
@@ -535,19 +535,19 @@ export const text = {
         icoTech: {
           header: 'Technology\u00A0for\u00A0ICO',
           text:
-            <ul>
-              <li>Smart contracts in Ethereum (ERC20-enabled token, crowdsale, ether vault).</li>
-              <li>User account, embeddable into any website able to customize its design, accepting BTC, ETH, and other currencies. Implementing KYC procedures, participation statistics, general ICO statistics, link to Google Ecommerce.</li>
-              <li>Admin interface</li>
-              <li>Receiving Ethereum and Bitcoin without commission and other currencies through coinpayments.net</li>
-            </ul>,
+            <div>
+              <span>Smart contracts in Ethereum (ERC20-enabled token, crowdsale, ether vault).</span><br/><br/>
+              <span>User account, embeddable into any website able to customize its design, accepting BTC, ETH, and other currencies. Implementing KYC procedures, participation statistics, general ICO statistics, link to Google Ecommerce.</span><br/><br/>
+              <span>Admin interface</span><br/><br/>
+              <span>Receiving Ethereum and Bitcoin without commission and other currencies through coinpayments.net</span>
+            </div>,
         },
         consulting: {
           header: 'Consulting',
-          text: 'Разберем технические аспекты проведе-ния ICO, расскажем о децентрализации проектов, текенизации и токеномике. Поможем с подбором и обучения разработчиков.',
+          text: 'Analyze technical aspects of conducting ICOs, tell about decentralization of projects, tokenization, tokenomics. Help with the decentralization of projects, tokenization, tokenomics.',
         },
         blokchain: {
-          header: 'Developing\u00A0blockchain\u00A0systems',
+          header: 'Blockchain\u00A0systems\u00A0development',
           text: 'Solutions for projects to require their own blockchain. High speed, arbitrary rate of decentralization. Fine-tuning the consensus protocol based on Graphene / BitShares/ Steem / EOS.',
         },
         etherium: {
@@ -615,7 +615,7 @@ export const text = {
         },
       },
 
-      openSource: 'We are for public code',
+      openSource: 'We are for open source',
     },
 
     meetUs: {
@@ -913,10 +913,10 @@ export const text = {
         name: 'Константин Привезенцев',
         desc:
           <ul>
-            <li>Закончил МИЭМ по специальности "Системы автоматизированного проектирования"</li>
-            <li>Опыт промышленного программирования 8 лет на различных языках программирования</li>
-            <li>Участвовал в разработке мобильных приложений в Paragon, BigData инфраструктуры Поиск@Mail.ru и системы обработки данных в Kaspersky Lab</li>
-            <li>Интересы: базы данных, функциональное программирование, распределенные вычисления</li>
+            <li>Graduated from the Moscow Institute of Electronics and Mathematics with a degree in CAD</li>
+            <li>8 years of programming experience</li>
+            <li>Worked as a developer in Paragon, BigData-infrastructure developer in Internet searching engine Poisk Mail.Ru and data processing systems in Kaspersky Lab</li>
+            <li>Interests: databases, functional programming, distributed computing</li>
           </ul>,
       },
     },
