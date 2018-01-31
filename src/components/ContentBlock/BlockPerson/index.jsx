@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 
 import './styles.css';
 
-class BlockPerson extends Component {
+export class BlockPerson extends Component {
   render() {
-    const {link, name, photo, position, text} = this.props.person;
+    const {link, name, photo, position, text, socialLinks} = this.props.person;
+
     return (
       <div className="block-person">
         <div className="photo">
@@ -12,12 +13,26 @@ class BlockPerson extends Component {
         </div>
         <div className="text">
           <h2>{name}</h2>
-          <div className="position">{position}</div>
-          {text}
+
+          <div className="position personPosition">{position}</div>
+
+          { text }
+
+          <div>
+            {
+              socialLinks && socialLinks.facebook
+                ? <a className="social-icn facebook-icn" href={socialLinks.facebook}></a>
+                : null
+            }
+
+            {
+              socialLinks && socialLinks.linkedin
+                ? <a className="social-icn linkedin-icn" href={socialLinks.linkedin}></a>
+                : null
+            }
+          </div>
         </div>
       </div>
     );
   }
 }
-
-export default BlockPerson;

@@ -49,3 +49,26 @@
     margin-top: 15px;
   }
 }
+
+.social-icn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social-icn:not(:first-child) {
+  margin-left: 15px;
+}
+
+.facebook-icn {
+  background: url('../../../assets/facebook.svg');
+}
+
+.linkedin-icn {
+  background: url('../../../assets/linkedin.svg');
+}
+
+.personPosition {
+  display: inline-block;
+}
