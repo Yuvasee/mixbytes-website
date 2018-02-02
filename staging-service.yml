@@ -6,4 +6,4 @@ services:
     image: 128894178443.dkr.ecr.eu-central-1.amazonaws.com/mixbytes_website:latest
     restart: always
     ports:
-      - "81:80"
+      - "8001:80"

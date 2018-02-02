@@ -9,6 +9,7 @@ RUN yarn build
 FROM nginx:alpine
 WORKDIR /app
 EXPOSE 80
-COPY --from=stage /static/build /usr/share/nginx/html
+COPY --from=stage /static/build .
+COPY nginx.conf /etc/nginx/nginx.conf
 
 CMD [ "nginx-debug", "-g", "daemon off;" ]
