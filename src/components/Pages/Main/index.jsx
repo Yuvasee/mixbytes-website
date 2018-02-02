@@ -12,7 +12,7 @@ import BlockEvent from 'components/ContentBlock/BlockEvent';
 import Splurge from 'components/Splurge';
 import Capabilities from 'components/Capabilities';
 import MeetUs from 'components/MeetUs';
-import { FeedbackForm } from '../../FeedbackForm'
+// import { FeedbackForm } from '../../FeedbackForm'
 import { ICOTechIcn, ConsultingIcn, BlokchainIcn, EtheriumIcn, DocsIcn } from './icons';
 import { OpenSource } from '../../OpenSource';
 
@@ -27,7 +27,7 @@ class Main extends Component {
       // {link: 'dev-audit', name: text.devAudit.title},
       // {link: 'consulting', name: text.consulting},
       {link: 'services', name: text.navigation.services},
-      {link: 'feedback', name: text.navigation.feedback},
+      // {link: 'feedback', name: text.navigation.feedback},
       {link: 'splurge', name: '>&#8201;48&#8201;000&#8201;000&#8201;$'},
       // {link: 'capabilities', name: text.capabilities.title},
       {link: 'meet-us', name: meetUsText.anchor},
@@ -44,9 +44,11 @@ class Main extends Component {
 
           { this.renderConsultingBlock() }
 
+          {/*
           <div id="feedback">
             <FeedbackForm containerStyle="content-block"/>
           </div>
+          */}
 
           <Splurge />
 
