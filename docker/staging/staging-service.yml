@@ -1,0 +1,9 @@
+version: '2'
+services:
+
+  frontend:
+    mem_limit: 0.25GB
+    image: 128894178443.dkr.ecr.eu-central-1.amazonaws.com/mixbytes_website:latest
+    restart: always
+    ports:
+      - "8001:80"

@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+  frontend:
+    build:
+      dockerfile: docker/staging/Dockerfile
+      context: .
+    image: mixbytes-web-staging:latest
+    restart: always
+    ports:
+      - "8080:80"
