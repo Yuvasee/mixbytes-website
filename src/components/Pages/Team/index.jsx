@@ -17,7 +17,7 @@ class Team extends Component {
         link: 'prilutskiy',
         name: text.prilutsky.name,
         photo: require('./i/prilutskiy.jpg'),
-        position: 'Co-founder, Software Engineer',
+        position: 'Co-founder, Chief research',
         text: text.prilutsky.desc,
         socialLinks: {
           facebook: 'https://www.facebook.com/prilutskiy.sergey',
@@ -27,7 +27,7 @@ class Team extends Component {
         link: 'vasilchikov',
         name: text.vasilchikov.name,
         photo: require('./i/vasilchikov.jpg'),
-        position: 'Co-founder, Manager, Developer',
+        position: 'Co-founder, CEO',
         text: text.vasilchikov.desc,
         socialLinks: {
           facebook: 'https://www.facebook.com/yuriy.vasilchikov',
@@ -38,7 +38,7 @@ class Team extends Component {
         link: 'makeev',
         name: text.makeev.name,
         photo: require('./i/makeev.jpg'),
-        position: 'Co-founder, Software Engineer',
+        position: 'Co-founder, CTO',
         text: text.makeev.desc,
         socialLinks: {
           facebook: 'https://www.facebook.com/alpsycongroo',
@@ -54,6 +54,14 @@ class Team extends Component {
           facebook: 'https://www.facebook.com/k.privezentsev',
           linkedin: 'https://www.linkedin.com/in/konstantin-privezentsev-5a901769/',
         },
+      },
+      {
+        link: 'ievlev',
+        name: text.ievlev.name,
+        photo: require('./i/ievlev.png'),
+        position: 'Software Researcher',
+        text: text.ievlev.desc,
+        socialLinks: {},
       },
       {
         link: 'karbachinsky',
