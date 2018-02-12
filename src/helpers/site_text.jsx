@@ -441,6 +441,17 @@ export const text = {
             <li>Интересы: базы данных, функциональное программирование, распределенные вычисления</li>
           </ul>,
       },
+      ievlev: {
+        name: 'Алгыс Иевлев',
+        desc:
+          <ul>
+            <li>Cтудент старших курсов МГТУ им. Баумана и&nbsp;программы &laquo;Технопарк&raquo;</li>
+            <li>Cтажёр-разработчик в&nbsp;Mail.Ru Group, команда мессенджеров</li>
+            <li>Начал программировать в&nbsp;8&nbsp;классе на&nbsp;C/C++, занимался спортивным программированием</li>
+            <li>Диплом 3&nbsp;степени в&nbsp;финале всероссийский командной олимпиады, участие в&nbsp;финале всероссийской олимпиады по&nbsp;программированию</li>
+            <li>Разработчик рабочих прототипов систем на&nbsp;движках Steem, EOS</li>
+          </ul>,
+      },
     },
 
     job: {
@@ -917,6 +928,17 @@ export const text = {
             <li>8&nbsp;years of&nbsp;programming experience</li>
             <li>Worked as&nbsp;a&nbsp;developer in&nbsp;Paragon, BigData-infrastructure developer in&nbsp;Internet searching engine Poisk Mail.Ru and data processing systems in&nbsp;Kaspersky Lab</li>
             <li>Interests: databases, functional programming, distributed computing</li>
+          </ul>,
+      },
+      ievlev: {
+        name: 'Algys Ievlev',
+        desc:
+          <ul>
+            <li>BMSTU senior student, participated in&nbsp;the &laquo;Technopark&raquo; project</li>
+            <li>Intern developer in&nbsp;Mail.Ru Group, messenger&rsquo;s team</li>
+            <li>Started C/C++ programming in&nbsp;the 8th school grade, practiced in&nbsp;competitive programming</li>
+            <li>Participated in&nbsp;the final of&nbsp;the All-Russia Programming Competition. Has a&nbsp;diploma of&nbsp;the 3d&nbsp;degree</li>
+            <li>Developed prototypes using Steem and EOS platforms</li>
           </ul>,
       },
     },
