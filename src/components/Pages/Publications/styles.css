@@ -28,8 +28,6 @@
 .publication h3 a {
   color: #fff;
   text-decoration: none !important;
-  background-color: rgba(0,0,0,0.4);
-  line-height: 1.3;
 }
 
 .publication h3 a:hover {
@@ -43,10 +41,6 @@
 
   .publication p {
     font-size: 15px;
-  }
-
-  .publication p span {
-    background-color: rgba(0,0,0,0.4);
   }
 
   .publication h3 {

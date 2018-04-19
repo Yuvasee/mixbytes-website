@@ -18,7 +18,7 @@ class Publications extends Component {
         name: 'Simple and Powerful Short-Term Smart Contracts',
         date: '4 апреля 2017',
         place: 'Medium',
-        img: require('./i/smart-contracts.jpg'),
+        img: require('./i/smart-contracts.jpeg'),
         link: 'https://medium.com/@sprilutskiy/simple-and-powerful-short-term-smart-contracts-ba069954b0ca'
       },
       {
