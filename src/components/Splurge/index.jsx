@@ -9,7 +9,7 @@ class Splurge extends Component {
 
     return (
       <div className="splurge" id="splurge">
-        <h2>>&#8201;48&#8201;000&#8201;000&#8201;$</h2>
+        <h2>>&#8201;50&#8201;000&#8201;000&#8201;$</h2>
         <div className="splurge-text">
           {text.description_first}<br />{text.description_second}
         </div>
@@ -20,6 +20,8 @@ class Splurge extends Component {
           <div><img src={require('./i/storiqa-logo.svg')} alt="Storiqa" width="180" /></div>
           <div><img src={require('./i/bubbletone-logo.png')} alt="Bubbletone" /></div>
           <div><img src={require('./i/kickico-logo.svg')} alt="KickICO" /></div>
+          <div><img src={require('./i/world-wifi.png')} alt="World Wi-Fi" /></div>
+          <div><img src={require('./i/sp8de.png')} alt="Sp8de" /></div>
         </div>
       </div>
     );

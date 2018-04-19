@@ -41,7 +41,7 @@ class Team extends Component {
         position: 'Co-founder, CTO',
         text: text.makeev.desc,
         socialLinks: {
-          facebook: 'https://www.facebook.com/alpsycongroo',
+          linkedin: 'https://www.linkedin.com/in/aleksey-makeyev-98471884/',
         },
       },
       {

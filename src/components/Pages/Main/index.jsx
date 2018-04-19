@@ -28,7 +28,7 @@ class Main extends Component {
       // {link: 'consulting', name: text.consulting},
       {link: 'services', name: text.navigation.services},
       // {link: 'feedback', name: text.navigation.feedback},
-      {link: 'splurge', name: '>&#8201;48&#8201;000&#8201;000&#8201;$'},
+      {link: 'splurge', name: '>&#8201;50&#8201;000&#8201;000&#8201;$'},
       // {link: 'capabilities', name: text.capabilities.title},
       {link: 'meet-us', name: meetUsText.anchor},
     ];
