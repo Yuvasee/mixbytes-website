@@ -15,6 +15,13 @@ class Publications extends Component {
 
     const pubs = [
       {
+        name: 'Simple and Powerful Short-Term Smart Contracts',
+        date: '4 апреля 2017',
+        place: 'Medium',
+        img: require('./i/smart-contracts.jpg'),
+        link: 'https://medium.com/@sprilutskiy/simple-and-powerful-short-term-smart-contracts-ba069954b0ca'
+      },
+      {
         name: 'Dive into ICO',
         date: '16 ноября 2017',
         place: 'Хабрахабр',
@@ -69,7 +76,7 @@ class Publications extends Component {
             {pubs.map((el, i) => (
               <div className={classNames('publication', {noimg: !el.img})} style={el.img ? {backgroundImage: `url(${el.img})`} : {}}>
                 <h3><a href={el.link}>{el.name}</a></h3>
-                <p>{el.date} &bull; {el.place}</p>
+                <p><span>{el.date} &bull; {el.place}</span></p>
               </div>
             ))}
           </ContentBlock>

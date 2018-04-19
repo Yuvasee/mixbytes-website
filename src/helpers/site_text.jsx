@@ -457,16 +457,17 @@ export const text = {
     job: {
       title: 'Вакансии',
       blockchainDev: {
-        name: 'Разработчик смарт-контрактов',
-        desc: <span>Ищем опытного разработчика для работы над смарт-контрактами (Solidity) и&nbsp;не&nbsp;только. Опыт в&nbsp;blockchain не&nbsp;требуем&nbsp;&mdash; умеем растить blockchain developer&rsquo;ов из&nbsp;толковых senior&rsquo;ов.</span>,
+        name: 'Senior Blockchain developer',
+        desc: <span>В&nbsp;нашу команду MixBytes (https://mixbytes.io/) приглашаем опытного разработчика, который будет заниматься: разработкой смарт-контрактов (ICO, прототипов крипто-механизмов, например DAO-подобных), аудитом смарт-контрактов на&nbsp;предмет багов и&nbsp;уязвимостей, разработкой собственных решений (например библиотеки mixbytes-solidity) и&nbsp;активнейшем RnD&nbsp;на острие технологического прогресса. Опыт blockchain не&nbsp;требуем, умеем растить blockchain developer&rsquo;ов из&nbsp;толковых senior&rsquo;ов.</span>,
         requirements: [
-          <span>Базовые знания алгоритмов, структур данных, графов, конечных автоматов</span>,
-          <span>Базовые знания по&nbsp;криптографии, понимание криптографических протоколов</span>,
+          <span>Уверенные знания алгоритмов, структур данных, графов, конечных автоматов</span>,
+          <span>Уверенные знания по&nbsp;криптографии, понимание криптографических протоколов</span>,
           <span>Знание сетевого программирования</span>,
           <span>Опыт разработки на&nbsp;разных языках</span>,
           <span>Опыт разработки 4+&nbsp;года</span>,
         ],
         advantages: [
+          <span>Опыт разработки на Solidity</span>,
           <span>Знание *nix, опыт работы в&nbsp;консоли</span>,
           <span>Опыт разработки высоконагруженных отказоустойчивых систем</span>,
           <span>Знание&nbsp;js, node, python, java, C++</span>,
@@ -475,7 +476,6 @@ export const text = {
         ],
         conditions: [
           <span>Высокая зарплата</span>,
-          <span>Лофт на&nbsp;1905&nbsp;года</span>,
           <span>Возможна удаленная работа</span>,
         ]
       },
@@ -946,25 +946,25 @@ export const text = {
     job: {
       title: 'Vacancy',
       blockchainDev: {
-        name: 'Developer of smart contracts',
-        desc: <span>We&nbsp;are looking for an&nbsp;experienced developer to&nbsp;work on&nbsp;smart contracts (Solidity) and more. Experience in&nbsp;blockchain is&nbsp;not required, as&nbsp;we&nbsp;can grow blockchain developers out of&nbsp;clever seniors.</span>,
+        name: 'Senior Blockchain developer',
+        desc: <span>In&nbsp;our MixBytes team we&nbsp;invite an&nbsp;experienced developer who will deal with: smart contracts development (ICO, crypto-prototypes such as&nbsp;DAO), smart contracts audit, development of&nbsp;own solutions (for example, mixbytes-solidity library) and active RnD&nbsp;at the forefront of&nbsp;technological progress. Experience in&nbsp;blockchain is&nbsp;not required, as&nbsp;we&nbsp;can grow blockchain developers out of&nbsp;clever seniors.</span>,
         requirements: [
-          <span>Basic knowledge of&nbsp;algorithms, data structures, graphs, state machines</span>,
-          <span>Basic knowledge of&nbsp;cryptography, understanding of&nbsp;cryptographic protocols</span>,
+          <span>Confident knowledge of&nbsp;algorithms, data structures, graphs, finite-state machines</span>,
+          <span>Confident knowledge of&nbsp;cryptography, understanding of&nbsp;cryptographic protocols</span>,
           <span>Knowledge of&nbsp;network programming</span>,
-          <span>Experience of&nbsp;development in&nbsp;multiple programming languages</span>,
-          <span>4+&nbsp;years of&nbsp;development experience</span>,
+          <span>Experience in&nbsp;different programming languages</span>,
+          <span>Development experience 4+&nbsp;years</span>,
         ],
         advantages: [
+          <span>Experience in Solidity</span>,
           <span>Knowledge of&nbsp;*nix, experience in&nbsp;console programming</span>,
-          <span>Experience in&nbsp;the development of&nbsp;high-load fault-tolerant systems</span>,
-          <span>Knowledge of&nbsp;js, node, python, java, C++</span>,
-          <span>Basic sense of&nbsp;consensus algorithms</span>,
-          <span>Experience in&nbsp;low-level programming</span>,
+          <span>Experience in&nbsp;the development high-loaded fault-tolerant systems</span>,
+          <span>Knowledge of&nbsp;JS, Node.js, python, Java, C++</span>,
+          <span>Basic sense of consensus algorithms</span>,
+          <span>Experience in low-level programming</span>,
         ],
         conditions: [
           <span>High salary</span>,
-          <span>Loft office near the Ulitsa 1905 Goda metro station</span>,
           <span>Possibility of&nbsp;working remotely</span>,
         ]
       },

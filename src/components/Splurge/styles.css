@@ -19,8 +19,18 @@
 .splurge-logos {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 55px;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.splurge-logos div {
+  padding-top: 20px;
+  margin: 0 30px;
+}
+
+.splurge-logos img {
+  max-width: 200px;
+  max-height: 50px;
 }
 
 @media (max-width: 1400px) {
@@ -30,7 +40,7 @@
 
   .splurge-logos {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -63,7 +73,7 @@
 
   .splurge-logos div {
     width: 50%;
-    padding-top: 20px;
+    margin: 0;
   }
 
   .splurge-logos img {
