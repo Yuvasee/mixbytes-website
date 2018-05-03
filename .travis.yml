@@ -1,0 +1,33 @@
+---
+language: generic
+dist: trusty
+sudo: required
+services:
+  - docker
+env:
+  global:
+  - secure: "Y9iiiLOXNuWHfJYU1qxXP6YbB4kk5vQkiwLVVKY0ILOE004Jwi5NLg33RWLorFmjEWLZF1YrbwxO1lG9g1iventOEAiJ4OguP7gi/3abx1Op+np2lV2m4Z6hp3vC2FhiDeha7b9vh5OJJQHNw5JOdqrl0cTb+tCzqPM4GTUUFGt9C0SfWc/sd6JGeGg481NOgtu4WEwbMuArcSyzAobpg9M2NjsgHiHNxTm2BJHCaVOA7NecDvlmWAZNFegHs5GbU+zEevimzvzgcxtjOkd+zCrGUIF1iHc5DDOVU29AfuDfCihhvXYKGfKUzHVTi8KbVE/TS7rBxpTmqIP+uq75klWujhpAXWGJR8q03aetcJMi+aOPodAbh/7o3PzFRp6kP3HrGsA624e177ByCZSk+khIInDC1NW2zkZ/zs9J3Nj/9vZL7ekWkqYD/tQ83alV596ifUnZ2rlp3ILTkVizUNb778ZD60Pf/3nLUvZlPmQ3Cc45i+Borj5Xn17Fg1clvgE2/cYQ4cuiXUCoGc/tXWve5flJs5gS1VvU/WnHA+aXLOkQt07jH7J4QX7mBLuywaZdsAHN2Ql+pgUwWLmQZpWrO3NujYRIxnss/WpJ8RxRsPVjv9WeM4C2HHRahyNf+YqYXx/82fgoFoL8o9OAtPBPgVTuNO8uSiYd+w/U5vs="
+  - secure: "M7P6skkbJNsuR2L1r7YHs1jk7V1bI7a7g/tu6gG0H/hBNnUpwI6vmz9RPTvMBG0X0hlct1rXk33yqrtDcx79OX4i5D0dom64H2x8izxOTN5jnY9lINeMNvKYdX6eysOACw32RbErcf2KNIgOVUt2wroIArlhexEjtERn2clhvidTrTSj3tnQMKfw7JTG4sHBMEDW1l2yhg8whbhrD9hRDpC9tpFhyYdtcj9dmg5L1u9My9LWwHycIimpb6U4XQgfC23B6q+D907mZ8+zhLAwgETftD2nlLCrbuDu9m/sVSykasXVOg82mLW4rUKiYOFM2tvCfyPwEWjyM2PzMuRZgK1ulHRQfKt8KREuhg7idV2FMn9e/gID2wzUGwjXXKZ2OND3jvEQYHJIetb6wY+Sw4iRuPdgzNb2O/dO+u07gFJMjjv+pumKEcLnhI20PzW8rG7Y4ODIZFqN/khglGw2gih+I0kmPZQH/myq2zjCPp0gmmPD6Kfqzs6zCFY3hNxzkitadLdCx9o8n8ZsPeFNTy5NrMRHFQemD1K8cfyZyRoeSC/zUAV2bySB477erSf8hBtceES/oZKbQLtfb2MSfmIFbeUIylSC4WdUbIE7Wq9X4OyiXvshPJQ5gnvZNcKKrgr39WkSjnkbdK2tsEQemhWQwANUsklBQ3vlICfzERE="
+
+before_install:
+- docker --version
+- docker-compose --version
+
+install:
+- curl -L https://goss.rocks/install | sudo sh
+- sudo curl -o /usr/local/bin/ecs-cli https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-linux-amd64-latest
+- sudo chmod +x /usr/local/bin/ecs-cli
+- ecs-cli configure profile --profile-name travis --access-key $AWS_ACCESS_KEY_ID --secret-key $AWS_SECRET_ACCESS_KEY
+- ecs-cli configure --cluster default --default-launch-type EC2 --region eu-central-1 --config-name travis
+
+script:
+- /bin/bash docker/label_containers.sh &&
+  docker build -f docker/Dockerfile -t mixbytes-website:latest . &&
+  /bin/bash ./tests/integration.sh &&
+  docker images &&
+  /bin/bash ./docker/upload_to_registry.sh mixbytes-website
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
