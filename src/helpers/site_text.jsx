@@ -64,6 +64,14 @@ export const text = {
               <span>Прием Ethereum и Bitcoin без комиссий и других валют через сoinpayments.net</span>
             </div>,
         },
+        smartz: {
+          header: 'SMARTZ\u00A0— конструктор и\u00A0маркетплейс для смарт-контрактов',
+          buttonText: 'Попробовать!',
+          text:
+            <div>
+              <span>SMARTZ&nbsp;&mdash; это система управления полным жизненным циклом смарт-контрактов, призванная открыть окно в&nbsp;мир смарт-контрактов для всех. Платформа предоставляет людям и&nbsp;организациям возможность легко выбирать, запускать и&nbsp;управлять множеством смарт-контрактов в&nbsp;одном месте. Все происходит в&nbsp;рамках удобного пользовательского интерфейса, без необходимости навыков программирования. В&nbsp;то&nbsp;же время, платформа не&nbsp;хранит секретные ключи пользователей и&nbsp;основывается на&nbsp;принципах децентрализации. Ключи всегда на&nbsp;стороне клиента.</span>
+            </div>,
+        },
         consulting: {
           header: 'Консультирование',
           text: 'Разберем технические аспекты проведения ICO, расскажем о децентрализации проектов, текенизации и токеномике. Поможем с подбором и обучения разработчиков.',
@@ -452,6 +460,17 @@ export const text = {
             <li>Разработчик рабочих прототипов систем на&nbsp;движках Steem, EOS</li>
           </ul>,
       },
+      polyakov: {
+        name: 'Максим Поляков',
+        desc:
+          <ul>
+            <li>Разработал свой первый (безвредный) компьютерный вирус в&nbsp;ХХ веке</li>
+            <li>Опыт системного администрирования Linux 15&nbsp;лет (и&nbsp;он&nbsp;знает, кто такой Патрик Фолькердинг)</li>
+            <li>Работал back-end разработчиком на&nbsp;Perl в&nbsp;Mail.Ru Group (2013-2018)</li>
+            <li>Разрабатывает ПО&nbsp;уже более чем 20&nbsp;лет на&nbsp;разных языках программирования: Assembly, C/C++, Javascript, Perl, Lua, Golang, Solidity (а&nbsp;так&nbsp;же Basic, PHP и&nbsp;Python, но&nbsp;не&nbsp;очень любит говорить на&nbsp;эту тему)</li>
+            <li>Интересы: разработка смарт-контрактов, высоконагруженные системы, распределенные и&nbsp;децентрализованные системы, безопасность приложений, анонимность в&nbsp;Интернете</li>
+          </ul>,
+      },
     },
 
     job: {
@@ -551,6 +570,14 @@ export const text = {
               <span>User account, embeddable into any website able to&nbsp;customize its design, accepting BTC, ETH, and other currencies. Implementing KYC procedures, participation statistics, general ICO statistics, link to&nbsp;Google Ecommerce.</span><br/><br/>
               <span>Admin interface</span><br/><br/>
               <span>Receiving Ethereum and Bitcoin without commission and other currencies through coinpayments.net</span>
+            </div>,
+        },
+        smartz: {
+          header: 'SMARTZ\u00A0— smart contracts constructor &\u00A0marketplace',
+          buttonText: 'Try it now!',
+          text:
+            <div>
+              <span>SMARTZ is&nbsp;the full life cycle smart contracts management system which opens up&nbsp;the world of&nbsp;smart contracts for everyone. Our Platform provides individuals and organizations with the possibility to&nbsp;easily choose, deploy and manage a&nbsp;variety of&nbsp;Smart Contracts, within the framework of&nbsp;friendly&nbsp;UI and without the need for programming skills. Our Platform does not store user&rsquo;s secret keys or&nbsp;any private information due to&nbsp;its decentralized format and worldview. All keys remain firmly with the user.</span>
             </div>,
         },
         consulting: {
@@ -939,6 +966,17 @@ export const text = {
             <li>Started C/C++ programming in&nbsp;the 8th school grade, practiced in&nbsp;competitive programming</li>
             <li>Participated in&nbsp;the final of&nbsp;the All-Russia Programming Competition. Has a&nbsp;diploma of&nbsp;the 3d&nbsp;degree</li>
             <li>Developed prototypes using Steem and EOS platforms</li>
+          </ul>,
+      },
+      polyakov: {
+        name: 'Maxim Polyakov',
+        desc:
+          <ul>
+            <li>Created his first (harmless) computer virus in&nbsp;20-th century</li>
+            <li>Has 15&nbsp;years experience in&nbsp;Linux system administration (he&nbsp;knows who Patrick Volkerding&nbsp;is)</li>
+            <li>Worked as&nbsp;Perl back-end developer in&nbsp;Mail.Ru Group (2013-2018)</li>
+            <li>Deleloped software for more then 20&nbsp;years using different languages: Assembly, C/C++, Javascript, Perl, Lua, Golang, Solidity (also Basic, PHP and Python, but he&nbsp;does not like to&nbsp;talk about&nbsp;it)</li>
+            <li>Interests: smart contract development, highload, distributed decentralized systems, software security, internet anonymity</li>
           </ul>,
       },
     },

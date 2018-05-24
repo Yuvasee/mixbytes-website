@@ -56,6 +56,13 @@ class Team extends Component {
         },
       },
       {
+        link: 'polyakov',
+        name: text.polyakov.name,
+        photo: require('./i/polyakov.jpg'),
+        position: 'Back-end Developer',
+        text: text.polyakov.desc,
+      },
+      {
         link: 'ievlev',
         name: text.ievlev.name,
         photo: require('./i/ievlev.png'),

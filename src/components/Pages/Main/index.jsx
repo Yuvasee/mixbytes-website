@@ -13,7 +13,7 @@ import Splurge from 'components/Splurge';
 import Capabilities from 'components/Capabilities';
 import MeetUs from 'components/MeetUs';
 // import { FeedbackForm } from '../../FeedbackForm'
-import { ICOTechIcn, ConsultingIcn, BlokchainIcn, EtheriumIcn, DocsIcn } from './icons';
+import { SmartzIcn, ICOTechIcn, ConsultingIcn, BlokchainIcn, EtheriumIcn, DocsIcn } from './icons';
 import { OpenSource } from '../../OpenSource';
 
 import './styles.css';
@@ -62,9 +62,10 @@ class Main extends Component {
     );
   }
 
-  getServiceBlock = (element, isFocused, isList) => {
+  getServiceBlock = (element, isFocused, isList, html, index) => {
     return (
       <div
+        key={element.header + index}
         className={
           `service-block ${isFocused ? 'service-block--focused' : ''}` +
           `${isList ? 'service-block-list' : ''}`
@@ -74,6 +75,7 @@ class Main extends Component {
         <div className="service-block-header">{element.header}</div>
         <div className="service-block-text">{element.text}</div>
         <div className="service-block-footer">{element.footerImg}</div>
+        { html }
       </div>
     );
   }
@@ -90,18 +92,30 @@ class Main extends Component {
             {
               [
                 {
+                  header: text.services.smartz.header,
+                  text: text.services.smartz.text,
+                  icn: SmartzIcn,
+                  html: <a target="_blank" rel="noopener noreferrer" href="https://smartz.io/"><button className="btn btn-success service-button">{text.services.smartz.buttonText}</button></a>,
+                },
+                {
                   header: text.services.icoTech.header,
                   text: text.services.icoTech.text,
                   icn: ICOTechIcn,
                   isList: true,
                 },
                 {
-                  header: text.services.consulting.header,
-                  text: text.services.consulting.text,
-                  icn: ConsultingIcn,
-                },
+                  header: text.services.docs.header,
+                  text: text.services.docs.text,
+                  icn: DocsIcn,
+                }
               ]
-              .map(element => this.getServiceBlock(element, element.isFocused, element.isList))
+              .map((element, index) => this.getServiceBlock(
+                element,
+                element.isFocused,
+                element.isList,
+                element.html,
+                index
+              ))
             }
           </div>
           <div className="column services-column">
@@ -120,12 +134,18 @@ class Main extends Component {
                   icn: EtheriumIcn,
                 },
                 {
-                  header: text.services.docs.header,
-                  text: text.services.docs.text,
-                  icn: DocsIcn,
+                  header: text.services.consulting.header,
+                  text: text.services.consulting.text,
+                  icn: ConsultingIcn,
                 }
               ]
-              .map(element => this.getServiceBlock(element, element.isFocused, element.isList))
+              .map((element, index) => this.getServiceBlock(
+                element,
+                element.isFocused,
+                element.isList,
+                element.html,
+                index,
+              ))
             }
           </div>
         </div>
