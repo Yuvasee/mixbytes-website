@@ -1,15 +1,15 @@
 user			nginx;
 worker_processes	auto;
 
-error_log	/var/log/nginx/error.log warn;                        
-pid		/var/run/nginx.pid;  
+error_log	/var/log/nginx/error.log warn;
+pid		/var/run/nginx.pid;
 
-events {                        
+events {
 	worker_connections  4096;
 	multi_accept on;
-}                               
+}
 
-http {                          
+http {
 	include       /etc/nginx/mime.types;
 	default_type  application/octet-stream;
 
@@ -48,11 +48,11 @@ http {
 			if ($http_x_forwarded_proto != "https") { return 301 https://$host$request_uri; }
 			try_files $uri /index.html;
 			#add_header Cache-Control "no-store, no-cache, must-revalidate";
-			expires 6h;
+			expires 1h;
 		}
 		location ~* \.(?:css(\.map)?|js(\.map)?|jpe?g|png|gif|ico|cur|heic|webp|tiff?|mp3|m4a|aac|ogg|midi?|wav|mp4|mov|webm|mpe?g|avi|ogv|flv|wmv)$ {
 			if ($http_x_forwarded_proto != "https") { return 301 https://$host$request_uri; }
-			expires 7d;
+			expires 6h;
 		}
 		location = /robots.txt {
 			allow all;
