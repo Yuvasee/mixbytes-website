@@ -103,11 +103,6 @@ class Main extends Component {
                   icn: ICOTechIcn,
                   isList: true,
                 },
-                {
-                  header: text.services.docs.header,
-                  text: text.services.docs.text,
-                  icn: DocsIcn,
-                }
               ]
               .map((element, index) => this.getServiceBlock(
                 element,
@@ -133,11 +128,6 @@ class Main extends Component {
                   text: text.services.etherium.text,
                   icn: EtheriumIcn,
                 },
-                {
-                  header: text.services.consulting.header,
-                  text: text.services.consulting.text,
-                  icn: ConsultingIcn,
-                }
               ]
               .map((element, index) => this.getServiceBlock(
                 element,

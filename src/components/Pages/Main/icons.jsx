@@ -7,23 +7,6 @@ export const BlokchainIcn =
     </g>
   </svg>;
 
-export const ConsultingIcn =
-  <svg width="57" height="52" xmlns="http://www.w3.org/2000/svg">
-    <g stroke="#FF5932" fill="none" fillRule="evenodd">
-      <path strokeWidth="2" d="M2 19.54L28.5 50 55 19.54 44.4 3.65 28.5 1 13.925 3.649z"/>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M14.333 3.714L13 20 29 1l16 19-1-16.286"/>
-      <path d="M2 19.5h53M13 20l15.5 28L45 20"/>
-    </g>
-  </svg>;
-
-export const DocsIcn =
-  <svg width="51" height="51" xmlns="http://www.w3.org/2000/svg">
-    <g stroke="#FF5932" fill="none" fillRule="evenodd">
-      <rect strokeWidth="2.5" x="1.25" y="1.25" width="48.5" height="48.5" rx="8"/>
-      <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M16 19l5 15 5-15 5 15 5-15"/>
-    </g>
-  </svg>;
-
 export const EtheriumIcn =
   <svg width="37" height="54" xmlns="http://www.w3.org/2000/svg">
     <g stroke="#FF5932" strokeWidth="1.492" fill="none" fillRule="evenodd">
