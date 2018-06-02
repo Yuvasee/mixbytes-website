@@ -37,7 +37,7 @@ export const text = {
     headerJumbo: {
       header: <h1>Блокчейн-решения<br />и&nbsp;смарт-контракты</h1>,
       description: 'Мы\u00A0\u2014 команда программистов. Составляем технические проекты, внедряем блокчейн-технологии, пишем смарт-контракты. Проводим корпоративное обучение и\u00A0открытые лекции.',
-      stack: 'Стек: Solidity/Truffle, JS/Node, C++/Graphene, Python.',
+      stack: <span>Стек: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C++&nbsp;/ Graphene, Python.</span>,
     },
 
     main: {
@@ -72,21 +72,13 @@ export const text = {
               <span>SMARTZ&nbsp;&mdash; это система управления полным жизненным циклом смарт-контрактов, призванная открыть окно в&nbsp;мир смарт-контрактов для всех. Платформа предоставляет людям и&nbsp;организациям возможность легко выбирать, запускать и&nbsp;управлять множеством смарт-контрактов в&nbsp;одном месте. Все происходит в&nbsp;рамках удобного пользовательского интерфейса, без необходимости навыков программирования. В&nbsp;то&nbsp;же время, платформа не&nbsp;хранит секретные ключи пользователей и&nbsp;основывается на&nbsp;принципах децентрализации. Ключи всегда на&nbsp;стороне клиента.</span>
             </div>,
         },
-        consulting: {
-          header: 'Консультирование',
-          text: 'Разберем технические аспекты проведения ICO, расскажем о децентрализации проектов, текенизации и токеномике. Поможем с подбором и обучения разработчиков.',
-        },
         blokchain: {
-          header: 'Разработка\u00A0блокчейн-систем',
-          text: 'Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.',
+          header: <span>Разработка&nbsp;блокчейн-систем</span>,
+          text: <span>Мы развернули и поддерживаем надежную инфраструктуру в облаке для запуска ноды EOS для создания новых блоков <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span>,
         },
         etherium: {
           header: 'Смарт-контракты\u00A0Ethereum',
           text: 'Разработка контрактов токенов, прототипов (proof-of-concept) и систем смарт-контрактов для блокчейн-проектов. Аудирование смарт-контрактов, проверка ошибок, уязвимостей и автоматизация запуска смарт-контрактов в блокчейн.',
-        },
-        docs: {
-          header: 'Разработка\u00A0документации',
-          text: 'Технические документы с описанием методов решения задач в тех. терминах и технические Whitepaper с рассказом о работе технологий.',
         },
       },
 
@@ -545,7 +537,7 @@ export const text = {
     headerJumbo: {
       header: <h1>Blockchain solutions<br />and&nbsp;smart-contracts</h1>,
       description: <span>We&nbsp;are a&nbsp;team of&nbsp;programmers. We&nbsp;fullfill technical projects, implement blockchain technologies, write smart contracts. We&nbsp;conduct corporate training and open lectures.</span>,
-      stack: <span>Stack: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C ++&nbsp;/ Graphene, Python.</span>,
+      stack: <span>Stack: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C++&nbsp;/ Graphene, Python.</span>,
     },
 
     main: {
@@ -573,28 +565,20 @@ export const text = {
             </div>,
         },
         smartz: {
-          header: 'SMARTZ\u00A0— smart contracts constructor &\u00A0marketplace',
-          buttonText: 'Try it now!',
+          header: 'SMARTZ\u00A0— smart contracts management system &\u00A0marketplace',
+          buttonText: 'Try Smartz now!',
           text:
             <div>
-              <span>SMARTZ is&nbsp;the full life cycle smart contracts management system which opens up&nbsp;the world of&nbsp;smart contracts for everyone. Our Platform provides individuals and organizations with the possibility to&nbsp;easily choose, deploy and manage a&nbsp;variety of&nbsp;Smart Contracts, within the framework of&nbsp;friendly&nbsp;UI and without the need for programming skills. Our Platform does not store user&rsquo;s secret keys or&nbsp;any private information due to&nbsp;its decentralized format and worldview. All keys remain firmly with the user.</span>
+              <span>Our flagship project&nbsp;&mdash; full life cycle smart contracts management system, which opens up&nbsp;the world of&nbsp;smart contracts for every non-programmer. We&nbsp;have wide choose of&nbsp;smart contracts templates to&nbsp;configure, deploy and manage within the framework of&nbsp;friendly&nbsp;UI and without the need for programming skills.</span>
             </div>,
-        },
-        consulting: {
-          header: 'Consulting',
-          text: <span>Analyze technical aspects of&nbsp;conducting ICOs, tell about decentralization of&nbsp;projects, tokenization, tokenomics. Help with the decentralization of&nbsp;projects, tokenization, tokenomics.</span>,
         },
         blokchain: {
           header: <span>Blockchain&nbsp;systems&nbsp;development</span>,
-          text: <span>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
+          text: <span>We maintain reliable cloud server infrastructure for running EOS block producing node <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
         },
         etherium: {
           header: <span>Ethereum&nbsp;Smart&nbsp;Contracts.</span>,
           text: <span>Developing token contracts, prototypes (proof-of-concept) and smart contract systems for blockchain projects. Developing Checking smart contracts for bugs and vulnerabilities and automating the launch of&nbsp;smart contracts in&nbsp;blockchain.</span>,
-        },
-        docs: {
-          header: <span>Developing&nbsp;documentation</span>,
-          text: <span>Technical documents describing in&nbsp;technical terms how we&nbsp;will approach the task and technical white papers where we&nbsp;tell a&nbsp;wider audience how our technology works.</span>,
         },
       },
 
@@ -882,7 +866,7 @@ export const text = {
         desc:
           <ul>
             <li>Graduated from the Bauman Moscow State Technical University (BMSTU), Faculty &laquo;Computer Complexes, Systems and Networks&raquo;</li>
-            <li>Experience in&nbsp;programming for 17&nbsp;years (Assembler, C/C ++, Java, PHP, Perl, Python, JS)</li>
+            <li>Experience in&nbsp;programming for 17&nbsp;years (Assembler, C/C++, Java, PHP, Perl, Python, JS)</li>
             <li>Experience in&nbsp;Big Data solutions developing Big Data on&nbsp;the industrial-scale Hadoop cluster</li>
             <li>Worked as&nbsp;a&nbsp;team leader in&nbsp;the Internet search project Поиск@mail.ru</li>
             <li>Worked as&nbsp;a&nbsp;system architect at&nbsp;1C&nbsp;Company</li>
@@ -894,7 +878,7 @@ export const text = {
         desc:
           <ul>
             <li>Graduated from the Moscow Institute of&nbsp;Electronics and Mathematics, Cybernetics Faculty, Diploma on&nbsp;ranking algorithms in&nbsp;searching engines</li>
-            <li>12&nbsp;years of&nbsp;programming experience (C&nbsp;/ C ++, Java, PHP, Perl, Python, JS)</li>
+            <li>12&nbsp;years of&nbsp;programming experience (C&nbsp;/ C++, Java, PHP, Perl, Python, JS)</li>
             <li>Headed the department in&nbsp;the Internet searching engine Поиск@mail.ru for many years</li>
             <li>Worked on&nbsp;the Data Science Architect position in&nbsp;such projects as&nbsp;Lang.ai and Sentisis.com</li>
             <li>Experienced in&nbsp;creating industrial&nbsp;IT solutions in&nbsp;Google and Amazon clouds</li>
@@ -906,7 +890,7 @@ export const text = {
         desc:
           <ul>
             <li>Graduated from the National Research Nuclear University &laquo;Moscow Engineering Physics Institute&raquo;, Faculty of&nbsp;Information Security of&nbsp;Banking Systems</li>
-            <li>Started programming on&nbsp;C/C ++ and developing sites while learning at&nbsp;school, <s>and then break them, hehe</s></li>
+            <li>Started programming on&nbsp;C/C++ and developing sites while learning at&nbsp;school, <s>and then break them, hehe</s></li>
             <li>Worked on&nbsp;several projects as&nbsp;an&nbsp;information security expert, including the Central Bank of&nbsp;Russia</li>
             <li>Has more than 30&nbsp;personal publications in&nbsp;the Hacker magazine, more than 100&nbsp;as an&nbsp;editor</li>
             <li>Interests: information security, system analysis, investment, psychology</li>
