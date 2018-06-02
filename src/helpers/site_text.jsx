@@ -37,7 +37,7 @@ export const text = {
     headerJumbo: {
       header: <h1>Блокчейн-решения<br />и&nbsp;смарт-контракты</h1>,
       description: 'Мы\u00A0\u2014 команда программистов. Составляем технические проекты, внедряем блокчейн-технологии, пишем смарт-контракты. Проводим корпоративное обучение и\u00A0открытые лекции.',
-      stack: 'Стек: Solidity/Truffle, JS/Node, C++/Graphene, Python.',
+      stack: <span>Стек: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C++&nbsp;/ Graphene, Python.</span>,
     },
 
     main: {
@@ -74,7 +74,7 @@ export const text = {
         },
         blokchain: {
           header: <span>Разработка&nbsp;блокчейн-систем</span>,
-          text: <span>EOS Blockchain Producer<br/>Мы развернули и поддерживаем надежную инфраструктуру в облаке для запуска ноды EOS для создания новых блоков <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span>,
+          text: <span>Мы развернули и поддерживаем надежную инфраструктуру в облаке для запуска ноды EOS для создания новых блоков <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span>,
         },
         etherium: {
           header: 'Смарт-контракты\u00A0Ethereum',
@@ -574,7 +574,7 @@ export const text = {
         },
         blokchain: {
           header: <span>Blockchain&nbsp;systems&nbsp;development</span>,
-          text: <span>EOS Blockchain Producer<br/>We maintain reliable cloud server infrastructure for running EOS block producing node <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
+          text: <span>We maintain reliable cloud server infrastructure for running EOS block producing node <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
         },
         etherium: {
           header: <span>Ethereum&nbsp;Smart&nbsp;Contracts.</span>,
