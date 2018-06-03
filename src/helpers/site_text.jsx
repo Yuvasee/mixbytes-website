@@ -73,8 +73,10 @@ export const text = {
             </div>,
         },
         blokchain: {
+          header: <span>Поддержка блокчейна EOS</span>,
+          text: <span>Мы развернули и поддерживаем надежную инфраструктуру в облаке для запуска ноды EOS и создания новых блоков <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.</span>,
           header: <span>Разработка&nbsp;блокчейн-систем</span>,
-          text: <span>Мы развернули и поддерживаем надежную инфраструктуру в облаке для запуска ноды EOS для создания новых блоков <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span>,
+          text: <span>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span>,
         },
         etherium: {
           header: 'Смарт-контракты\u00A0Ethereum',
@@ -573,8 +575,10 @@ export const text = {
             </div>,
         },
         blokchain: {
+          header: <span>EOS&nbsp;Blockchain&nbsp;Producer</span>,
+          text: <span>We maintain reliable cloud server infrastructure for running EOS block producing node <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.</span>,
           header: <span>Blockchain&nbsp;systems&nbsp;development</span>,
-          text: <span>We maintain reliable cloud server infrastructure for running EOS block producing node <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
+          text: <span>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
         },
         etherium: {
           header: <span>Ethereum&nbsp;Smart&nbsp;Contracts.</span>,
