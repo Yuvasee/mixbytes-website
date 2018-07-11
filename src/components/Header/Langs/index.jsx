@@ -1,18 +1,31 @@
 import React from 'react';
 
-import { Dropdown } from '../../common/Dropdown/index';
+// import { Dropdown } from '../../common/Dropdown/index';
 import { getLanguage, setLanguage } from '../../../helpers/language';
 
 import './styles.css';
 
+const titles = {
+  RU: 'MixBytes - разработка смарт-контрактов и приватных блокчейнов',
+  EN: 'MixBytes - smart contracts and private blockchain development',
+}
+
 class Langs extends React.Component {
 
   constructor(props) {
-    super();
+    super(props);
 
     const currentLanguage = getLanguage();
 
     this.state = { value: currentLanguage };
+  }
+
+  componentDidMount() {
+    this.setTitleText()
+  }
+
+  componentDidUpdate() {
+    this.setTitleText()
   }
 
   render() {
@@ -41,6 +54,12 @@ class Langs extends React.Component {
     );
   }
 
+  setTitleText = () => {
+    if (document && document.title) {
+      document.title = titles[this.state.value]
+    }
+  }
+
   toggleLanguage() {
     const newLanguage = this.state.value === 'RU' ? 'EN' : 'RU';
 
@@ -49,7 +68,7 @@ class Langs extends React.Component {
     window.location.reload();
   }
 
-  onLangageChange(language) {
+  onLanguageChange(language) {
     if (this.state.value === language) {
       return;
     }

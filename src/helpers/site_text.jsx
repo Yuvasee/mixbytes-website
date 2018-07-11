@@ -18,7 +18,7 @@ export const text = {
       ethereumBalance: 'Баланс Ethereum-кошелька',
       transactionInfo: 'Информация о транзакции',
       checkTimestamps: 'Проверить значения timestamps в коде',
-      timestampsPlaceholder: 'Скопипуйте код сюда',
+      timestampsPlaceholder: 'Скопируйте код сюда',
       program: 'Программа',
       requirements: 'Требования',
       advantages: 'Будет плюсом',
