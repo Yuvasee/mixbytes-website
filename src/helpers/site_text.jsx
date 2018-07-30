@@ -73,12 +73,12 @@ export const text = {
             </div>,
         },
         blokchain: {
-          header: <span>Поддержка блокчейна EOS</span>,
-          text: <span>Мы развернули и поддерживаем надежную инфраструктуру в облаке для запуска ноды EOS и создания новых блоков <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/><span><b>Разработка&nbsp;блокчейн-систем</b></span><br/><br/><span>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span></span>,
+          header: <span></span>,
+          text: <span><b>Разработка&nbsp;блокчейн-систем</b><br/><br/><span>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span></span>,
         },
         etherium: {
-          header: 'Смарт-контракты\u00A0Ethereum',
-          text: 'Разработка контрактов токенов, прототипов (proof-of-concept) и систем смарт-контрактов для блокчейн-проектов. Аудирование смарт-контрактов, проверка ошибок, уязвимостей и автоматизация запуска смарт-контрактов в блокчейн.',
+          header: '',
+          text: <span><b>Разработка смарт-контрактов</b><br/><br/>Разработка контрактов токенов, прототипов (proof-of-concept) и&nbsp;систем смарт-контрактов для блокчейн-проектов на&nbsp;Ethereum. Автоматизация запуска смарт-контрактов в&nbsp;блокчейн.<br/><br/><b>Аудит смарт-контрактов</b><br/><br/>Аудирование смарт-контрактов, проверка на&nbsp;наличие уязвимостей, логических ошибок, соответствие WhitePaper. Код контракта просматривается вручную, при необходимости пишутся unit-тесты.</span>,
         },
       },
 
@@ -573,12 +573,11 @@ export const text = {
             </div>,
         },
         blokchain: {
-          header: <span>EOS&nbsp;Blockchain&nbsp;Producer</span>,
-          text: <span>We maintain reliable cloud server infrastructure for running EOS block producing node <a href='https://bp.eosgo.io/listing/mixbytes/'>Mixbytes EOS BP</a>.<br/><br/><span><b>Blockchain&nbsp;systems&nbsp;development</b></span><br/><br/><span>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span></span>,
+          text: <span><b>Blockchain&nbsp;systems&nbsp;development</b><br/><br/><span>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span></span>,
         },
         etherium: {
-          header: <span>Ethereum&nbsp;Smart&nbsp;Contracts.</span>,
-          text: <span>Developing token contracts, prototypes (proof-of-concept) and smart contract systems for blockchain projects. Developing Checking smart contracts for bugs and vulnerabilities and automating the launch of&nbsp;smart contracts in&nbsp;blockchain.</span>,
+          header: <span></span>,
+          text: <span><span><b>Smart contracts development</b><br/><br/></span>Developing token contracts, prototypes (proof-of-concept) and smart contract systems for Ethereum blockchain projects. Automating the launch of&nbsp;smart contracts in&nbsp;blockchain.<br/><br/><b>Smart contracts audit</b><br/><br/>Audit of&nbsp;smart contracts, checking for vulnerabilities, logical errors, WhitePaper compliance. The contract code is&nbsp;auditing manually, unit-tests are written if&nbsp;necessary.</span>,
         },
       },
 
