@@ -117,16 +117,16 @@ class Main extends Component {
             {
               [
                 {
+                  header: text.services.etherium.header,
+                  text: text.services.etherium.text,
+                  isFocused: true,
+                  icn: EtheriumIcn,
+                },
+                {
                   header: text.services.blokchain.header,
                   text: text.services.blokchain.text,
                   icn: BlokchainIcn,
-                  isFocused: true,
                   footerImg: <div className="blockchain-systems-img"></div>
-                },
-                {
-                  header: text.services.etherium.header,
-                  text: text.services.etherium.text,
-                  icn: EtheriumIcn,
                 },
               ]
               .map((element, index) => this.getServiceBlock(
