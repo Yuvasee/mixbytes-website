@@ -211,11 +211,11 @@ class Education extends Component {
               },
             ]} />
           </ContentBlock>
-          <ContentBlock id="participation">
+          /*<ContentBlock id="participation">
             <h2>{text.conditions.title}</h2>
             <div className="white-block">
               {text.conditions.soon}
-              {/*
+              {
               <BlockTwoColumns content={[
                 {
                   header: text.conditions.early.header,
@@ -237,9 +237,9 @@ class Education extends Component {
                   </p>
                 </div>
               </div>
-              */}
+              }
             </div>
-          </ContentBlock>
+          </ContentBlock>*/
           <ContentBlock id="place">
             <h2>{text.location.title}</h2>
             <p><img src={require('./i/kluch.jpg')} /></p>
