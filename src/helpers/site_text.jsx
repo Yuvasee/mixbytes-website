@@ -168,13 +168,13 @@ export const text = {
         description: 'Описание',
         program: 'Программа',
         speakers: 'Ведущие',
-        participation: 'Участие',
+        //participation: 'Участие',
         place: 'Место',
         partners: 'Партнеры',
       },
       header: {
         title: <h2>Интенсивы, лекции и мастер-классы по блокчейн-технологиям</h2>,
-        description: <p>За время своего существования мы провели десятки образовательных мероприятий: начиная с небольших митапов и заканчивая двухдневными интенсивами. На наших мероприятиях вы получите фундаментальное понимание технической и&nbsp;юридической базы блокчейн-технологий. Криптографический фундамент, консенсусы и&nbsp;майнинг, технические тонкости&nbsp;ICO, юридическая практика. Вы,&nbsp;наконец, поймете как и&nbsp;почему всё это работает!</p>,
+        description: <p>За время своего существования мы провели десятки образовательных мероприятий: начиная с небольших митапов и заканчивая двухдневными интенсивами. На наших мероприятиях вы получите фундаментальное понимание технической и&nbsp;юридической базы блокчейн-технологий, криптографического фундамента, консенсусов и&nbsp;майнинга. Вы,&nbsp;наконец, поймете как и&nbsp;почему всё это работает!</p>,
         comment: <p>Если вы хотите заказать у нас обучение, напишите запрос на почту <a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a>.</p>,
       },
       info: {
@@ -205,19 +205,19 @@ export const text = {
       },
       asideBlock: {
         title: 'Будет полезно',
-        businessmen: 'бизнесменам',
-        investors: 'инвесторам',
-        lawyers: 'юристам',
-        managers: 'менеджерам',
-        programmers: 'программистам',
+        businessmen: ' бизнесменам',
+        investors: ' инвесторам',
+        lawyers: ' юристам',
+        managers: ' менеджерам',
+        programmers: ' программистам',
       },
       description: {
-        intro: 'Блокчейн-технологии ворвались в\u00A0нашу жизнь\u00A0и, похоже, собираются полностью изменить\u00A0её. Биткоин и\u00A0ICO у\u00A0всех на\u00A0устах, в\u00A0них вкладывают деньги, часто даже не\u00A0понимая о\u00A0чем идет речь. Ведь, к\u00A0сожалению, большая часть доступной информации\u00A0&mdash; либо слишком техническая и\u00A0непонятная документация для программистов, либо слишком рекламная и\u00A0провокационная, нацеленная на\u00A0привлечение инвестиций в\u00A0очередное ICO.',
+        intro: 'Блокчейн-технологии ворвались в\u00A0нашу жизнь\u00A0и, похоже, собираются полностью изменить\u00A0её. Биткоин и\u00A0ICO у\u00A0всех на\u00A0устах, в\u00A0них вкладывают деньги, часто даже не\u00A0понимая о\u00A0чем идет речь. Ведь, к\u00A0сожалению, большая часть доступной информации\u00A0 либо слишком техническая и\u00A0непонятная документация для программистов, либо слишком рекламная и\u00A0провокационная, нацеленная на\u00A0привлечение инвестиций в\u00A0очередное ICO.',
         courceGoal: 'Мы\u00A0болеем за\u00A0популяризацию блокчейн-технологий, за\u00A0прозрачность и\u00A0доступность информации, за\u00A0безопасность финансовых операций. На\u00A0курсе вы\u00A0получите фундамент знаний, который позволит вам уверенно ориентироваться в\u00A0новостном и\u00A0рекламном потоке. И\u00A0принимать взвешенные решения об\u00A0использовании блокчейн-технологий в\u00A0своей жизни, карьере и\u00A0бизнесе.',
       },
       advices: {
-        first: 'Если вы\u00A0скептик&nbsp;&mdash; приходите и\u00A0задайте спикерам самые сложные вопросы. Cкорее всего, вы\u00A0поверите в\u00A0силу блокчейн-технологий больше, чем раньше.',
-        second: 'Если блокчейн и\u00A0ICO уже вскружили вам голову&nbsp;&mdash; приходите тоже, мы\u00A0постараемся немного охладить ваш пыл.',
+        first: 'Если вы\u00A0скептик — приходите и\u00A0задайте спикерам самые сложные вопросы. Cкорее всего, вы\u00A0поверите в\u00A0силу блокчейн-технологий больше, чем раньше.',
+        second: 'Если блокчейн и\u00A0ICO уже вскружили вам голову — приходите тоже, мы\u00A0постараемся немного охладить ваш пыл.',
         promise: 'Обещаем, что на\u00A0курсе не\u00A0будет никакой рекламы и\u00A0призывов куда-либо вложить деньги.',
       },
       program: {
@@ -519,7 +519,7 @@ export const text = {
       transactionInfo: 'Transaction information',
       checkTimestamps: 'Check timestamps in code',
       timestampsPlaceholder: 'Copy code here',
-      program: 'Program',
+      program: 'Program Sample',
       requirements: 'Requirements',
       advantages: 'It would be a plus to have',
       conditions: 'Conditions',
@@ -672,9 +672,9 @@ export const text = {
         partners: 'Partners',
       },
       header: {
-        title: <h2>2-Days Intensive course<br />&laquo;Dive into&nbsp;Blockchain&raquo;</h2>,
-        description: <p><strong>During the two days</strong> you will receive a&nbsp;fundamental understanding of&nbsp;the technical and legal basis of&nbsp;blockchain technologies. Cryptographic foundation, consensus and mining, technical subtleties of&nbsp;ICO, legal practice. You will finally understand how and why it&nbsp;all works!</p>,
-        comment: <p>The course is&nbsp;conducted with the support&nbsp;of <a href="http://cych.io">cych.io</a> and invited experts from The Russian Academy of&nbsp;National Economy and Public Service under the President of&nbsp;the Russian Federation.</p>,
+        title: <h2>Intensive courses, lectures and master classes on blockchain technology</h2>,
+        description: <p>We have already conducted dozens of educational events: starting from small meetups and ending with two-day intensities. At our events, you will get a fundamental understanding of the technical and legal basis of blockchain technologies, cryptography theory, consensus types, and mining. You will finally understand how and why it all works!</p>,
+        comment: <p>If you want to order a course, write a request to <a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a>.</p>,
       },
       info: {
         blockchain: {
@@ -704,11 +704,11 @@ export const text = {
       },
       asideBlock: {
         title: 'Will be useful for',
-        businessmen: 'businessmen',
-        investors: 'investors',
-        lawyers: 'lawyers',
-        managers: 'managers',
-        programmers: 'programmers',
+        businessmen: ' businessmen',
+        investors: ' investors',
+        lawyers: ' lawyers',
+        managers: ' managers',
+        programmers: ' programmers',
       },
       description: {
         intro: <span>The blokchain technologies appeared in&nbsp;our lives and, it&nbsp;seems, they&rsquo;re going to&nbsp;completely change&nbsp;it. Bitcoin and ICO are on&nbsp;everyone&rsquo;s lips, people invest money in&nbsp;that without even knowing what it&nbsp;is&nbsp;all about. Unfortunately, most of&nbsp;the available information is&nbsp;either too technical and incomprehensible documentation for programmers, or&nbsp;too advertising and provocative, aimed at&nbsp;the attracting investments to&nbsp;some ICO.</span>,
@@ -958,7 +958,7 @@ export const text = {
             <li>Created his first (harmless) computer virus in&nbsp;20-th century</li>
             <li>Has 15&nbsp;years experience in&nbsp;Linux system administration (he&nbsp;knows who Patrick Volkerding&nbsp;is)</li>
             <li>Worked as&nbsp;Perl back-end developer in&nbsp;Mail.Ru Group (2013-2018)</li>
-            <li>Deleloped software for more then 20&nbsp;years using different languages: Assembly, C/C++, Javascript, Perl, Lua, Golang, Solidity (also Basic, PHP and Python, but he&nbsp;does not like to&nbsp;talk about&nbsp;it)</li>
+            <li>More than 20&nbsp;years experience in&nbsp;programming using different languages: Assembly, C/C++, Javascript, Perl, Lua, Golang, Solidity (also Basic, PHP and&nbsp;Python, but he does not like to talk about it)</li>
             <li>Interests: smart contract development, highload, distributed decentralized systems, software security, internet anonymity</li>
           </ul>,
       },
