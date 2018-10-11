@@ -13,7 +13,7 @@ class BlockTwoColumns extends Component {
         <div>
           {persons.map((element, i) => (
             <div key={i}>
-              <img src={element.photo} />
+              <img src={element.photo} alt="" />
               <p className="person-name">{element.name}</p>
               {element.desc}
             </div>

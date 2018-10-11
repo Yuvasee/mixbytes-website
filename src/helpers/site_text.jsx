@@ -37,7 +37,8 @@ export const text = {
     headerJumbo: {
       header: <h1>Блокчейн-решения<br />и&nbsp;смарт-контракты</h1>,
       description: 'Мы\u00A0\u2014 команда программистов. Составляем технические проекты, внедряем блокчейн-технологии, пишем смарт-контракты. Проводим корпоративное обучение и\u00A0открытые лекции.',
-      stack: <span>Стек: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C++&nbsp;/ Graphene, Python.</span>,
+      stack: <span>Стек: C++, Java, JS/TS, Python, Solidity.</span>,
+      blockchains: <span>Блокчейны: Bitcoin, Ethereum, EOS.</span>,
     },
 
     main: {
@@ -73,12 +74,17 @@ export const text = {
             </div>,
         },
         blokchain: {
-          header: <span></span>,
-          text: <span><b>Разработка&nbsp;блокчейн-систем</b><br/><br/><span>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span></span>,
+          header: <span>Разработка&nbsp;блокчейн-систем</span>,
+          text: <span>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span>,
         },
         etherium: {
-          header: '',
-          text: <span><b>Разработка смарт-контрактов</b><br/><br/>Разработка контрактов токенов, прототипов (proof-of-concept) и&nbsp;систем смарт-контрактов для блокчейн-проектов на&nbsp;Ethereum. Автоматизация запуска смарт-контрактов в&nbsp;блокчейн.<br/><br/><b>Аудит смарт-контрактов</b><br/><br/>Аудирование смарт-контрактов, проверка на&nbsp;наличие уязвимостей, логических ошибок, соответствие WhitePaper. Код контракта просматривается вручную, при необходимости пишутся unit-тесты.</span>,
+          text:
+          <div>
+            <div style={{marginBottom: '8px'}}><b>Разработка смарт-контрактов</b></div>
+            <div style={{marginBottom: '22px'}}>Разработка контрактов токенов, прототипов (proof-of-concept) и&nbsp;систем смарт-контрактов для блокчейн-проектов на&nbsp;Ethereum. Автоматизация запуска смарт-контрактов в&nbsp;блокчейн.</div>
+            <div style={{marginBottom: '8px'}}><b>Аудит смарт-контрактов</b></div>
+            <div>Аудирование смарт-контрактов, проверка на&nbsp;наличие уязвимостей, логических ошибок, соответствие WhitePaper. Код контракта просматривается вручную, при необходимости пишутся unit-тесты.</div>
+          </div>,
         },
       },
 
@@ -537,7 +543,8 @@ export const text = {
     headerJumbo: {
       header: <h1>Blockchain solutions<br />and&nbsp;smart-contracts</h1>,
       description: <span>We&nbsp;are a&nbsp;team of&nbsp;programmers. We&nbsp;fullfill technical projects, implement blockchain technologies, write smart contracts. We&nbsp;conduct corporate training and open lectures.</span>,
-      stack: <span>Stack: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C++&nbsp;/ Graphene, Python.</span>,
+      stack: <span>Stack: C++, Java, JS/TS, Python, Solidity.</span>,
+      blockchains: <span>Blockchains: Bitcoin, Ethereum, EOS.</span>,
     },
 
     main: {
@@ -558,14 +565,14 @@ export const text = {
           header: <span>Technology&nbsp;for&nbsp;ICO</span>,
           text:
             <div>
-              <span>Smart contracts in&nbsp;Ethereum (ERC20-enabled token, crowdsale, ether vault).</span><br/><br/>
-              <span>User account, embeddable into any website able to&nbsp;customize its design, accepting BTC, ETH, and other currencies. Implementing KYC procedures, participation statistics, general ICO statistics, link to&nbsp;Google Ecommerce.</span><br/><br/>
-              <span>Admin interface</span><br/><br/>
-              <span>Receiving Ethereum and Bitcoin without commission and other currencies through coinpayments.net</span>
+              <span>Ethereum smart contracts set for ICO: ERC20 token, crowdsale contracts, ether vault.</span><br/><br/>
+              <span>Secure and reliable payment gate for BTC, LTC, BCH and other BTC-like currencies.</span><br/><br/>
+              <span>User interface for participating, monitoring tokens and ICO statistics. Embeddable into any website, with customizable design, Google Ecommerce support, KYC provider integration functions.</span><br/><br/>
+              <span>Administrator interface for ICO campaign management.</span><br/><br/>
             </div>,
         },
         smartz: {
-          header: 'SMARTZ\u00A0— smart contracts management system &\u00A0marketplace',
+          header: 'SMARTZ\u00A0— dapps management system &\u00A0marketplace',
           buttonText: 'Try Smartz now!',
           text:
             <div>
@@ -573,11 +580,17 @@ export const text = {
             </div>,
         },
         blokchain: {
-          text: <span><b>Blockchain&nbsp;systems&nbsp;development</b><br/><br/><span>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span></span>,
+          header: <span>Blockchain&nbsp;systems&nbsp;development</span>,
+          text: <span>Solutions for projects requiring their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
         },
         etherium: {
-          header: <span></span>,
-          text: <span><span><b>Smart contracts development</b><br/><br/></span>Developing token contracts, prototypes (proof-of-concept) and smart contract systems for Ethereum blockchain projects. Automating the launch of&nbsp;smart contracts in&nbsp;blockchain.<br/><br/><b>Smart contracts audit</b><br/><br/>Audit of&nbsp;smart contracts, checking for vulnerabilities, logical errors, WhitePaper compliance. The contract code is&nbsp;auditing manually, unit-tests are written if&nbsp;necessary.</span>,
+          text: 
+            <div>
+              <div style={{marginBottom: '8px'}}><b>Smart contracts development</b></div>
+              <div style={{marginBottom: '22px'}}>Developing token contracts, prototypes (proof-of-concept) and smart contract systems for Ethereum blockchain projects. Automating the launch of&nbsp;smart contracts in&nbsp;blockchain.</div>
+              <div style={{marginBottom: '8px'}}><b>Smart contracts audit</b></div>
+              <div>Audit of&nbsp;smart contracts, checking for vulnerabilities, logical errors, requirements compliance. The contract code is&nbsp;audited manually, unit-tests are written if&nbsp;necessary.</div>
+            </div>,
         },
       },
 
@@ -641,9 +654,9 @@ export const text = {
 
     meetUs: {
       anchor: 'Meet us',
-      title: <span>We&nbsp;will be&nbsp;glad to&nbsp;know you</span>,
+      title: <span>We&nbsp;will be&nbsp;glad to&nbsp;meet you</span>,
       description: <span>We&nbsp;develop smart contracts, conduct their audits, advise organizations, and talk about this in&nbsp;our courses and lectures.</span>,
-      linkText: 'Getting to know us closer',
+      linkText: 'Get to know us better',
       persons: {
         prilutsky: {
           label: <p>Sergey<br />Prilutsky</p>,

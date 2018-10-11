@@ -13,7 +13,7 @@ import BlockThreeColumns from 'components/ContentBlock/BlockThreeColumns';
 import BlockProgram from 'components/ContentBlock/BlockProgram';
 import { BlockPerson } from 'components/ContentBlock/BlockPerson';
 import BlockPersonList from 'components/ContentBlock/BlockPersonList';
-import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
+// import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
 import BlockLogos from 'components/ContentBlock/BlockLogos';
 
 class Education extends Component {
@@ -96,7 +96,7 @@ class Education extends Component {
               },
               {
                 text: <p>{text.advices.promise}</p>,
-                icon: <img style={{marginBottom: '10px'}} src={require('./i/littlefinger.png')} />
+                icon: <img style={{marginBottom: '10px'}} src={require('./i/littlefinger.png')} alt="" />
               },
 
             ]} />
@@ -213,7 +213,7 @@ class Education extends Component {
           </ContentBlock>
           <ContentBlock id="place">
             <h2>{text.location.title}</h2>
-            <p><img src={require('./i/kluch.jpg')} /></p>
+            <p><img src={require('./i/kluch.jpg')} alt="" /></p>
             {text.location.place}
             {text.location.support}
           </ContentBlock>

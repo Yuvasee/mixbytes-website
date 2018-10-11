@@ -6,14 +6,15 @@ import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
 import HeaderJumbo from 'components/HeaderJumbo';
-import { BlockWithIcon } from 'components/ContentBlock/BlockWithIcon';
-import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
-import BlockEvent from 'components/ContentBlock/BlockEvent';
+// import { BlockWithIcon } from 'components/ContentBlock/BlockWithIcon';
+// import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
+// import BlockEvent from 'components/ContentBlock/BlockEvent';
 import Splurge from 'components/Splurge';
-import Capabilities from 'components/Capabilities';
+// import Capabilities from 'components/Capabilities';
 import MeetUs from 'components/MeetUs';
 // import { FeedbackForm } from '../../FeedbackForm'
-import { SmartzIcn, ICOTechIcn, ConsultingIcn, BlokchainIcn, EtheriumIcn, DocsIcn } from './icons';
+import { SmartzIcn, ICOTechIcn, BlokchainIcn, EtheriumIcn } from './icons';
+//import { ConsultingIcn, DocsIcn } from './icons';
 import { OpenSource } from '../../OpenSource';
 
 import './styles.css';
@@ -92,31 +93,6 @@ class Main extends Component {
             {
               [
                 {
-                  header: text.services.smartz.header,
-                  text: text.services.smartz.text,
-                  icn: SmartzIcn,
-                  html: <a target="_blank" rel="noopener noreferrer" href="https://smartz.io/"><button className="btn btn-success service-button">{text.services.smartz.buttonText}</button></a>,
-                },
-                {
-                  header: text.services.icoTech.header,
-                  text: text.services.icoTech.text,
-                  icn: ICOTechIcn,
-                  isList: true,
-                },
-              ]
-              .map((element, index) => this.getServiceBlock(
-                element,
-                element.isFocused,
-                element.isList,
-                element.html,
-                index
-              ))
-            }
-          </div>
-          <div className="column services-column">
-            {
-              [
-                {
                   header: text.services.etherium.header,
                   text: text.services.etherium.text,
                   isFocused: true,
@@ -135,6 +111,31 @@ class Main extends Component {
                 element.isList,
                 element.html,
                 index,
+              ))
+            }
+          </div>
+          <div className="column services-column">
+            {
+              [
+                {
+                  header: text.services.smartz.header,
+                  text: text.services.smartz.text,
+                  icn: SmartzIcn,
+                  html: <a target="_blank" rel="noopener noreferrer" href="https://smartz.io/"><button className="btn btn-success service-button">{text.services.smartz.buttonText}</button></a>,
+                },
+                {
+                  header: text.services.icoTech.header,
+                  text: text.services.icoTech.text,
+                  icn: ICOTechIcn,
+                  isList: true,
+                },
+              ]
+              .map((element, index) => this.getServiceBlock(
+                element,
+                element.isFocused,
+                element.isList,
+                element.html,
+                index
               ))
             }
           </div>
