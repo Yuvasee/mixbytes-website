@@ -1,6 +1,6 @@
 .header-navigation {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   height: 68px;
   overflow-x: auto;
 }
