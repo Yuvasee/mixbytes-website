@@ -19,7 +19,7 @@ export const text = {
       transactionInfo: 'Информация о транзакции',
       checkTimestamps: 'Проверить значения timestamps в коде',
       timestampsPlaceholder: 'Скопируйте код сюда',
-      program: 'Программа',
+      program: 'Пример программы интенсива',
       requirements: 'Требования',
       advantages: 'Будет плюсом',
       conditions: 'Условия',
@@ -37,7 +37,8 @@ export const text = {
     headerJumbo: {
       header: <h1>Блокчейн-решения<br />и&nbsp;смарт-контракты</h1>,
       description: 'Мы\u00A0\u2014 команда программистов. Составляем технические проекты, внедряем блокчейн-технологии, пишем смарт-контракты. Проводим корпоративное обучение и\u00A0открытые лекции.',
-      stack: <span>Стек: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C++&nbsp;/ Graphene, Python.</span>,
+      stack: <span>Стек: C++, Java, JS/TS, Python, Solidity.</span>,
+      blockchains: <span>Блокчейны: Bitcoin, Ethereum, EOS.</span>,
     },
 
     main: {
@@ -73,12 +74,17 @@ export const text = {
             </div>,
         },
         blokchain: {
-          header: <span></span>,
-          text: <span><b>Разработка&nbsp;блокчейн-систем</b><br/><br/><span>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span></span>,
+          header: <span>Разработка&nbsp;блокчейн-систем</span>,
+          text: <span>Решения для проектов, которым требуется собственный блокчейн. Высокая скорость, произвольная степень децентрализации, тонкая настройка протокола консенсуса на базе Graphene/BitShares/Steem/EOS.</span>,
         },
         etherium: {
-          header: '',
-          text: <span><b>Разработка смарт-контрактов</b><br/><br/>Разработка контрактов токенов, прототипов (proof-of-concept) и&nbsp;систем смарт-контрактов для блокчейн-проектов на&nbsp;Ethereum. Автоматизация запуска смарт-контрактов в&nbsp;блокчейн.<br/><br/><b>Аудит смарт-контрактов</b><br/><br/>Аудирование смарт-контрактов, проверка на&nbsp;наличие уязвимостей, логических ошибок, соответствие WhitePaper. Код контракта просматривается вручную, при необходимости пишутся unit-тесты.</span>,
+          text:
+          <div>
+            <div style={{marginBottom: '8px'}}><b>Разработка смарт-контрактов</b></div>
+            <div style={{marginBottom: '22px'}}>Разработка контрактов токенов, прототипов (proof-of-concept) и&nbsp;систем смарт-контрактов для блокчейн-проектов на&nbsp;Ethereum. Автоматизация запуска смарт-контрактов в&nbsp;блокчейн.</div>
+            <div style={{marginBottom: '8px'}}><b>Аудит смарт-контрактов</b></div>
+            <div>Аудирование смарт-контрактов, проверка на&nbsp;наличие уязвимостей, логических ошибок, соответствие WhitePaper. Код контракта просматривается вручную, при необходимости пишутся unit-тесты.</div>
+          </div>,
         },
       },
 
@@ -168,14 +174,14 @@ export const text = {
         description: 'Описание',
         program: 'Программа',
         speakers: 'Ведущие',
-        participation: 'Участие',
+        //participation: 'Участие',
         place: 'Место',
         partners: 'Партнеры',
       },
       header: {
-        title: <h2>Двухдневный интенсив<br />&laquo;Погружение в&nbsp;блокчейн&raquo;</h2>,
-        description: <p><strong>За два дня</strong> вы получите фундаментальное понимание технической и&nbsp;юридической базы блокчейн-технологий. Криптографический фундамент, консенсусы и&nbsp;майнинг, технические тонкости&nbsp;ICO, юридическая практика. Вы,&nbsp;наконец, поймете как и&nbsp;почему всё это работает!</p>,
-        comment: <p>Курс проводится совместно с&nbsp;компанией <a href="http://cych.io">cych.io</a> и&nbsp;приглашёнными экспертами Центра Россия-ОЭСР РАНХиГС при Президенте&nbsp;РФ.</p>,
+        title: <h2>Интенсивы, лекции и мастер-классы по блокчейн-технологиям</h2>,
+        description: <p>За время своего существования мы провели десятки образовательных мероприятий: начиная с небольших митапов и заканчивая двухдневными интенсивами. На наших мероприятиях вы получите фундаментальное понимание технической и&nbsp;юридической базы блокчейн-технологий, криптографического фундамента, консенсусов и&nbsp;майнинга. Вы,&nbsp;наконец, поймете как и&nbsp;почему всё это работает!</p>,
+        comment: <p>Если вы хотите заказать у нас обучение, напишите запрос на почту <a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a>.</p>,
       },
       info: {
         blockchain: {
@@ -205,19 +211,19 @@ export const text = {
       },
       asideBlock: {
         title: 'Будет полезно',
-        businessmen: 'бизнесменам',
-        investors: 'инвесторам',
-        lawyers: 'юристам',
-        managers: 'менеджерам',
-        programmers: 'программистам',
+        businessmen: ' бизнесменам',
+        investors: ' инвесторам',
+        lawyers: ' юристам',
+        managers: ' менеджерам',
+        programmers: ' программистам',
       },
       description: {
-        intro: 'Блокчейн-технологии ворвались в\u00A0нашу жизнь\u00A0и, похоже, собираются полностью изменить\u00A0её. Биткоин и\u00A0ICO у\u00A0всех на\u00A0устах, в\u00A0них вкладывают деньги, часто даже не\u00A0понимая о\u00A0чем идет речь. Ведь, к\u00A0сожалению, большая часть доступной информации\u00A0&mdash; либо слишком техническая и\u00A0непонятная документация для программистов, либо слишком рекламная и\u00A0провокационная, нацеленная на\u00A0привлечение инвестиций в\u00A0очередное ICO.',
+        intro: 'Блокчейн-технологии ворвались в\u00A0нашу жизнь\u00A0и, похоже, собираются полностью изменить\u00A0её. Биткоин и\u00A0ICO у\u00A0всех на\u00A0устах, в\u00A0них вкладывают деньги, часто даже не\u00A0понимая о\u00A0чем идет речь. Ведь, к\u00A0сожалению, большая часть доступной информации\u00A0 либо слишком техническая и\u00A0непонятная документация для программистов, либо слишком рекламная и\u00A0провокационная, нацеленная на\u00A0привлечение инвестиций в\u00A0очередное ICO.',
         courceGoal: 'Мы\u00A0болеем за\u00A0популяризацию блокчейн-технологий, за\u00A0прозрачность и\u00A0доступность информации, за\u00A0безопасность финансовых операций. На\u00A0курсе вы\u00A0получите фундамент знаний, который позволит вам уверенно ориентироваться в\u00A0новостном и\u00A0рекламном потоке. И\u00A0принимать взвешенные решения об\u00A0использовании блокчейн-технологий в\u00A0своей жизни, карьере и\u00A0бизнесе.',
       },
       advices: {
-        first: 'Если вы\u00A0скептик\u00A0&mdash; приходите и\u00A0задайте спикерам самые сложные вопросы. Cкорее всего, вы\u00A0поверите в\u00A0силу блокчейн-технологий больше, чем раньше.',
-        second: 'Если блокчейн и\u00A0ICO уже вскружили вам голову\u00A0&mdash; приходите тоже, мы\u00A0постараемся немного охладить ваш пыл.',
+        first: 'Если вы\u00A0скептик — приходите и\u00A0задайте спикерам самые сложные вопросы. Cкорее всего, вы\u00A0поверите в\u00A0силу блокчейн-технологий больше, чем раньше.',
+        second: 'Если блокчейн и\u00A0ICO уже вскружили вам голову — приходите тоже, мы\u00A0постараемся немного охладить ваш пыл.',
         promise: 'Обещаем, что на\u00A0курсе не\u00A0будет никакой рекламы и\u00A0призывов куда-либо вложить деньги.',
       },
       program: {
@@ -519,7 +525,7 @@ export const text = {
       transactionInfo: 'Transaction information',
       checkTimestamps: 'Check timestamps in code',
       timestampsPlaceholder: 'Copy code here',
-      program: 'Program',
+      program: 'Program Sample',
       requirements: 'Requirements',
       advantages: 'It would be a plus to have',
       conditions: 'Conditions',
@@ -537,7 +543,8 @@ export const text = {
     headerJumbo: {
       header: <h1>Blockchain solutions<br />and&nbsp;smart-contracts</h1>,
       description: <span>We&nbsp;are a&nbsp;team of&nbsp;programmers. We&nbsp;fullfill technical projects, implement blockchain technologies, write smart contracts. We&nbsp;conduct corporate training and open lectures.</span>,
-      stack: <span>Stack: Solidity&nbsp;/ Truffle, JS&nbsp;/ Node, C++&nbsp;/ Graphene, Python.</span>,
+      stack: <span>Stack: C++, Java, JS/TS, Python, Solidity.</span>,
+      blockchains: <span>Blockchains: Bitcoin, Ethereum, EOS.</span>,
     },
 
     main: {
@@ -558,14 +565,14 @@ export const text = {
           header: <span>Technology&nbsp;for&nbsp;ICO</span>,
           text:
             <div>
-              <span>Smart contracts in&nbsp;Ethereum (ERC20-enabled token, crowdsale, ether vault).</span><br/><br/>
-              <span>User account, embeddable into any website able to&nbsp;customize its design, accepting BTC, ETH, and other currencies. Implementing KYC procedures, participation statistics, general ICO statistics, link to&nbsp;Google Ecommerce.</span><br/><br/>
-              <span>Admin interface</span><br/><br/>
-              <span>Receiving Ethereum and Bitcoin without commission and other currencies through coinpayments.net</span>
+              <span>Ethereum smart contracts set for ICO: ERC20 token, crowdsale contracts, ether vault.</span><br/><br/>
+              <span>Secure and reliable payment gate for BTC, LTC, BCH and other BTC-like currencies.</span><br/><br/>
+              <span>User interface for participating, monitoring tokens and ICO statistics. Embeddable into any website, with customizable design, Google Ecommerce support, KYC provider integration functions.</span><br/><br/>
+              <span>Administrator interface for ICO campaign management.</span><br/><br/>
             </div>,
         },
         smartz: {
-          header: 'SMARTZ\u00A0— smart contracts management system &\u00A0marketplace',
+          header: 'SMARTZ\u00A0— dapps management system &\u00A0marketplace',
           buttonText: 'Try Smartz now!',
           text:
             <div>
@@ -573,11 +580,17 @@ export const text = {
             </div>,
         },
         blokchain: {
-          text: <span><b>Blockchain&nbsp;systems&nbsp;development</b><br/><br/><span>Solutions for projects to&nbsp;require their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span></span>,
+          header: <span>Blockchain&nbsp;systems&nbsp;development</span>,
+          text: <span>Solutions for projects requiring their own blockchain. High speed, arbitrary rate of&nbsp;decentralization. Fine-tuning the consensus protocol based on&nbsp;Graphene&nbsp;/ BitShares/ Steem&nbsp;/ EOS.</span>,
         },
         etherium: {
-          header: <span></span>,
-          text: <span><span><b>Smart contracts development</b><br/><br/></span>Developing token contracts, prototypes (proof-of-concept) and smart contract systems for Ethereum blockchain projects. Automating the launch of&nbsp;smart contracts in&nbsp;blockchain.<br/><br/><b>Smart contracts audit</b><br/><br/>Audit of&nbsp;smart contracts, checking for vulnerabilities, logical errors, WhitePaper compliance. The contract code is&nbsp;auditing manually, unit-tests are written if&nbsp;necessary.</span>,
+          text: 
+            <div>
+              <div style={{marginBottom: '8px'}}><b>Smart contracts development</b></div>
+              <div style={{marginBottom: '22px'}}>Developing token contracts, prototypes (proof-of-concept) and smart contract systems for Ethereum blockchain projects. Automating the launch of&nbsp;smart contracts in&nbsp;blockchain.</div>
+              <div style={{marginBottom: '8px'}}><b>Smart contracts audit</b></div>
+              <div>Audit of&nbsp;smart contracts, checking for vulnerabilities, logical errors, requirements compliance. The contract code is&nbsp;audited manually, unit-tests are written if&nbsp;necessary.</div>
+            </div>,
         },
       },
 
@@ -641,9 +654,9 @@ export const text = {
 
     meetUs: {
       anchor: 'Meet us',
-      title: <span>We&nbsp;will be&nbsp;glad to&nbsp;know you</span>,
+      title: <span>We&nbsp;will be&nbsp;glad to&nbsp;meet you</span>,
       description: <span>We&nbsp;develop smart contracts, conduct their audits, advise organizations, and talk about this in&nbsp;our courses and lectures.</span>,
-      linkText: 'Getting to know us closer',
+      linkText: 'Get to know us better',
       persons: {
         prilutsky: {
           label: <p>Sergey<br />Prilutsky</p>,
@@ -672,9 +685,9 @@ export const text = {
         partners: 'Partners',
       },
       header: {
-        title: <h2>2-Days Intensive course<br />&laquo;Dive into&nbsp;Blockchain&raquo;</h2>,
-        description: <p><strong>During the two days</strong> you will receive a&nbsp;fundamental understanding of&nbsp;the technical and legal basis of&nbsp;blockchain technologies. Cryptographic foundation, consensus and mining, technical subtleties of&nbsp;ICO, legal practice. You will finally understand how and why it&nbsp;all works!</p>,
-        comment: <p>The course is&nbsp;conducted with the support&nbsp;of <a href="http://cych.io">cych.io</a> and invited experts from The Russian Academy of&nbsp;National Economy and Public Service under the President of&nbsp;the Russian Federation.</p>,
+        title: <h2>Intensive courses, lectures and master classes on blockchain technology</h2>,
+        description: <p>We have already conducted dozens of educational events: starting from small meetups and ending with two-day intensities. At our events, you will get a fundamental understanding of the technical and legal basis of blockchain technologies, cryptography theory, consensus types, and mining. You will finally understand how and why it all works!</p>,
+        comment: <p>If you want to order a course, write a request to <a href="mailto:hello@mixbytes.io">hello@mixbytes.io</a>.</p>,
       },
       info: {
         blockchain: {
@@ -704,11 +717,11 @@ export const text = {
       },
       asideBlock: {
         title: 'Will be useful for',
-        businessmen: 'businessmen',
-        investors: 'investors',
-        lawyers: 'lawyers',
-        managers: 'managers',
-        programmers: 'programmers',
+        businessmen: ' businessmen',
+        investors: ' investors',
+        lawyers: ' lawyers',
+        managers: ' managers',
+        programmers: ' programmers',
       },
       description: {
         intro: <span>The blokchain technologies appeared in&nbsp;our lives and, it&nbsp;seems, they&rsquo;re going to&nbsp;completely change&nbsp;it. Bitcoin and ICO are on&nbsp;everyone&rsquo;s lips, people invest money in&nbsp;that without even knowing what it&nbsp;is&nbsp;all about. Unfortunately, most of&nbsp;the available information is&nbsp;either too technical and incomprehensible documentation for programmers, or&nbsp;too advertising and provocative, aimed at&nbsp;the attracting investments to&nbsp;some ICO.</span>,
@@ -958,7 +971,7 @@ export const text = {
             <li>Created his first (harmless) computer virus in&nbsp;20-th century</li>
             <li>Has 15&nbsp;years experience in&nbsp;Linux system administration (he&nbsp;knows who Patrick Volkerding&nbsp;is)</li>
             <li>Worked as&nbsp;Perl back-end developer in&nbsp;Mail.Ru Group (2013-2018)</li>
-            <li>Deleloped software for more then 20&nbsp;years using different languages: Assembly, C/C++, Javascript, Perl, Lua, Golang, Solidity (also Basic, PHP and Python, but he&nbsp;does not like to&nbsp;talk about&nbsp;it)</li>
+            <li>More than 20&nbsp;years experience in&nbsp;programming using different languages: Assembly, C/C++, Javascript, Perl, Lua, Golang, Solidity (also Basic, PHP and&nbsp;Python, but he does not like to talk about it)</li>
             <li>Interests: smart contract development, highload, distributed decentralized systems, software security, internet anonymity</li>
           </ul>,
       },

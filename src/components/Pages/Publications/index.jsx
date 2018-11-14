@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import PageLayout from 'components/PageLayout';
-import PageNav from 'components/PageNav';
+// import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
 import ContentBlock from 'components/ContentBlock';
 

@@ -8,6 +8,7 @@ class Navigation extends React.PureComponent {
 
   render() {
     const text = this.context.text.navigation;
+    const language = this.context.language;
 
     const links = [
       {link: '/', name: text.services},
@@ -15,8 +16,11 @@ class Navigation extends React.PureComponent {
       {link: '/education', name: text.training},
       {link: '/helpers', name: text.tools},
       {link: '/team', name: text.team},
-      {link: '/job', name: text.careers},
     ];
+
+    if (language === 'RU') {
+      links.push({link: '/job', name: text.careers});
+    }
 
     const navItems = links.map((item, i) => {
       const active = window.location.pathname === item.link;
@@ -38,4 +42,5 @@ export default Navigation;
 
 Navigation.contextTypes = {
   text: PropTypes.object,
+  language: PropTypes.string
 };

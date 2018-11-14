@@ -17,7 +17,7 @@ class Router extends Component {
   getChildContext() {
     const language = getLanguage();
 
-    return { text: text[language] };
+    return { text: text[language], language };
   }
 
   render() {
@@ -36,7 +36,8 @@ class Router extends Component {
 }
 
 Router.childContextTypes = {
-  text: PropTypes.object
+  text: PropTypes.object,
+  language: PropTypes.string
 };
 
 export default Router;

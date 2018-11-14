@@ -16,9 +16,9 @@ class HeaderJumbo extends Component {
       <div className="header-jumbo">
         {text.header}
         <div className="intro">
-        {text.description}
-        <br />
-        {text.stack}
+          <div>{text.description}</div>
+          <div>{text.stack}</div>
+          {text.blockchains}
         </div>
       </div>
     );

@@ -19,7 +19,6 @@ class Splurge extends Component {
           */}
           <div><img src={require('./i/poa-network-logo.png')} alt="POA Network" /></div>
           <div><img src={require('./i/storiqa-logo.svg')} alt="Storiqa" width="180" /></div>
-          <div><img src={require('./i/bubbletone-logo.png')} alt="Bubbletone" /></div>
           <div><img src={require('./i/kickico-logo.svg')} alt="KickICO" /></div>
           <div><img src={require('./i/world-wifi.png')} alt="World Wi-Fi" /></div>
           <div><img src={require('./i/sp8de.svg')} alt="Sp8de" /></div>

@@ -13,7 +13,7 @@ import BlockThreeColumns from 'components/ContentBlock/BlockThreeColumns';
 import BlockProgram from 'components/ContentBlock/BlockProgram';
 import { BlockPerson } from 'components/ContentBlock/BlockPerson';
 import BlockPersonList from 'components/ContentBlock/BlockPersonList';
-import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
+// import BlockTwoColumns from 'components/ContentBlock/BlockTwoColumns';
 import BlockLogos from 'components/ContentBlock/BlockLogos';
 
 class Education extends Component {
@@ -96,7 +96,7 @@ class Education extends Component {
               },
               {
                 text: <p>{text.advices.promise}</p>,
-                icon: <img style={{marginBottom: '10px'}} src={require('./i/littlefinger.png')} />
+                icon: <img style={{marginBottom: '10px'}} src={require('./i/littlefinger.png')} alt="" />
               },
 
             ]} />
@@ -211,38 +211,9 @@ class Education extends Component {
               },
             ]} />
           </ContentBlock>
-          <ContentBlock id="participation">
-            <h2>{text.conditions.title}</h2>
-            <div className="white-block">
-              {text.conditions.soon}
-              {/*
-              <BlockTwoColumns content={[
-                {
-                  header: text.conditions.early.header,
-                  text: text.conditions.early.text,
-                },
-                {
-                  header: text.conditions.late.header,
-                  text: text.conditions.late.text,
-                }
-              ]} />
-              <div className="mt-3 text-center"><a className="link-button" href="https://mixbytes.timepad.ru/event/611938/#register">{text.conditions.registration}</a></div>
-              <div className="card border-success mt-4" style={{fontSize: '80%'}}>
-                <div className="card-body">
-                  <h4 className="card-title text-success">{text.conditions.sale}</h4>
-                  {text.conditions.saleDescription}
-                  <p>
-                    Bitcoin: 1QKj9niHezvenxWWw5ZDrHv6i4yujo3ZPh<br />
-                    Ethereum: 0x2B1d01Ac2c87F1FD3b07F0A09eF4A42a03368458
-                  </p>
-                </div>
-              </div>
-              */}
-            </div>
-          </ContentBlock>
           <ContentBlock id="place">
             <h2>{text.location.title}</h2>
-            <p><img src={require('./i/kluch.jpg')} /></p>
+            <p><img src={require('./i/kluch.jpg')} alt="" /></p>
             {text.location.place}
             {text.location.support}
           </ContentBlock>

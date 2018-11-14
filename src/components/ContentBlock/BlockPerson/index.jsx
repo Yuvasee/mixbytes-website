@@ -4,7 +4,7 @@ import './styles.css';
 
 export class BlockPerson extends Component {
   render() {
-    const {link, name, photo, position, text, socialLinks} = this.props.person;
+    const {name, photo, position, text, socialLinks} = this.props.person;
 
     return (
       <div className="block-person">
@@ -21,13 +21,13 @@ export class BlockPerson extends Component {
           <div>
             {
               socialLinks && socialLinks.facebook
-                ? <a className="social-icn facebook-icn" href={socialLinks.facebook}></a>
+                ? <a className="social-icn facebook-icn" href={socialLinks.facebook}> </a>
                 : null
             }
 
             {
               socialLinks && socialLinks.linkedin
-                ? <a className="social-icn linkedin-icn" href={socialLinks.linkedin}></a>
+                ? <a className="social-icn linkedin-icn" href={socialLinks.linkedin}> </a>
                 : null
             }
           </div>

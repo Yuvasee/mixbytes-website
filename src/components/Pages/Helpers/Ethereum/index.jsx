@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
+const TOKEN = 'T44gOUFQej6GXv5fKFfv';
+
 const API = axios.create({
   baseURL: 'https://mainnet.infura.io/' + TOKEN,
   timeout: 5000,
@@ -11,8 +13,6 @@ const API = axios.create({
     'content-type': 'application/json'
   }
 });
-
-const TOKEN = 'T44gOUFQej6GXv5fKFfv';
 
 class Ethereum extends Component {
   constructor(props) {
