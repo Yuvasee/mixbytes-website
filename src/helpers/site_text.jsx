@@ -23,6 +23,7 @@ export const text = {
       requirements: 'Требования',
       advantages: 'Будет плюсом',
       conditions: 'Условия',
+      contactUs: 'Свяжитесь с нами'
     },
 
     navigation: {
@@ -35,10 +36,19 @@ export const text = {
     },
 
     headerJumbo: {
-      header: <h1>Блокчейн-решения<br />и&nbsp;смарт-контракты</h1>,
-      description: 'Мы\u00A0\u2014 команда программистов. Составляем технические проекты, внедряем блокчейн-технологии, пишем смарт-контракты. Проводим корпоративное обучение и\u00A0открытые лекции.',
-      stack: <span>Стек: C++, Java, JS/TS, Python, Solidity.</span>,
-      blockchains: <span>Блокчейны: Bitcoin, Ethereum, EOS.</span>,
+      header: 'Блокчейн разработка на заказ',
+      description: 'Mixbytes — команда блокчейн программистов. Мы помогаем компаниям внедрять передовые решения на основе блокчейн технологии, сокращая их затраты на подбор и обучение внутренней команды разработки.',
+      stack: 'Стек технологий:',
+      stackText: 'С/C++, Java, JS/TS, Python, Solidity, WebAssembly, Rust',
+      blockchains: 'Блокчейны:',
+      blockchainsText: 'Bitcoin, Ethereum, EOS (Bitshares, Steem), Substrate (Polkadot)',
+      facts: 'Факты:',
+      factsTexts: [
+        '> 50 миллионов долларов собрано с помощью разработанных и проаудированных нами смарт-контрактов', 
+        '> 11,500 трудочасов программистов отгружено',
+        '> 300,000 строк кода написано и проаудировано',
+        '> 100 GitHub репозиториев',
+      ],
     },
 
     main: {
@@ -529,6 +539,7 @@ export const text = {
       requirements: 'Requirements',
       advantages: 'It would be a plus to have',
       conditions: 'Conditions',
+      contactUs: 'Contact us',
     },
 
     navigation: {
@@ -541,10 +552,19 @@ export const text = {
     },
 
     headerJumbo: {
-      header: <h1>Blockchain solutions<br />and&nbsp;smart-contracts</h1>,
-      description: <span>We&nbsp;are a&nbsp;team of&nbsp;programmers. We&nbsp;fullfill technical projects, implement blockchain technologies, write smart contracts. We&nbsp;conduct corporate training and open lectures.</span>,
-      stack: <span>Stack: C++, Java, JS/TS, Python, Solidity.</span>,
-      blockchains: <span>Blockchains: Bitcoin, Ethereum, EOS.</span>,
+      header: 'Blockchain Development On-Demand',
+      description: 'Mixbytes is a team of blockchain talent. We help companies implement cutting-edged blockchain-based solutions thereby reducing the costs of hiring and in-house software development.',
+      stack: 'Stack:',
+      stackText: 'С/C++, Java, JS/TS, Python, Solidity, WebAssembly, Rust',
+      blockchains: 'Blockchains:',
+      blockchainsText: 'Bitcoin, Ethereum, EOS (Bitshares, Steem), Substrate (Polkadot)',
+      facts: 'Facts:',
+      factsTexts: [
+        '> M 50 $ collected with our well developed and finely audited smart contracts', 
+        '> 11,500 expertise hours shipped',
+        '> 300,000 lines of code written an audited',
+        '> 100 GitHub repositories'
+      ],
     },
 
     main: {

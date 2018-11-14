@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
+import ContactUsButton from '../common/ContactUsButton';
+
 import './styles.css';
 
 class HeaderJumbo extends Component {
@@ -14,11 +16,18 @@ class HeaderJumbo extends Component {
 
     return (
       <div className="header-jumbo">
-        {text.header}
-        <div className="intro">
-          <div>{text.description}</div>
-          <div>{text.stack}</div>
-          {text.blockchains}
+        <h1>{text.header}</h1>
+        <div>{text.description}</div>
+        <div>
+          <span>{text.stack}</span> {text.stackText}<br/>
+          <span>{text.blockchains}</span> {text.blockchainsText}
+        </div>
+        <div className="jumbo-contacts-us"><ContactUsButton/></div>
+        <div className="facts">
+          <div className="facts-h"><span>{text.facts}</span></div>
+          {text.factsTexts.map((e, i) => (
+            <div key={i+e.length}>{e}</div>
+          ))}
         </div>
       </div>
     );

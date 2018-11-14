@@ -12,14 +12,22 @@
   color: #28C677;
 }
 
-.header-jumbo .intro {
+.header-jumbo > div {
   font-size: 24px;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
-.header-jumbo .intro div {
-  margin-bottom: 10px;
+.header-jumbo > div.facts {
+  margin-top: 80px;
+}
+
+.header-jumbo > div.jumbo-contacts-us {
+  margin-top: 50px;
+}
+
+.header-jumbo > div span {
+  color: #28C677;
 }
 
 @media (max-width: 1400px) {
@@ -32,7 +40,7 @@
     line-height: 54px;
   }
 
-  .header-jumbo .intro {
+  .header-jumbo > div {
     font-size: 20px;
   }
 }
@@ -54,9 +62,18 @@
     margin-left: -1px;
   }
 
-  .header-jumbo .intro {
+  .header-jumbo > div {
     font-size: 14px;
     color: #fff;
     margin-top: 14px;
   }
+
+  .header-jumbo > div.facts {
+    margin-top: 50px;
+  }
+  
+  .header-jumbo > div.jumbo-contacts-us {
+    margin-top: 20px;
+  }
+  
 }

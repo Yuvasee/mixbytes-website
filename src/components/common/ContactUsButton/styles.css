@@ -1,0 +1,25 @@
+.contact-us {
+  border: 3px solid #28C677;
+  font-size: 24px;
+  color: #28C677;
+  line-height: 54px;
+  padding: 0 38px;
+  background: none;
+}
+
+@media (max-width: 1400px) {
+  .contact-us {
+    font-size: 20px;
+    line-height: 45px;
+    padding: 0 31px;
+  }
+}
+
+@media (max-width: 770px) {
+  .contact-us {
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 23px;
+  }
+
+}
