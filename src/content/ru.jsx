@@ -22,7 +22,17 @@ export default {
     requirements: 'Требования',
     advantages: 'Будет плюсом',
     conditions: 'Условия',
-    contactUs: 'Свяжитесь с нами'
+  },
+
+  contactUs: {
+    contactUs: 'Свяжитесь с нами',
+    send: 'Отправить',
+    name: 'Имя',
+    email: 'E-mail',
+    message: 'Сообщение',
+    sending: 'Отправка...',
+    success: 'Сообщение отправлено',
+    error: 'Ошибка :-('
   },
 
   navigation: {

@@ -8,6 +8,12 @@
   cursor: pointer;
 }
 
+.big-button:disabled {
+  cursor: default;
+  border: 0;
+  padding: 3px 41px;
+}
+
 @media (max-width: 1400px) {
   .big-button {
     font-size: 20px;

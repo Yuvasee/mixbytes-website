@@ -22,7 +22,17 @@ export default {
     requirements: 'Requirements',
     advantages: 'It would be a plus to have',
     conditions: 'Conditions',
+  },
+
+  contactUs: {
     contactUs: 'Contact us',
+    send: 'Send',
+    name: 'Name',
+    email: 'E-mail',
+    message: 'Message',
+    sending: 'Sending...',
+    success: 'Message sent',
+    error: 'Error :-('
   },
 
   navigation: {

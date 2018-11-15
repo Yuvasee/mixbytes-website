@@ -13,9 +13,6 @@ class Navigation extends React.PureComponent {
     const links = [
       {link: '/', name: text.services},
       {link: '/publications', name: text.publications},
-      {link: '/education', name: text.training},
-      {link: '/helpers', name: text.tools},
-      {link: '/team', name: text.team},
     ];
 
     if (language === 'RU') {
