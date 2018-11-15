@@ -32,10 +32,16 @@ div.content-right > div {
 
   div.content-mid {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 40px;
   }
 
   div.content-right {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  div.content-mid {
+    padding: 0 20px;
   }
 }

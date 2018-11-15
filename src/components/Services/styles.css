@@ -29,6 +29,7 @@
 
 .services-item-list {
   margin-top: 10px;
+  padding-right: 60px;
 }
 
 .services-item-list > div:not(:last-child) {
