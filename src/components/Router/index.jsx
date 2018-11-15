@@ -11,7 +11,7 @@ import Job from 'components/Pages/Job';
 import Page404 from 'components/Pages/404';
 
 import { getLanguage } from '../../helpers/language';
-import { text } from '../../helpers/site_text.jsx';
+import text from '../../content';
 
 class Router extends Component {
   getChildContext() {

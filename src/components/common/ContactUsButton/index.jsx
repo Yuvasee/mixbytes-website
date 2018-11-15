@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import './styles.css';
+import BigButton from 'components/common/BigButton';
 
 class ContactUsButton extends Component {
 
@@ -9,9 +9,7 @@ class ContactUsButton extends Component {
     const buttonText = this.context.text.common.contactUs;
 
     return (
-      <button className="contact-us">
-        {buttonText}
-      </button>
+      <BigButton>{buttonText}</BigButton>
     );
   }
 }
