@@ -56,12 +56,6 @@ export default {
       feedback: 'Обратная связь',
     },
 
-    devAudit: {
-      title: 'Разработка и аудит',
-      description: 'Пишем и\u00A0проверяем смарт-контракты на\u00A0Solidity с\u00A0нуля или на\u00A0основе проверенных библиотек. Соблюдаем стандарт ERC20. Тестируем код под Truffle framework. Верифицируем контракты на\u00A0Etherscan. Находим ошибки и\u00A0уязвимости в\u00A0ваших смарт-контрактах. Разрабатываем блокчейны на\u00A0базе фреймворка Graphene. Скорее всего, сначала вам понадобятся наши консультации.',
-      example: <p>Пример <a href="https://github.com/mixbytes/storiqa_ico/tree/master/contracts">контракта</a><br />и&nbsp;<a href="https://github.com/mixbytes/audits_public/blob/master/solidity/KickICO/report.md">аудита</a> на&nbsp;Гитхабе</p>,
-    },
-
     services: 'Услуги',
     servicesItems: [
       {
@@ -128,7 +122,7 @@ export default {
       },
       {
         logo: 'logo-boomstarter.png',
-        name: 'Boomstarter\n.Network',
+        name: 'Boomstarter\u200B.Network',
         description: 'Глобальная криптофандинговая платформа',
         job: 'Разработка технического решения для ICO кампании «под ключ»',
       },
@@ -158,60 +152,7 @@ export default {
       'Деплой продукта в блокчейн сеть.',
     ],
 
-    consulting: 'Консалтинг',
-    businessRequirements: 'Бизнес-требования',
-    businessRequirementsDescription: 'Поможем найти возможные приложения блокчейн-технологий к\u00A0вашему бизнесу и\u00A0составить экономическую модель ваших токенов.',
-    hrHelp: 'Помощь в\u00A0HR',
-    hrHelpDescription: 'Поможем определить требования к\u00A0блокчейн программистам, проведём технические собеседования, разметим путь для роста и\u00A0обучения.',
-    technicalSolutions: 'Выбор технических решений',
-    technicalSolutionsDescription: 'Подберём стек технологий для решения задачи. Порекомендуем фреймворки, библиотеки, проверенные смарт-контракты.',
-    technicalDocumentation: 'Техническая документация',
-    technicalDocumentationDescription: 'Правильно сформулируем требования для программистов в\u00A0техническом проекте.',
-
-    lectures: 'Ближайшие лекции',
-    lecturesItems: {
-      diveIntoBlokchain: {
-        title: 'Интенсив \u00ABПогружение в\u00A0блокчейн\u00BB',
-        date: '9—10 декабря',
-        description: '<strong>9—10 декабря</strong> за два дня вы получите фундаментальное понимание технической и\u00A0юридической базы блокчейн-технологий. Криптографический фундамент, консенсусы и\u00A0майнинг, технические тонкости\u00A0ICO, юридическая практика. Вы\u00A0наконец поймёте, как и\u00A0почему всё это работает!',
-        themes: [
-          'Введение в\u00A0криптографию. Симметричные криптосистемы. Внутреннее устройство симметричных шифров. Целостность данных и\u00A0контрольные суммы. Схемы аутентификации и\u00A0хранение паролей. Алгоритмы работы программ защиты информации. Ассиметричные криптосистемы. Схема электронной подписи. Атаки типа man-in-the-middle и\u00A0система сертификатов. TOR и\u00A0mixed networks. Протокол подбрасывания монеты...',
-          'Блокчейн. Определения блокчейна. Блоки, механизмы сцепления блоков и\u00A0целостность цепочки. Основные моменты алгоритма Bitcoin. Требования сложности и\u00A0схема работы майнингового алгоритма. Понятие консенсуса и\u00A0подробное рассмотрение консенсуса Proof Of\u00A0Work. Атаки double spend и\u00A051%, стратегии майнинговых пулов, стабильность работы сети.',
-          'Блокчейн и бизнес. Платежи в\u00A0криптовалютах. Криптовалютные биржи и\u00A0кошельки. Приоритетность транзакции, комиссии и\u00A0газ. Централизованные vs\u00A0децентрализованные решения. Выпуск токенов, стандарт ERC20. Анатомия crowdsale смарт-контракта для проведения ICO/ITO. Аудит безопасности смарт-контрактов, примеры уязвимостей. Ошибки проектирования и\u00A0качество экономических моделей crowdsale.',
-          'Блокчейн и\u00A0право. Правовые аспекты ITO/ICO. Опыт регулирования профессиональных участников рынка в\u00A0США, Японии, Швейцарии, Германии, на\u00A0острове Мэн, в Великобритании и\u00A0ещё в\u00A0более чем в 10\u00A0странах мира. Экстерриториальное действие законодательства. Почему стоит опасаться законодательства США, Японии, Швейцарии и\u00A0др. даже если вы\u00A0не\u00A0зарегистрированы в\u00A0этих странах?',
-          '<a href="https://mixbytes.timepad.ru/event/611938/">Подробная программа</a>'
-        ],
-        speakers: {
-          prilutsky: {
-            name: 'Сергей Прилуцкий',
-            description: 'Программирует с\u00A0начальной школы, работал системным администратором много лет. Занимался реверс-инжинирингом и\u00A0безопасностью\u00A0ПО, исследовал программные защиты и\u00A0антивирусные движки. Окончил МИФИ и\u00A0преподавал там курсы \u00ABБазы данных\u00BB и\u00A0\u00ABИнформационная безопасность\u00BB, вёл исследовательские проекты, посвящённые криптографическим методам защиты. В\u00A0течение многих лет работал в\u00A0Mail.Ru ведущим разработчиком на\u00A0многих проектах, последние годы — в\u00A0команде Антиспама. Имел дело с\u00A0системами, начиная от\u00A0небольших высоконагруженных микросервисов и\u00A0сайтов и\u00A0заканчивая большими кластерами для распределённых вычислений. Преподаватель и\u00A0автор курса по\u00A0информационной безопасности для проектов \u00ABТехнопарк\u00BB (Бауманка) и\u00A0\u00ABТехноатом\u00BB (МИФИ). Активный участник сообщества блокчейн-разработчиков.',
-          },
-          vasilchikov: {
-            name: 'Юрий Васильчиков',
-            description: 'Начал разрабатывать сайты в\u00A02000 году на\u00A0языке Perl. В\u00A0стеке: PHP, JS/Node/React. В\u00A0юношестве год отработал программистом в\u00A0студии Лебедева. В\u00A02005 году стал сооснователем веб-студии Eggo.ru, где шесть лет работал техническим директором. Руководил веб-студией Eggo.ru три года. Разрабатывал решения более чем для 150 малых и\u00A0средних компаний и консультировал их. Крипто-энтузиаст, менеджер в\u00A0команде MixBytes.',
-          },
-        },
-        prices: {
-          early: {
-            name: 'До 1 декабря',
-          },
-          late: {
-            name: 'После'
-          },
-        },
-      },
-    },
-
-    capabilities: {
-      title: 'Наши возможности',
-      items: {
-        money: 'Приём криптовалют в\u00A0ICO в\u00A0автоматическом режиме, сразу с выдачей токенов.',
-        testing: 'Автоматизируем тестирование контракта, проверяя набор из\u00A0заготовленных сценариев в\u00A0разных комбинациях.',
-        security: 'Мультиподпись защитит смарт-контракт от\u00A0взлома через кражу ключей.',
-        solidity: 'Solidity-инспектор автоматизирует обнаружение проблем в\u00A0коде, проверяет опасные конструкции и\u00A0особенности языка.',
-        analytics: 'Аналитика криптоплатежей в\u00A0реальном времени подсчитает ether-платежи, полученные через разные каналы привлечения трафика, позволит корректировать маркетинг ICO на\u00A0ходу.',
-      },
-    },
+    founders: 'Основатели',
 
     openSource: 'Мы за открытый код',
   },
@@ -411,135 +352,60 @@ export default {
     },
   },
 
-  team: {
-    prilutsky: {
+  team: [
+    {
       name: 'Сергей Прилуцкий',
+      position: 'Chief researcher',
+      photo: 'prilutskiy.jpg',
+      linkedin: 'https://www.linkedin.com/in/sergey-prilutskiy-2a619951/',
       desc:
         <ul>
-          <li>Начал программировать в&nbsp;начальной школе, работал системным администратором много лет</li>
-          <li>Занимался реверс-инжинирингом и&nbsp;безопасностью&nbsp;ПО, исследовал программные защиты и&nbsp;антивирусные движки</li>
-          <li>Закончил МИФИ и&nbsp;преподавал там курсы &laquo;Базы данных&raquo; и&nbsp;&laquo;Информационная безопасность&raquo;, вел исследовательские проекты посвящённые криптографическим методам защиты</li>
-          <li>В&nbsp;течение многих лет работал в&nbsp;Mail.Ru ведущим разработчиком на&nbsp;многих проектах, последние годы в&nbsp;команде Антиспама</li>
-          <li>Имел дело с&nbsp;системами, начиная от&nbsp;небольших высоконагруженных микросервисов и&nbsp;сайтов и&nbsp;заканчивая большими кластерами для распредеённых вычислений</li>
-          <li>Преподаватель и&nbsp;автор курса по&nbsp;информационной безопасности для проектов &laquo;Технопарк&raquo; (Бауманка) и&nbsp;&laquo;Техноатом&raquo; (МИФИ)</li>
-          <li>Активный участник сообщества блокчейн-разработчиков</li>
+          <li>Started programming in&nbsp;the elementary school, worked as&nbsp;a&nbsp;system administrator for many years</li>
+          <li>Was engaged in&nbsp;reverse engineering and software security, researched software protection and antivirus engines</li>
+          <li>Graduated from the Moscow Engineering Physics Institute</li>
+          <li>For many years worked at&nbsp;Mail.Ru as&nbsp;a&nbsp;leading developer on&nbsp;many projects, the last years in&nbsp;the team of&nbsp;Antispam</li>
+          <li>Worked with systems, ranging from small highly loaded micro services and sites to&nbsp;the large clusters for distributed computing</li>
+          <li>The teacher and author of&nbsp;the course on&nbsp;information security for the &laquo;Technopark&raquo; (BMSTU)</li>
+          <li>Active member of&nbsp;the blockchain developers community</li>
         </ul>,
     },
-    vasilchikov: {
-      name: 'Юрий Васильчиков',
+    {
+      name: 'Yuri Vasilchikov',
+      photo: 'vasilchikov.jpg',
+      position: 'CEO',
+      linkedin: 'https://www.linkedin.com/in/yuriy-vasilchikov/',
       desc:
         <ul>
-          <li>В&nbsp;8&nbsp;классе написал клон Тетриса на&nbsp;Бейсике :)</li>
-          <li>Начал разрабатывать сайты в&nbsp;2000 году на&nbsp;языке Perl. В&nbsp;стеке: PHP, JS/Node/React</li>
-          <li>В&nbsp;юношестве год отработал программистом в&nbsp;студии Лебедева</li>
-          <li>В&nbsp;2005 году стал сооснователем веб-студии Eggo.ru, где на&nbsp;протяжении 6&nbsp;лет работал техническим директором</li>
-          <li>Руководил веб-студией Eggo.ru на&nbsp;протяжении 3&nbsp;лет</li>
-          <li>Консультировал и&nbsp;разрабатывал решения для более чем 150 малых и&nbsp;средних компаний</li>
+          <li>Wrote a&nbsp;clone of&nbsp;Tetris in&nbsp;BASIC</li>
+          <li>Started to&nbsp;develop the sites in&nbsp;2000 in&nbsp;Perl</li>
+          <li>Worked as&nbsp;a&nbsp;programmer in&nbsp;the studio of&nbsp;Lebedev for one year</li>
+          <li>In&nbsp;2005, co-founded the Eggo.ru web studio, where he&nbsp;worked as&nbsp;a&nbsp;technical director for 6&nbsp;years</li>
+          <li>Managed the Eggo.ru web-studio for 3&nbsp;years</li>
+          <li>Consulted and developed solutions for more than 150 small and medium-sized companies</li>
         </ul>,
     },
-    makeev: {
-      name: 'Алексей Макеев',
+    {
+      name: 'Alexey Makeev',
+      photo: 'makeev.jpg',
+      position: 'CTO',
+      linkedin: 'https://www.linkedin.com/in/aleksey-makeyev-98471884/',
       desc:
         <ul>
-          <li>Закончил МГТУ им. Н.&nbsp;Э.&nbsp;Баумана, кафедра &laquo;Компьютерные комплексы, системы и&nbsp;сети&raquo;, диплом о&nbsp;распределенных вычислениях</li>
-          <li>Опыт программирования 17&nbsp;лет (Assembler, C/C++, Java, PHP, Perl, Python, JS)</li>
-          <li>Опыт разработки Big Data решений на&nbsp;Hadoop-кластере промышленного масштаба</li>
-          <li>Работал тимлидом в&nbsp;проекте интернет-поисковика Поиск@mail.ru</li>
-          <li>Работал системным архитектором в&nbsp;фирме&nbsp;1С, отдел разработки платформы</li>
-          <li>В&nbsp;сфере интересов: Big Data, распределенные вычисления, информационная безопасность, финтех, инвестиции</li>
+          <li>Graduated from the Bauman Moscow State Technical University (BMSTU), Faculty &laquo;Computer Complexes, Systems and Networks&raquo;</li>
+          <li>Experience in&nbsp;programming for 17&nbsp;years (Assembler, C/C++, Java, PHP, Perl, Python, JS)</li>
+          <li>Experience in&nbsp;Big Data solutions developing Big Data on&nbsp;the industrial-scale Hadoop cluster</li>
+          <li>Worked as&nbsp;a&nbsp;team leader in&nbsp;the Internet search project Поиск@mail.ru</li>
+          <li>Worked as&nbsp;a&nbsp;system architect at&nbsp;1C&nbsp;Company</li>
+          <li>Fields of&nbsp;interest: Big Data, distributed computing, information security, finance, investments</li>
         </ul>,
     },
-    karbachinsky: {
-      name: 'Игорь Карбачинский',
-      desc:
-        <ul>
-          <li>Закончил МИЭМ, кафедра &laquo;Кибернетика&raquo;, диплом об&nbsp;алгоритмах ранжирования в&nbsp;поисковых системах</li>
-          <li>Опыт программирования 12&nbsp;лет (C/C++, Java, PHP, Perl, Python, JS)</li>
-          <li>На&nbsp;протяжении многих лет руководил отделом в&nbsp;интернет-поисковике Поиск@mail.ru</li>
-          <li>Работал на&nbsp;позиции Data Science Architect в&nbsp;проектах Lang.ai и&nbsp;Sentisis.com</li>
-          <li>Опыт создания промышленных&nbsp;IT решений в&nbsp;облаках Google и&nbsp;Amazon</li>
-          <li>В&nbsp;сфере интересов: Анализ данных, Big Data, Теория игр, Речевые технологи</li>
-        </ul>,
-    },
-    kruglov: {
-      name: 'Павел Круглов',
-      desc:
-        <ul>
-          <li>Закончил НИЯУ МИФИ, кафедра &laquo;Информационная безопасность банковских систем&raquo;</li>
-          <li>В&nbsp;школе начал программировать на&nbsp;C/C++ и&nbsp;разрабатывать сайты, <s>а&nbsp;потом ломать, хехе</s></li>
-          <li>Работал на&nbsp;нескольких проектах в&nbsp;качестве эксперта по&nbsp;информационной безопасности, в&nbsp;том числе в&nbsp;ЦБ&nbsp;РФ</li>
-          <li>Более 30&nbsp;личных публикаций в&nbsp;журнале Хакер, более 100&nbsp;в качестве редактора</li>
-          <li>Интересы: информационная безопасность, анализ систем, инвестиции, психология</li>
-        </ul>,
-    },
-    yakovlev: {
-      name: 'Андрей Яковлев',
-      desc:
-        <ul>
-          <li>Закончил Мех-Мат СГУ по&nbsp;специальности &laquo;прикладная математика и&nbsp;информатика&raquo;</li>
-          <li>Опыт программирования 7&nbsp;лет (Python, JS, Bash)</li>
-          <li>Начинал свой путь в&nbsp;компании Mirantis инженером по&nbsp;тестированию, а&nbsp;затем DevOps инженером</li>
-          <li>Работал DevOps-инженером в&nbsp;интернет-поисковике Поиск@mail.ru</li>
-          <li>Последние годы&nbsp;&mdash; разработчик авто-тестов в&nbsp;компании Kaspersky Lab</li>
-          <li>Интересуется стартапами и&nbsp;инвестициями, мечтает о&nbsp;единороге :)</li>
-        </ul>,
-    },
-    shubin: {
-      name: 'Михаил Шубин',
-      desc:
-        <ul>
-          <li>В школе организовал ячейку домонета с коллективным подключением к сети. Держал узел Fidonet</li>
-          <li>Закончил ТУСУР, кафедра "Радиосвязь, радиовещание, телевидение"</li>
-          <li>Разрабатывал цифровые измерительные приборы</li>
-          <li>Занимался администрированием систем разного уровня сложности. Писал на Python, Perl, Bash</li>
-          <li>Люблю разбираться в новых для себя областях, понимать "как это устроено" и "как это можно применять"</li>
-          <li>Интересы: роботостроение, электроника, психология</li>
-        </ul>,
-    },
-    galuzinskaya: {
-      name: 'Илона Галузинская',
-      desc:
-        <ul>
-          <li>Единственный человек в команде, который никогда и ничего не программировал. Усердно осваивает значение понятий форк, хэш и нода</li>
-          <li>Окончила НИУ МЭИ (ТУ) по специальности далекой от энергетики — связи с общественностью</li>
-          <li>С 2015 года аккаунт-менеджер в IT-сфере</li>
-          <li>Решает административные вопросы и организует лекции MixBytes</li>
-          <li>Среди интересов — начать разбираться в блокчейн. Ну и мода, конечно:)</li>
-        </ul>,
-    },
-    privezentsev: {
-      name: 'Константин Привезенцев',
-      desc:
-        <ul>
-          <li>Закончил МИЭМ по специальности "Системы автоматизированного проектирования"</li>
-          <li>Опыт промышленного программирования 8 лет на различных языках программирования</li>
-          <li>Участвовал в разработке мобильных приложений в Paragon, BigData инфраструктуры Поиск@Mail.ru и системы обработки данных в Kaspersky Lab</li>
-          <li>Интересы: базы данных, функциональное программирование, распределенные вычисления</li>
-        </ul>,
-    },
-    ievlev: {
-      name: 'Алгыс Иевлев',
-      desc:
-        <ul>
-          <li>Cтудент старших курсов МГТУ им. Баумана и&nbsp;программы &laquo;Технопарк&raquo;</li>
-          <li>Cтажёр-разработчик в&nbsp;Mail.Ru Group, команда мессенджеров</li>
-          <li>Начал программировать в&nbsp;8&nbsp;классе на&nbsp;C/C++, занимался спортивным программированием</li>
-          <li>Диплом 3&nbsp;степени в&nbsp;финале всероссийский командной олимпиады, участие в&nbsp;финале всероссийской олимпиады по&nbsp;программированию</li>
-          <li>Разработчик рабочих прототипов систем на&nbsp;движках Steem, EOS</li>
-        </ul>,
-    },
-    polyakov: {
-      name: 'Максим Поляков',
-      desc:
-        <ul>
-          <li>Разработал свой первый (безвредный) компьютерный вирус в&nbsp;ХХ веке</li>
-          <li>Опыт системного администрирования Linux 15&nbsp;лет (и&nbsp;он&nbsp;знает, кто такой Патрик Фолькердинг)</li>
-          <li>Работал back-end разработчиком на&nbsp;Perl в&nbsp;Mail.Ru Group (2013-2018)</li>
-          <li>Разрабатывает ПО&nbsp;уже более чем 20&nbsp;лет на&nbsp;разных языках программирования: Assembly, C/C++, Javascript, Perl, Lua, Golang, Solidity (а&nbsp;так&nbsp;же Basic, PHP и&nbsp;Python, но&nbsp;не&nbsp;очень любит говорить на&nbsp;эту тему)</li>
-          <li>Интересы: разработка смарт-контрактов, высоконагруженные системы, распределенные и&nbsp;децентрализованные системы, безопасность приложений, анонимность в&nbsp;Интернете</li>
-        </ul>,
-    },
-  },
+    {
+      name: 'Vadim Buyanov',
+      photo: 'buyanov.jpg',
+      position: 'Chief business developer',
+      linkedin: 'https://www.linkedin.com/in/vadim-buyanov/',
+    }
+  ],
 
   job: {
     title: 'Вакансии',

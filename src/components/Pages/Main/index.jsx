@@ -8,21 +8,19 @@ import HeaderJumbo from 'components/HeaderJumbo';
 import Services from 'components/Services';
 import Cases from 'components/Cases';
 import WorkingProcess from 'components/WorkingProcess';
-import MeetUs from 'components/MeetUs';
-import { OpenSource } from '../../OpenSource';
+import Founders from 'components/Founders';
 
 import './styles.css';
 
 class Main extends Component {
   render() {
     const text = this.context.text.main;
-    const meetUsText = this.context.text.meetUs;
 
     const pageNav = [
       {link: 'services', name: text.navigation.services},
       {link: 'cases', name: text.cases},
       {link: 'wprocess', name: text.wprocess},
-      {link: 'meet-us', name: meetUsText.anchor},
+      {link: 'founders', name: text.founders},
     ];
 
     return (
@@ -32,8 +30,7 @@ class Main extends Component {
           <Services/>
           <Cases/>
           <WorkingProcess/>
-          <MeetUs />
-          <OpenSource />
+          <Founders/>
         </ContentLayout>
       </PageLayout>
     );

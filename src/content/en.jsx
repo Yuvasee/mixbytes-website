@@ -56,12 +56,6 @@ export default {
       feedback: 'Feedback',
     },
 
-    devAudit: {
-      title: 'Development and Audit',
-      description: 'We write smart contracts with Solidity, completely from scratch or on the basis of proven libraries as OpenZeppelin. We comply with the ERC20 standard.We cover the code with unit-tests under the Truffle framework. We verify contracts for Etherscan. We find mistakes and vulnerabilities of your smart contracts. We develop blockchains based on the Graphene framework. Most likely, you will need our consultations.',
-      example: <p><a href="https://github.com/mixbytes/storiqa_ico/tree/master/contracts">Contract</a> and&nbsp;<a href="https://github.com/mixbytes/audits_public/blob/master/solidity/KickICO/report.md">audit</a><br /> examples on&nbsp;Github</p>,
-    },
-
     services: 'Services',
     servicesItems: [
       {
@@ -128,7 +122,7 @@ export default {
       },
       {
         logo: 'logo-boomstarter.png',
-        name: 'Boomstarter.Network',
+        name: 'Boomstarter\u200B.Network',
         description: 'Global Cryptofunding Platform',
         job: 'Turn-key solution for ICO campaign',
       },
@@ -158,60 +152,7 @@ export default {
       'Delivery: deployment into blockchain.',
     ],
 
-    consulting: 'Consulting',
-    businessRequirements: 'Formulation of business requirements',
-    businessRequirementsDescription: 'We will help you to find possible applications of blockchain technologies to your business and formulate an economic model of your tokens.',
-    hrHelp: 'Help with HR',
-    hrHelpDescription: 'We will help you determine the requirements for the blockchain programmers you want to take on the team. We will conduct technical interviews, mark out the way for growth and training.',
-    technicalSolutions: 'The choice of technical solutions, writing of TP',
-    technicalSolutionsDescription: 'We will select a stack of technologies for solving the problem. We will recommend the frameworks, libraries, verified smart contracts.',
-    technicalDocumentation: 'Technical documentation',
-    technicalDocumentationDescription: 'We formulate correct requirements for programmers of the technical project.',
-
-    lectures: 'The next lectures',
-    lecturesItems: {
-      diveIntoBlokchain: {
-        title: 'Intensive course \u00ABDive into blokchain\u00BB',
-        date: '9-10 DECEMBER',
-        description: 'During the two days, <strong>December 9-10</strong>, you will receive a fundamental understanding of the technical and legal basis of blockchain technologies. Cryptographic foundation, consensus and mining, technical subtleties of ICO, legal practice. You will finally understand how and why it all works!',
-        themes: [
-          'Introduction to cryptography. Symmetric cryptosystems. The internal arrangement of symmetric ciphers. Data Integrity and Checksums. Authentication schemes and storage of passwords. Algorithms of how programs of the information protection work. Asymmetric cryptosystems. Electronic signature scheme. Attacks such as man-in-the-middle and a certificate system. TOR and mixed networks. Coin flipping protocol...',
-          'Blockсhain. Definitions of blockchain. Blocks, mechanisms of block adhesion and chain integrity. Highlights of the Bitcoin algorithm. The complexity requirements and the mining algorithm’s scheme of operation. The concept of consensus and a detailed consideration of the Proof Of Work consensus. Double spend attacks and 51%, the strategies of mining pools, the stability of the network.',
-          'Blockchain and business. Payments in cryptocurrencies. Cryptocurrencies and wallets. Priority of transaction, commission and gas. Centralized vs decentralized solutions. Issue of tokens, standard ERC20. Anatomy of crowdsale smart contract for ICO / ITO. Audit of smart contracts security, examples of vulnerabilities. Designing mistakes and quality of crowdsale economic models.',
-          'Blockchain and the law. Legal aspects of ITO / ICO. Experience in regulating professional participants of market in the US, Japan, Switzerland, Germany, the Isle of Man, the UK and more than other 10 countries. Extraterritorial validity of legislation. Why should you be afraid of the legislation of the USA, Japan, Switzerland, etc. even if you are not registered in these countries?',
-          '<a href="https://mixbytes.timepad.ru/event/611938/">Detailed program</a>'
-        ],
-        speakers: {
-          prilutsky: {
-            name: 'Sergey Prilutsky',
-            description: 'Started programming in the elementary school, worked as a system administrator for many years. Was engaged in reverse engineering and software security, researched software protection and antivirus engines. Graduated from the Moscow Engineering and Physics Institute and was a lector of such courses as "Databases" and "Information Security", conducted research projects on security cryptographic methods. For many years worked at Mail.Ru as a leading developer on many projects, the last years in the team of Antispam. Worked with systems, ranging from small highly loaded micro services and sites to the large clusters for distributed computing. The teacher and author of the course on information security for the "Technopark" (Baumanka) and "Technoatom" (MEPhI) projects. Active member of the blockchain developers community.',
-          },
-          vasilchikov: {
-            name: 'Yuri Vasilchikov',
-            description: 'Started to develop the sites in 2000 in Perl. Worked as a programmer in the studio of Lebedev for one year. In 2005, co-founded the Eggo.ru web studio, where he worked as a technical director for 6 years. Managed the Eggo.ru web-studio for 3 years. Consulted and developed solutions for more than 150 small and medium-sized companies.',
-          },
-        },
-        prices: {
-          early: {
-            name: 'Before December\u00A01',
-          },
-          late: {
-            name: 'After December\u00A01'
-          },
-        },
-      },
-    },
-
-    capabilities: {
-      title: 'Our capabilities',
-      items: {
-        money: 'We accept different cryptocurrencies of the ICO in automatic mode by issuing tokens at once',
-        testing: 'We automate the testing of any typical contract by checking the set of scripts that we prepared in different combinations',
-        security: 'Multisig will protect any smart contract from hacking through the key theft',
-        solidity: 'Solidity Inspector automates the detection of problems in solidity code, checks the dangerous structures and features of the language',
-        analytics: 'Analytics of real-time crypto payments, it calculates ether-payments that were received through the different traffic channels, allows you to correct the marketing of ICO in real time',
-      },
-    },
+    founders: 'Founders',
 
     openSource: 'We are for open source',
   },
@@ -232,11 +173,6 @@ export default {
         label: <p>Aleksey<br />Makeev</p>,
       },
     },
-  },
-
-  splurge: {
-    description_first: 'Collected with our',
-    description_second: 'developed and audited smart contracts',
   },
 
   education: {
@@ -411,9 +347,12 @@ export default {
     },
   },
 
-  team: {
-    prilutsky: {
+  team: [
+    {
       name: 'Sergey Prilutsky',
+      position: 'Chief researcher',
+      photo: 'prilutskiy.jpg',
+      linkedin: 'https://www.linkedin.com/in/sergey-prilutskiy-2a619951/',
       desc:
         <ul>
           <li>Started programming in&nbsp;the elementary school, worked as&nbsp;a&nbsp;system administrator for many years</li>
@@ -425,8 +364,11 @@ export default {
           <li>Active member of&nbsp;the blockchain developers community</li>
         </ul>,
     },
-    vasilchikov: {
+    {
       name: 'Yuri Vasilchikov',
+      photo: 'vasilchikov.jpg',
+      position: 'CEO',
+      linkedin: 'https://www.linkedin.com/in/yuriy-vasilchikov/',
       desc:
         <ul>
           <li>Wrote a&nbsp;clone of&nbsp;Tetris in&nbsp;BASIC</li>
@@ -437,8 +379,11 @@ export default {
           <li>Consulted and developed solutions for more than 150 small and medium-sized companies</li>
         </ul>,
     },
-    makeev: {
+    {
       name: 'Alexey Makeev',
+      photo: 'makeev.jpg',
+      position: 'CTO',
+      linkedin: 'https://www.linkedin.com/in/aleksey-makeyev-98471884/',
       desc:
         <ul>
           <li>Graduated from the Bauman Moscow State Technical University (BMSTU), Faculty &laquo;Computer Complexes, Systems and Networks&raquo;</li>
@@ -449,97 +394,13 @@ export default {
           <li>Fields of&nbsp;interest: Big Data, distributed computing, information security, finance, investments</li>
         </ul>,
     },
-    karbachinsky: {
-      name: 'Igor Karbachinsky',
-      desc:
-        <ul>
-          <li>Graduated from the Moscow Institute of&nbsp;Electronics and Mathematics, Cybernetics Faculty, Diploma on&nbsp;ranking algorithms in&nbsp;searching engines</li>
-          <li>12&nbsp;years of&nbsp;programming experience (C&nbsp;/ C++, Java, PHP, Perl, Python, JS)</li>
-          <li>Headed the department in&nbsp;the Internet searching engine Поиск@mail.ru for many years</li>
-          <li>Worked on&nbsp;the Data Science Architect position in&nbsp;such projects as&nbsp;Lang.ai and Sentisis.com</li>
-          <li>Experienced in&nbsp;creating industrial&nbsp;IT solutions in&nbsp;Google and Amazon clouds</li>
-          <li>Field of&nbsp;interests: Data analysis, Big Data, Game theory, Speech technology</li>
-        </ul>,
-    },
-    kruglov: {
-      name: 'Pavel Kruglov',
-      desc:
-        <ul>
-          <li>Graduated from the National Research Nuclear University &laquo;Moscow Engineering Physics Institute&raquo;, Faculty of&nbsp;Information Security of&nbsp;Banking Systems</li>
-          <li>Started programming on&nbsp;C/C++ and developing sites while learning at&nbsp;school, <s>and then break them, hehe</s></li>
-          <li>Worked on&nbsp;several projects as&nbsp;an&nbsp;information security expert, including the Central Bank of&nbsp;Russia</li>
-          <li>Has more than 30&nbsp;personal publications in&nbsp;the Hacker magazine, more than 100&nbsp;as an&nbsp;editor</li>
-          <li>Interests: information security, system analysis, investment, psychology</li>
-        </ul>,
-    },
-    yakovlev: {
-      name: 'Andrey Yakovlev',
-      desc:
-        <ul>
-          <li>Graduated from Faculty of&nbsp;Mechanics and Mathematics of&nbsp;Moscow National University with a&nbsp;degree in&nbsp;applied mathematics and computer science</li>
-          <li>7&nbsp;years of&nbsp;programming experience (Python, JS, Bash)</li>
-          <li>Started as&nbsp;a&nbsp;testing engineer in&nbsp;Mirantis company, then worked as&nbsp;DevOps engineer there</li>
-          <li>Worked as&nbsp;a&nbsp;DevOps-engineer in&nbsp;the Internet searching engine Поиск@mail.ru</li>
-          <li>Worked as&nbsp;auto-tests developer in&nbsp;Kaspersky Lab company</li>
-          <li>Interested in&nbsp;startups and investments, dreams of&nbsp;a&nbsp;unicorn :)</li>
-        </ul>,
-    },
-    shubin: {
-      name: 'Mikhail Shubin',
-      desc:
-        <ul>
-          <li>While still in&nbsp;school, organized a&nbsp;&laquo;domoneta&raquo; (home-coin) cell network with a&nbsp;collective connection to&nbsp;the Net. Maintained a&nbsp;FidoNet node</li>
-          <li>Graduated from Tomsk State University of&nbsp;Control Systems and Radioelectronics, where he&nbsp;studied in&nbsp;the Department of&nbsp;Radio Communications, Radio Broadcasting, and Television</li>
-          <li>Developed digital measuring devices</li>
-          <li>Handled the administration of&nbsp;systems with varying levels of&nbsp;complexity. Wrote code in&nbsp;Python, Perl, and Bash</li>
-          <li>Likes to&nbsp;learn new things to&nbsp;understand &laquo;how it&nbsp;works&raquo; and &laquo;how it&nbsp;can be&nbsp;used&raquo;</li>
-          <li>Major interests: robotics, electronics, psychology</li>
-        </ul>,
-    },
-    galuzinskaya: {
-      name: 'Ilona Galuzinskaya',
-      desc:
-        <ul>
-          <li>Ilona is&nbsp;the only team member who has never programmed anything. She&rsquo;s working hard to&nbsp;master the concepts of&nbsp;fork, hash, and node</li>
-          <li>Graduated from the Moscow Power Engineering Institute with a&nbsp;major in&nbsp;public relations, a&nbsp;field far removed from power engineering</li>
-          <li>Since 2015, has worked as&nbsp;an&nbsp;IT&nbsp;Account Manager</li>
-          <li>Handles administrative tasks and arranges MixBytes lectures</li>
-          <li>Interests include starting to&nbsp;understand what blockchain&nbsp;is. And fashion, of&nbsp;course :)</li>
-        </ul>,
-    },
-    privezentsev: {
-      name: 'Konstantin Privezentsev',
-      desc:
-        <ul>
-          <li>Graduated from the Moscow Institute of&nbsp;Electronics and Mathematics with a&nbsp;degree in&nbsp;CAD</li>
-          <li>8&nbsp;years of&nbsp;programming experience</li>
-          <li>Worked as&nbsp;a&nbsp;developer in&nbsp;Paragon, BigData-infrastructure developer in&nbsp;Internet searching engine Poisk Mail.Ru and data processing systems in&nbsp;Kaspersky Lab</li>
-          <li>Interests: databases, functional programming, distributed computing</li>
-        </ul>,
-    },
-    ievlev: {
-      name: 'Algys Ievlev',
-      desc:
-        <ul>
-          <li>BMSTU senior student, participated in&nbsp;the &laquo;Technopark&raquo; project</li>
-          <li>Intern developer in&nbsp;Mail.Ru Group, messenger&rsquo;s team</li>
-          <li>Started C/C++ programming in&nbsp;the 8th school grade, practiced in&nbsp;competitive programming</li>
-          <li>Participated in&nbsp;the final of&nbsp;the All-Russia Programming Competition. Has a&nbsp;diploma of&nbsp;the 3d&nbsp;degree</li>
-          <li>Developed prototypes using Steem and EOS platforms</li>
-        </ul>,
-    },
-    polyakov: {
-      name: 'Maxim Polyakov',
-      desc:
-        <ul>
-          <li>Created his first (harmless) computer virus in&nbsp;20-th century</li>
-          <li>Has 15&nbsp;years experience in&nbsp;Linux system administration (he&nbsp;knows who Patrick Volkerding&nbsp;is)</li>
-          <li>Worked as&nbsp;Perl back-end developer in&nbsp;Mail.Ru Group (2013-2018)</li>
-          <li>More than 20&nbsp;years experience in&nbsp;programming using different languages: Assembly, C/C++, Javascript, Perl, Lua, Golang, Solidity (also Basic, PHP and&nbsp;Python, but he does not like to talk about it)</li>
-          <li>Interests: smart contract development, highload, distributed decentralized systems, software security, internet anonymity</li>
-        </ul>,
-    },
-  },
+    {
+      name: 'Vadim Buyanov',
+      photo: 'buyanov.jpg',
+      position: 'Chief business developer',
+      linkedin: 'https://www.linkedin.com/in/vadim-buyanov/',
+    }
+  ],
 
   job: {
     title: 'Vacancy',

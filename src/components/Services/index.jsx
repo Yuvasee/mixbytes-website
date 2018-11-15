@@ -8,8 +8,6 @@ import './styles.css';
 
 class Services extends Component {
   item(e, i) {
-    const { trySmartz } = this.context.text.main;
-
     return (
       <div className="services-item" key={i+e.name}>
         <div className="services-item-icon">

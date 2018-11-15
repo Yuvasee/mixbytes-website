@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 import ContentBlock from 'components/ContentBlock';
-import BigButton from 'components/common/BigButton';
 
 import './styles.css';
 
