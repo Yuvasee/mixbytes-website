@@ -4,8 +4,9 @@ import PropTypes from 'prop-types';
 import PageLayout from 'components/PageLayout';
 import PageNav from 'components/PageNav';
 import ContentLayout from 'components/ContentLayout';
-import Services from 'components/Services';
 import HeaderJumbo from 'components/HeaderJumbo';
+import Services from 'components/Services';
+import Cases from 'components/Cases';
 import MeetUs from 'components/MeetUs';
 import { OpenSource } from '../../OpenSource';
 
@@ -18,6 +19,7 @@ class Main extends Component {
 
     const pageNav = [
       {link: 'services', name: text.navigation.services},
+      {link: 'cases', name: text.cases},
       {link: 'meet-us', name: meetUsText.anchor},
     ];
 
@@ -26,6 +28,7 @@ class Main extends Component {
         <HeaderJumbo />
         <ContentLayout contentRight={<PageNav links={pageNav} />}>
           <Services/>
+          <Cases/>
           <MeetUs />
           <OpenSource />
         </ContentLayout>

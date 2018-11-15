@@ -99,7 +99,52 @@ export default {
         icon: 'icon-ico-solutions.png'
       },
     ],
-    trySmartz: 'Try Smartz',
+    
+    cases: 'Cases',
+    casesItems: [
+      {
+        logo: 'logo-poa.png',
+        name: 'POA Network',
+        description: 'Ethereum-based platform that offers an open-source framework for smart contracts',
+        job: 'Smart contracts and consensus algorithm audit',
+      },
+      {
+        logo: 'logo-storiqa.png',
+        name: 'Storiqa',
+        description: '# 1 Crypto marketplace',
+        job: 'ICO smart contracts development',
+      },
+      {
+        logo: 'logo-kickico.png',
+        name: 'Kickico',
+        description: 'Fundraising platform powered by blockchain',
+        job: 'ICO smart contract audit',
+      },
+      {
+        logo: 'logo-world-wifi.png',
+        name: 'World WiFi',
+        description: 'Blockchain platform for WiFi distribution',
+        job: 'ICO smart contract audit',
+      },
+      {
+        logo: 'logo-boomstarter.png',
+        name: 'Boomstarter.Network',
+        description: 'Global Cryptofunding Platform',
+        job: 'Turn-key solution for ICO campaign',
+      },
+      {
+        logo: 'logo-sp8de.png',
+        name: 'Sp8de',
+        description: 'Blockchain-based platform for unbiased public randomness.',
+        job: 'Secure random beacon generation prototype development and research',
+      },
+      {
+        logo: 'logo-raison.png',
+        name: 'Raison',
+        description: 'AI platform for investment',
+        job: 'Consulting on blockchain wallet implementation',
+      }
+    ],
 
     consulting: 'Consulting',
     businessRequirements: 'Formulation of business requirements',

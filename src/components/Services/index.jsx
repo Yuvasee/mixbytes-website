@@ -27,7 +27,9 @@ class Services extends Component {
           </div>
         }
         {e.button &&
-          <BigButton>{trySmartz}</BigButton>
+          <BigButton onClick={() => window.open(e.button.link, '_blank')}>
+            {e.button.text}
+          </BigButton>
         }
       </div>
     );

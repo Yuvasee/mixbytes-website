@@ -1,0 +1,66 @@
+.cases-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.cases-item {
+  width: 25%;
+  padding-right: 30px;
+}
+
+.cases-item-logo-wrapper {
+  margin-left: -20px;
+  padding: 30px 0;
+}
+
+.cases-item-logo {
+  padding: 10px 20px;
+  height: 65px;
+  background: white;
+  display: table-cell;
+  vertical-align: middle;
+  margin-left: -20px;
+}
+
+.cases-item-logo img {
+  margin: auto;
+}
+
+.cases-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.cases-item-description {
+  margin-bottom: 12px;
+}
+
+.cases-item-job {
+  margin-bottom: 22px;
+  font-weight: bold;  
+}
+
+@media (max-width: 1400px) {
+  .cases-item {
+    width: 33%;
+  }
+}
+
+@media (max-width: 770px) {
+  .cases-container {
+    font-size: 12px;
+  }
+
+  .cases-item {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .cases-item {
+    width: 100%;
+  }
+}

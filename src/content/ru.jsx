@@ -79,7 +79,7 @@ export default {
         text: 'Система управления смарт-контрактами. Позволяет создавать и администрировать наиболее распространенные виды смарт-контрактов. Платформа имеет дружественный интерфейс и не требует специальных навыков программирования.',
         icon: 'icon-smartz.png',
         button: {
-          text: 'Try Smartz',
+          text: 'Попробуйте Smartz',
           link: 'https://smartz.io'
         }
       },
@@ -99,7 +99,52 @@ export default {
         icon: 'icon-ico-solutions.png'
       },
     ],
-    trySmartz: 'Попробуйте Smartz',
+
+    cases: 'Cases',
+    casesItems: [
+      {
+        logo: 'logo-poa.png',
+        name: 'POA Network',
+        description: 'Платформа на основе Ethereum, предлагающая открытый фреймворк для смарт-контрактов',
+        job: 'Аудит смарт-контрактов и алгоритма консенсуса',
+      },
+      {
+        logo: 'logo-storiqa.png',
+        name: 'Storiqa',
+        description: '# 1 Крипто маркетплейс',
+        job: 'Разработка смарт-контрактов для ICO',
+      },
+      {
+        logo: 'logo-kickico.png',
+        name: 'Kickico',
+        description: 'Фандрайзинговая платформа на основе блокчейн',
+        job: 'Аудит смарт-контракта ICO',
+      },
+      {
+        logo: 'logo-world-wifi.png',
+        name: 'World WiFi',
+        description: 'Блокчейн платформа для дистрибуции WiFi',
+        job: 'Аудит смарт-контракта ICO',
+      },
+      {
+        logo: 'logo-boomstarter.png',
+        name: 'Boomstarter\n.Network',
+        description: 'Глобальная криптофандинговая платформа',
+        job: 'Разработка технического решения для ICO кампании «под ключ»',
+      },
+      {
+        logo: 'logo-sp8de.png',
+        name: 'Sp8de',
+        description: 'Блокчейн платформа для сферы гемблинга',
+        job: 'Исследования и разработка прототипа системы непредвзятой генерации случайных чисел',
+      },
+      {
+        logo: 'logo-raison.png',
+        name: 'Raison',
+        description: 'AI инвестиционная платформа',
+        job: 'Консультация по внедрению блокчейн кошелька',
+      }
+    ],
 
     consulting: 'Консалтинг',
     businessRequirements: 'Бизнес-требования',
