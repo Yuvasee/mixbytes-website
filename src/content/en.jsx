@@ -146,6 +146,18 @@ export default {
       }
     ],
 
+    wprocess: 'Working Process',
+    wprocessSteps: [
+      'Collect initial requirements.',
+      'Consulting and Analytics: clarifying stack and delivery time.',
+      'Estimating and preparing detailed proposal with timeframe and budget. Arranging the terms and agreement.',
+      'Solution Design: architecture development and task decomposition.',
+      'Building within 1 week sprints: Scrum, everyday 15 min stand-ups, coding and documentation.',
+      'Release preparation and testing.',
+      'Internal audit: security audit for vulnerabilities.',
+      'Delivery: deployment into blockchain.',
+    ],
+
     consulting: 'Consulting',
     businessRequirements: 'Formulation of business requirements',
     businessRequirementsDescription: 'We will help you to find possible applications of blockchain technologies to your business and formulate an economic model of your tokens.',

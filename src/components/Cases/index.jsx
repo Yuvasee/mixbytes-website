@@ -16,7 +16,7 @@ class Cases extends Component {
 
         <div className="cases-container">
           {text.casesItems.map((e, i) => (
-            <div className="cases-item">
+            <div className="cases-item" key={'cases-item'+i}>
               <div className="cases-item-logo-wrapper">
                 <div className="cases-item-logo">
                   <img src={require(`assets/cases-logos/${e.logo}`)} alt={`${e.name} logo`}/>

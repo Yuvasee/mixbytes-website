@@ -7,6 +7,7 @@ import ContentLayout from 'components/ContentLayout';
 import HeaderJumbo from 'components/HeaderJumbo';
 import Services from 'components/Services';
 import Cases from 'components/Cases';
+import WorkingProcess from 'components/WorkingProcess';
 import MeetUs from 'components/MeetUs';
 import { OpenSource } from '../../OpenSource';
 
@@ -20,6 +21,7 @@ class Main extends Component {
     const pageNav = [
       {link: 'services', name: text.navigation.services},
       {link: 'cases', name: text.cases},
+      {link: 'wprocess', name: text.wprocess},
       {link: 'meet-us', name: meetUsText.anchor},
     ];
 
@@ -29,6 +31,7 @@ class Main extends Component {
         <ContentLayout contentRight={<PageNav links={pageNav} />}>
           <Services/>
           <Cases/>
+          <WorkingProcess/>
           <MeetUs />
           <OpenSource />
         </ContentLayout>

@@ -1,0 +1,64 @@
+.wp-content-block {
+  background: #481F80;
+  color: white;
+  padding: 50px;
+  margin: 50px -50px;
+}
+
+.wp-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.wp-step {
+  width: 25%;
+  padding-right: 30px;
+}
+
+.wp-step-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28C677;
+}
+
+.wp-step-number span {
+  font-size: 220%;
+}
+
+.wp-step-text {
+  margin-bottom: 22px;
+}
+
+@media (max-width: 1400px) {
+  .wp-step {
+    width: 33%;
+  }
+}
+
+@media (max-width: 970px) {
+  .wp-content-block {
+    margin: 50px -20px;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  .wp-container {
+    font-size: 12px;
+  }
+
+  .wp-step {
+    width: 50%;
+  }
+
+  .wp-step-number {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wp-step {
+    width: 100%;
+  }
+}
